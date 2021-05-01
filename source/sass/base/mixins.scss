@@ -1,0 +1,29 @@
+/* адаптация (Desktop First) */
+
+//для экранов до 1440px
+@mixin atDesktop1440 {
+  @media screen and (max-width: 1440px) {
+    @content;
+  }
+}
+
+//для экранов до 1024px
+@mixin atDesktop1024 {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+//для экранов до 1024px
+@mixin atDesktop1024 {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+//для экранов до 576px
+@mixin atDesktop1024 {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}

@@ -1,0 +1,43 @@
+/* адаптация (Desktop First) */
+
+//для экранов до 1440px
+@mixin atDesktop1440 {
+  @media screen and (max-width: 1440px) {
+    @content;
+  }
+}
+
+//для экранов до 1024px
+@mixin atDesktop1024 {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+//для экранов до 576px
+@mixin atMobile {
+  @media screen and (max-width: 575px) {
+    @content;
+  }
+}
+
+/* типография */
+
+@mixin mainText() {
+  //margin: 0;
+  font-family: $ptRootUI;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.4;
+  color: $black;
+
+  @include atDesktop1024 {
+    font-size: 15px;
+  }
+}
+
+/* @mixin lightText {
+
+}
+*/

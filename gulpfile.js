@@ -2,7 +2,7 @@
 
 const gulp = require('gulp');
 const plumber = require('gulp-plumber');
-//const sourcemap = require('gulp-sourcemaps');
+const sourcemap = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
@@ -18,14 +18,14 @@ const server = require('browser-sync').create();
 gulp.task('css', function () {
   return gulp.src('source/sass/**/*.scss')
     .pipe(plumber())
-    //.pipe(sourcemap.init())
+    .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
       autoprefixer()
     ]))
     .pipe(csso())
     .pipe(rename({prefix: "", suffix: ""}))
-    //.pipe(sourcemap.write('.'))
+    .pipe(sourcemap.write('.'))
     .pipe(gulp.dest('build/css'))
     .pipe(server.stream());
 });

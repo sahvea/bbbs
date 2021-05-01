@@ -1,0 +1,48 @@
+.button {
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  border: 1px solid $black;
+  border-radius: 100px;
+  font-family: $protoGrotesk;
+  font-size: 15px;
+  color: $black;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  transition: .2s linear;
+
+  &:hover {
+    background-color: $lightGray;
+  }
+
+  &:active {
+    background-color: $black;
+    color: $background;
+  }
+
+  &:active:hover {
+    background-color: $darkBlue;
+    color: $background;
+  }
+}
+
+.test {
+  @include mainText();
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+@include atMobile {
+  .test {
+    padding: 150px 50px;
+  }
+
+  .button {
+    margin: 0 auto;
+  }
+}

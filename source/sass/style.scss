@@ -1,7 +1,8 @@
 /* Общие настройки и стили*/
 @import '../vendor/normalize.css';
 @import '../vendor/fonts/fonts.css';
-@import '../sass/base/variables.scss';
-@import '../sass/base/mixins.scss';
-/* test */
-@import '../sass/blocks/test.scss';
+@import './base/variables.scss';
+@import './base/mixins.scss';
+
+/* кнопки */
+@import './blocks/button.scss';

@@ -22,7 +22,7 @@
 }
 
 //для экранов до 576px
-@mixin atDesktop1024 {
+@mixin atMobile {
   @media screen and (max-width: 576px) {
     @content;
   }

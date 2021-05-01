@@ -18,19 +18,3 @@
     @content;
   }
 }
-
-/* типография */
-
-/* @mixin mainText() {
-  //margin: 0;
-  font-family: $ptRootUI;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 1.4;
-  color: $black;
-
-  @include atDesktop1024 {
-    font-size: 15px;
-  }
-} */

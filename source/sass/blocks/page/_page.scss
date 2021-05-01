@@ -1,0 +1,34 @@
+.page {
+  max-width: 1920px;
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+
+.page__section {
+  margin: 0 auto;
+  padding: 0 75px;
+}
+
+@include atDesktop1440 {
+  .page__section {
+    padding: 0 135px;
+  }
+}
+
+@include atDesktop1024 {
+  .page__section {
+    padding: 0 127px;
+  }
+}
+
+@include atMobile {
+  .page__section {
+    padding: 0 15px;
+  }
+}

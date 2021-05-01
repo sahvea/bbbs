@@ -1,8 +1,14 @@
-/* Общие настройки и стили*/
+// Общие настройки и стили
 @import '../vendor/normalize.css';
 @import '../vendor/fonts/fonts.css';
 @import './base/variables.scss';
 @import './base/mixins.scss';
+// page
+@import './blocks/page/page.scss';
+// header
+@import './blocks/header/header.scss';
+// menu
+@import './blocks/menu/menu.scss';
+// кнопки
+@import './blocks/button/button.scss';
 
-/* кнопки */
-@import './blocks/button.scss';

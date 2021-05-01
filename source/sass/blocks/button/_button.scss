@@ -26,23 +26,6 @@
   &:active:hover {
     background-color: $darkBlue;
     color: $background;
-  }
-}
-
-.test {
-  @include mainText();
-  display: block;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 50px 0;
-}
-
-@include atMobile {
-  .test {
-    padding: 150px 50px;
-  }
-
-  .button {
-    margin: 0 auto;
+    border-color: $darkBlue;
   }
 }

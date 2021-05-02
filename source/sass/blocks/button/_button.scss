@@ -8,7 +8,10 @@
   border-radius: 100px;
   font-family: $protoGrotesk;
   font-size: 15px;
+  line-height: 1.3;
+  letter-spacing: .2px;
   color: $black;
+  white-space: nowrap;
   background-color: transparent;
   cursor: pointer;
   outline: none;
@@ -27,5 +30,14 @@
     background-color: $darkBlue;
     color: $background;
     border-color: $darkBlue;
+  }
+}
+
+@include atDesktop1024 {
+  .button {
+    height: 40px;
+    padding: 0 15px;
+    font-size: 12px;
+    line-height: 1.4;
   }
 }

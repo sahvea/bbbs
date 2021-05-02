@@ -9,7 +9,7 @@
 @import './blocks/header/header.scss';
 // menu
 @import './blocks/menu/menu.scss';
-// кнопки
+// buttons
 @import './blocks/button/button.scss';
 // типография
 @import './blocks/main-title/main-title.scss';
@@ -17,7 +17,21 @@
 @import './blocks/paragraph/paragraph.scss';
 @import './blocks/link/link.scss';
 @import './blocks/caption/caption.scss';
+@import './blocks/rubric/rubric.scss';
+
+// cards
+@import './blocks/card/card.scss';
+
+// секции
+// lead
+@import './blocks/lead/lead.scss';
+// tags
+@import './blocks/tags/tags.scss';
+// places
+@import './blocks/places/places.scss';
+@import './blocks/place/place.scss';
 // footer
 @import './blocks/footer/footer.scss';
+
 
 

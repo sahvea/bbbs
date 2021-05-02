@@ -1,0 +1,15 @@
+.places {
+  padding-top: 80px;
+}
+
+@include atDesktop1024 {
+  .places {
+    padding-top: 50px;
+  }
+}
+
+@include atMobile {
+  .places {
+    padding-top: 30px;
+  }
+}

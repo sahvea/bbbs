@@ -1,0 +1,46 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 30px;
+  background-color: #fff;
+
+  &_color_yellow {
+    background-color: $yellow;
+  }
+
+  &_type_photo {
+    padding-top: 15px;
+  }
+
+  &_type_annotation {
+    align-items: flex-start;
+  }
+}
+
+.card__title-wrap {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.card__img {
+  margin-top: 35px;
+  margin-bottom: 15px;
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card__annotation {
+  margin-top: 20px;
+}
+
+.card__paragraph {
+  margin-top: 30px;
+
+  &:first-of-type {
+    margin: 0;
+  }
+}

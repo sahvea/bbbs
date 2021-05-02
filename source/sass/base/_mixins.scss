@@ -5,9 +5,9 @@
   }
 }
 
-//для экранов до 1024px
+//для экранов до 1100px
 @mixin atDesktop1024 {
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 1100px) {
     @content;
   }
 }

@@ -20,6 +20,12 @@
   &_active {
     background-color: $black;
     color: $background;
+
+    &:hover {
+      background-color: $darkBlue;
+      color: $background;
+      border-color: $darkBlue;
+    }
   }
 }
 
@@ -36,7 +42,7 @@
 @include atMobile {
   .tags {
     position: relative;
-    box-shadow: inset -40px 0px 27px -23px #f0e9e9;
+    box-shadow: inset -40px 0px 27px -23px white;
     overflow-y: scroll;
     scrollbar-width: none;
     z-index: 1;

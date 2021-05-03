@@ -1,8 +1,9 @@
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
+  padding: 30px 30px 15px;
   border-radius: 30px;
   background-color: #fff;
   box-sizing: border-box;
@@ -11,17 +12,35 @@
     background-color: $yellow;
   }
 
-  &_type_rubric {
-    padding-top: 15px;
+  &_color_green {
+    background-color: $green;
+  }
+
+  &_color_pink {
+    background-color: $pink;
+  }
+
+  &_color_blue {
+    background-color: $lightBlue;
+  }
+
+  &_type_img {
+    padding-top: 44px;
+    padding-bottom: 30px;
   }
 
   &_type_annotation {
     align-items: flex-start;
+    padding-bottom: 30px;
   }
 }
 
+.card__rubric {
+  position: absolute;
+  top: 10px;
+}
+
 .card__title-wrap {
-  margin-top: 12px;
   text-align: center;
 
   .caption {
@@ -39,8 +58,30 @@
   object-position: center;
 }
 
+.card__link {
+  margin-top: auto;
+}
+
+.card__content {
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #e8e6e6 transparent;
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+  &::-webkit-scrollbar-thumb {
+    height: 30px;
+    background-color: #e8e6e6;
+    border-radius: 5px;
+  }
+}
+
+.card__annotation-caption {
+  margin-bottom: 10px;
+}
+
 .card__annotation {
-  margin-top: 20px;
+  padding-right: 5px;
 }
 
 .card__paragraph {
@@ -59,18 +100,16 @@
 
 @include atDesktop1024 {
   .card {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
+    padding: 40px 15px 15px;
 
-    &_type_rubric {
-      padding-top: 10px;
+    &_type_img {
+      padding-top: 40px;
+      padding-bottom: 15px;
     }
 
     &_type_annotation {
       padding-right: 7px;
       padding-bottom: 30px;
-      height: 188px;
     }
   }
 
@@ -79,23 +118,8 @@
     height: 345px;
   }
 
-  .card__content {
-    overflow-x: scroll;
-    scrollbar-width: thin;
-    scrollbar-color: #e8e6e6 transparent;
-    &::-webkit-scrollbar {
-      width: 3px;
-    }
-    &::-webkit-scrollbar-thumb {
-      height: 30px;
-      background-color: #e8e6e6;
-      border-radius: 5px;
-    }
-  }
-
-  .card__annotation {
-    margin-top: 5px;
-    padding-right: 5px;
+  .card__annotation-caption {
+    margin-bottom: 5px;
   }
 
   .card__paragraph {

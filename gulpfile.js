@@ -51,8 +51,8 @@ gulp.task('html', function () {
 
 gulp.task('copy', function () {
   return gulp.src([
-    'source/vendor/fonts/**/*.{woff,woff2,eot,ttf,css}',
-    'source/vendor/*.css',
+    'source/vendor/fonts/**/*.{woff,woff2,ttf}',
+    'source/vendor/**/*.css',
     'source/images/**',
     'source/*.ico'
   ], {

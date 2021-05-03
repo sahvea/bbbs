@@ -1,6 +1,13 @@
-//для экранов до 1350px
+//для экранов до 1450px
 @mixin atDesktop1440 {
-  @media screen and (max-width: 1350px) {
+  @media screen and (max-width: 1450px) {
+    @content;
+  }
+}
+
+//для экранов до 1380px
+@mixin atDesktop1380 {
+  @media screen and (max-width: 1380px) {
     @content;
   }
 }
@@ -18,3 +25,10 @@
     @content;
   }
 }
+
+//для экранов до 576px
+/* @mixin atMobile {
+  @media screen and (max-width: 575px) {
+    @content;
+  }
+} */

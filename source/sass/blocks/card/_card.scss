@@ -5,12 +5,13 @@
   padding: 30px;
   border-radius: 30px;
   background-color: #fff;
+  box-sizing: border-box;
 
   &_color_yellow {
     background-color: $yellow;
   }
 
-  &_type_photo {
+  &_type_rubric {
     padding-top: 15px;
   }
 
@@ -22,12 +23,17 @@
 .card__title-wrap {
   margin-top: 12px;
   text-align: center;
+
+  .caption {
+    margin-top: 5px;
+  }
 }
 
 .card__img {
   margin-top: 35px;
   margin-bottom: 15px;
   width: 100%;
+  height: 400px;
   border-radius: 15px;
   object-fit: cover;
   object-position: center;
@@ -42,5 +48,64 @@
 
   &:first-of-type {
     margin: 0;
+  }
+}
+
+@include atDesktop1440 {
+  .card__img {
+    margin-top: 66px;
+  }
+}
+
+@include atDesktop1024 {
+  .card {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    &_type_rubric {
+      padding-top: 10px;
+    }
+
+    &_type_annotation {
+      padding-right: 7px;
+      padding-bottom: 30px;
+      height: 188px;
+    }
+  }
+
+  .card__img {
+    margin-top: 60px;
+    height: 345px;
+  }
+
+  .card__content {
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #e8e6e6 transparent;
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+    &::-webkit-scrollbar-thumb {
+      height: 30px;
+      background-color: #e8e6e6;
+      border-radius: 5px;
+    }
+  }
+
+  .card__annotation {
+    margin-top: 5px;
+    padding-right: 5px;
+  }
+
+  .card__paragraph {
+    margin-top: 10px;
+  }
+}
+
+@include atMobile {
+  .card__img {
+    margin-top: 37px;
+    height: 140px;
   }
 }

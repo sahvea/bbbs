@@ -44,6 +44,7 @@
   letter-spacing: .2px;
   text-transform: uppercase;
   text-decoration: none;
+  color: $black;
   transition: .2s linear;
 
   &:hover {
@@ -103,7 +104,7 @@
 }
 
 
-@include atDesktop1440 {
+@include atDesktop1380 {
   .menu__button-list {
     order: 1;
   }

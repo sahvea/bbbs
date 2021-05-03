@@ -9,6 +9,8 @@
 @import './blocks/header/header.scss';
 // menu
 @import './blocks/menu/menu.scss';
+// main
+@import './blocks/main/main.scss';
 // buttons
 @import './blocks/button/button.scss';
 // типография
@@ -20,6 +22,7 @@
 @import './blocks/rubric/rubric.scss';
 
 // cards
+@import './blocks/card-container/card-container.scss';
 @import './blocks/card/card.scss';
 
 // секции
@@ -28,8 +31,8 @@
 // tags
 @import './blocks/tags/tags.scss';
 // places
+@import './blocks/main-place/main-place.scss';
 @import './blocks/places/places.scss';
-@import './blocks/place/place.scss';
 // footer
 @import './blocks/footer/footer.scss';
 

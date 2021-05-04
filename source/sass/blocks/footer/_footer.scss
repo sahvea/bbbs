@@ -23,9 +23,22 @@
 }
 
 .footer__button {
-  font-family: $protoGrotesk;
   border-color: $background;
   color: $background;
+
+  &:hover {
+    background-color: $background;
+    color: $darkBlue;
+  }
+
+  &:active {
+    border-color: $black;
+  }
+
+  &:active:hover {
+    background-color: $blue;
+    border-color: $blue;
+  }
 }
 
 .footer__brand {

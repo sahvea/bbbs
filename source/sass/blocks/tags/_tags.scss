@@ -44,7 +44,7 @@
   }
 }
 
-@include atMobile {
+@include atTablet {
   .tags__list {
     justify-content: flex-start;
     overflow-y: scroll;

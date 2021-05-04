@@ -20,15 +20,15 @@
 }
 
 //для экранов до 768px
-@mixin atMobile {
+@mixin atTablet {
   @media screen and (max-width: 767px) {
     @content;
   }
 }
 
 //для экранов до 576px
-/* @mixin atMobile {
+@mixin atMobile {
   @media screen and (max-width: 575px) {
     @content;
   }
-} */
+}

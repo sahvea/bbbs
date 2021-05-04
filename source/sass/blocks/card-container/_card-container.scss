@@ -4,16 +4,18 @@
   grid-template-columns: 1fr;
   grid-template-rows: 224px 222px;
 
-  &_size_xl {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+  &_type_main {
+    grid-template-columns: 66% 34%;
+    grid-template-rows: minmax(630px, 660px);
+    justify-content: center;
+  }
+}
 
-    .card__annotation-caption {
-      margin-bottom: 20px;
-    }
+@include atDesktop1440 {
+  .card-container {
 
-    .card__rubric {
-      top: 15px;
+    &_type_main {
+      grid-template-columns: 1fr 1fr;
     }
   }
 }
@@ -22,17 +24,9 @@
   .card-container {
     grid-template-rows: 176px 188px;
 
-    &_size_xl {
+    &_type_main {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 188px;
-
-      .card__annotation-caption {
-        margin-bottom: 5px;
-      }
-
-      .card__rubric {
-        top: 10px;
-      }
     }
   }
 }
@@ -40,10 +34,5 @@
 @include atMobile {
   .card-container {
     grid-template-columns: minmax(290px, 450px);
-
-    &_size_xl {
-      grid-template-columns: minmax(290px, 450px);
-      justify-content: center;
-    }
   }
 }

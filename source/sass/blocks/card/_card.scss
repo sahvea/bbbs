@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 30px 15px;
+  padding: 37px 30px 15px;
   border-radius: 30px;
   background-color: #fff;
   box-sizing: border-box;
@@ -24,35 +24,36 @@
     background-color: $lightBlue;
   }
 
-  &_type_img {
-    padding-top: 44px;
+  &_content_annotation {
+    align-items: flex-start;
+    padding-top: 30px;
     padding-bottom: 30px;
   }
 
-  &_type_annotation {
-    align-items: flex-start;
+  &_type_main {
+    padding-top: 47px;
     padding-bottom: 30px;
   }
 }
 
 .card__rubric {
   position: absolute;
-  top: 10px;
+  top: 15px;
 }
 
 .card__title-wrap {
   text-align: center;
+}
 
-  .caption {
-    margin-top: 5px;
-  }
+.card__title-caption {
+  margin-top: 5px;
 }
 
 .card__img {
-  margin-top: 35px;
+  margin-top: 70px;
   margin-bottom: 15px;
   width: 100%;
-  height: 400px;
+  height: 394px;
   border-radius: 15px;
   object-fit: cover;
   object-position: center;
@@ -82,6 +83,10 @@
 
 .card__annotation {
   padding-right: 5px;
+
+  &_position_main-card {
+    margin-top: 95px;
+  }
 }
 
 .card__paragraph {
@@ -93,21 +98,20 @@
 }
 
 @include atDesktop1440 {
-  .card__img {
-    margin-top: 66px;
-  }
+
 }
 
 @include atDesktop1024 {
   .card {
-    padding: 40px 15px 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 
-    &_type_img {
-      padding-top: 40px;
+    &_type_main {
+      padding-top: 37px;
       padding-bottom: 15px;
     }
 
-    &_type_annotation {
+    &_content_annotation {
       padding-right: 7px;
       padding-bottom: 30px;
     }
@@ -122,6 +126,13 @@
     margin-bottom: 5px;
   }
 
+  .card__annotation {
+
+    &_position_main-card {
+      margin-top: 0;
+    }
+  }
+
   .card__paragraph {
     margin-top: 10px;
   }
@@ -129,7 +140,7 @@
 
 @include atMobile {
   .card__img {
-    margin-top: 37px;
-    height: 140px;
+    margin-top: 40px;
+    height: 142px;
   }
 }

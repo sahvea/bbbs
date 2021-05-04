@@ -1,0 +1,18 @@
+.cards-row {
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 30px;
+}
+
+@include atDesktop1024 {
+  .cards-row {
+    padding-top: 50px;
+  }
+}
+
+@include atMobile {
+  .cards-row {
+    padding-top: 30px;
+  }
+}

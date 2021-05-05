@@ -2,15 +2,19 @@
   padding-top: 90px;
   padding-bottom: 82px;
   display: grid;
-  grid-template-columns: 500px 300px 200px 156px;
+  grid-template-columns: 500px 300px 200px 90px;
   grid-template-rows: 135px 130px;
   justify-content: center;
   background-color: $darkBlue;
   font-family: $ptRootUI;
 }
 
-.footer__logo {
+.footer__logo-image {
   max-width: 415px;
+}
+
+.footer__logo {
+
 }
 
 .footer__donate {
@@ -18,13 +22,14 @@
   max-width: 169px;
   text-decoration: none;
   font-size: 15px;
-  line-height: 19px;
+  line-height: 1.25;
   letter-spacing: .2px;
 }
 
 .footer__button {
   border-color: $background;
   color: $background;
+  font-size: 15px;
 
   &:hover {
     background-color: $background;
@@ -45,14 +50,14 @@
   margin: 0;
   color: $lightBlue;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 1.5;
 }
 
 .footer__authors {
   margin: 0;
   color: $background;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 1.5;
 }
 
 .footer__production {
@@ -66,7 +71,7 @@
   padding-left: 30px;
   color: $background;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 1.5;
 }
 
 .footer__column {
@@ -108,8 +113,114 @@
 
 .footer__column-link {
   text-decoration: none;
+  text-transform: uppercase;
+  
   color: $background;
   font-family: $protoGrotesk;
   font-size: 14px;
   letter-spacing: .2px;
+}
+
+@include atDesktop1279 {
+  .footer {
+    padding: 40px 130px 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-auto-flow: column;
+  }
+  .footer__column_content_concept {
+    justify-self: center;
+    display: flex;
+    padding-top: 30px;
+  }
+
+  .footer__column_content_social {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    padding-bottom: 30px;
+    padding-top: 20;
+  }
+
+  .footer__column_content_info {
+    padding-top: 0;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $lightGray;
+  }
+
+  .footer__column-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer__column-links {
+    margin-bottom: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .footer__logo {
+    justify-self: center;
+    height: 60%;
+  }
+
+  .footer__logo-image {
+    max-width: 252px;
+    padding-bottom: 40px;
+  }
+
+  .footer__donate {
+    padding-top: 0;
+    justify-self: center;
+    grid-row: 4/5;
+    max-width: 134px;
+  }
+
+  .footer__copyright {
+    padding-top: 0;
+  }
+
+  .footer__authors {
+    font-size: 12px;
+    padding-left: 30px;
+  }
+
+  .footer__brand {
+    font-size: 12px;
+  }
+
+  .footer__design {
+    font-size: 12px;
+  }
+
+  .footer__button {
+    font-size: 12px;
+  }
+}
+
+@include atDesktop1023 {
+  .footer__column_content_concept {
+    flex-direction: column;
+  }
+
+  .footer__copyright {
+    flex-direction: column;
+    padding-bottom: 5px;
+  }
+
+  .footer__authors {
+    padding: 0;
+  }
+
+  .footer__design {
+    padding: 0 0 5px;
+    text-align: center;
+  }
+
+  .footer__brand {
+    text-align: center;
+  }
 }

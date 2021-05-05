@@ -4,37 +4,37 @@
 @import './base/variables.scss';
 @import './base/mixins.scss';
 // page
-@import './blocks/page/page.scss';
+@import './blocks/page.scss';
 // header
-@import './blocks/header/header.scss';
+@import './blocks/header.scss';
 // menu
-@import './blocks/menu/menu.scss';
+@import './blocks/menu.scss';
 // main
-@import './blocks/main/main.scss';
+@import './blocks/main.scss';
 // buttons
-@import './blocks/button/button.scss';
+@import './blocks/button.scss';
 // типография
-@import './blocks/main-title/main-title.scss';
-@import './blocks/section-title/section-title.scss';
-@import './blocks/paragraph/paragraph.scss';
-@import './blocks/link/link.scss';
-@import './blocks/caption/caption.scss';
-@import './blocks/rubric/rubric.scss';
+@import './blocks/main-title.scss';
+@import './blocks/section-title.scss';
+@import './blocks/paragraph.scss';
+@import './blocks/link.scss';
+@import './blocks/caption.scss';
+@import './blocks/rubric.scss';
 
 // cards
-@import './blocks/card-container/card-container.scss';
-@import './blocks/card/card.scss';
+@import './blocks/card-container.scss';
+@import './blocks/card.scss';
 
 // секции
 // lead
-@import './blocks/lead/lead.scss';
+@import './blocks/lead.scss';
 // tags
-@import './blocks/tags/tags.scss';
+@import './blocks/tags.scss';
 
-@import './blocks/main-card/main-card.scss';
-@import './blocks/cards-row/cards-row.scss';
+@import './blocks/main-card.scss';
+@import './blocks/cards-row.scss';
 // footer
-@import './blocks/footer/footer.scss';
+@import './blocks/footer.scss';
 
 
 

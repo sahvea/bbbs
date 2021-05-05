@@ -7,6 +7,8 @@
     "node-sass": "^5.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
     "autoprefixer": "^10.2.5",
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
@@ -14,6 +16,8 @@
     "eslint": "^7.25.0",
     "eslint-config": "^0.3.0",
     "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "^1.2.1",

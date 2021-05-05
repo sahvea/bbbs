@@ -8,7 +8,6 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const csso = require('gulp-csso');
 const imagemin = require('gulp-imagemin');
-//const svgstore = require('gulp-svgstore');
 const rename = require('gulp-rename');
 const posthtml = require('gulp-posthtml');
 const include = require('posthtml-include');

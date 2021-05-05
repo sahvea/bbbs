@@ -1,3 +1,15 @@
 .header {
   padding-top: 40px;
 }
+
+@include atDesktop1024 {
+  .header {
+    padding-top: 30px;
+  }
+}
+
+@include atMobile {
+  .header {
+    padding-top: 15px;
+  }
+}

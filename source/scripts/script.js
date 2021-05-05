@@ -1,27 +1,10 @@
 'use strict';
 
-/* const tagButtonList = document.querySelectorAll('.tags__button');
+// активное состояние тегов
+const tagButtonList = document.querySelectorAll('.tags__button');
 
-function toggleTagButton() {
-  tagButtonList.classList.toggle('tags__button_active');
-}
-
-tagButtonList.forEach(item => {
-  item.addEventListener(`click`, toggleTagButton);
+Array.prototype.forEach.call(tagButtonList, function (button) {
+  button.addEventListener('click', function (evt) {
+    button.classList.toggle('tags__button_active');
+  });
 });
-
-class TagList {
-  constructor (tagButton) {
-    this._tagButton = tagButton;
-  }
-
-  _handleClickButton() {
-    this._tagButton.classList.toggle('tags__button_active');
-  }
-
-  _setEventListeners() {
-    this._tagButton.addEventListener('click', () => this._handleClickButton());
-  }
-}
-
-const  */

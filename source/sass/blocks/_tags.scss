@@ -10,8 +10,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   list-style-type: none;
+
+  &_type_long {
+    flex-wrap: wrap;
+  }
 
   /* &:first-of-type {
     margin-top: 0;
@@ -23,7 +26,6 @@
 }
 
 .tags__button {
-
   &_active {
     background-color: $black;
     color: $background;
@@ -36,17 +38,35 @@
   }
 }
 
-.tags__shadow {
-  display: none;
-}
-
 @include atDesktop1024 {
   .tags {
     padding-top: 10px;
+
+    &_content_long-list {
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -1px;
+        width: 40px;
+        z-index: 1;
+        height: 100%;
+        background: linear-gradient(90deg, transparent 0%, $background 100%);
+      }
+    }
   }
 
   .tags__list {
-    flex-wrap: nowrap;
+
+    &_type_long {
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
   }
 
   .tags__list-item {
@@ -55,23 +75,40 @@
 }
 
 @include atTablet {
+  .tags {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -1px;
+      width: 40px;
+      z-index: 1;
+      height: 100%;
+      background: linear-gradient(90deg, transparent 0%, $background 100%);
+    }
+  }
   .tags__list {
     justify-content: flex-start;
-    overflow-y: scroll;
+    overflow-x: scroll;
     scrollbar-width: none;
     &::-webkit-scrollbar {
       display: none;
     }
   }
+}
 
-  .tags__shadow {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: -1px;
-    width: 40px;
-    z-index: 1;
-    height: 100%;
-    background: linear-gradient(90deg, transparent 0%, $background 100%);
+@include atMobile {
+  .tags {
+
+    &_content_long-list {
+      /* max-width: 330px; */
+    }
+  }
+  .tags__list {
+
+    &_type_long {
+      flex-wrap: nowrap;
+      /* max-width: 330px; */
+    }
   }
 }

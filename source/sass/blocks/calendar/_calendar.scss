@@ -1,5 +1,96 @@
 .calendar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  box-sizing: border-box;
+  max-width: 570px;
+  height: 414px;
+  border-radius: 30px;
+  background-color: $white;
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: $ptRootUI;
+  color: $black;
+}
 
+.calendar__weekday {
+  margin: 0;
+}
+
+.calendar__about {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.calendar__type {
+  margin: 0;
+  color: $darkGray;
+}
+
+.calendar__date {
+  font-family: $protoGrotesk;
+  font-size: 100px;
+  line-height: 1;
+  margin: 0;
+}
+
+.calendar__time {
+  margin: 0;
+  color: $lightBlack;
+  padding-bottom: 5px;
+  border-bottom: 1px solid $lightGray
+}
+
+.calendar__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendar__place {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid $lightGray;
+  color: $lightBlack;
+}
+
+.calendar__title {
+  max-width: 320px;
+}
+
+.calendar__contact {
+  margin: 0;
+  padding-top: 10px;
+  color: $black;
+}
+
+.calendar__submit {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+}
+
+.calendar__place-left {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: $ptRootUI;
+  align-self: center;
+  padding-left: 15px;
+}
+
+
+.calendar__button {
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: $ptRootUI;
+}
+
+.calendar__button-dots {
+  margin-left: auto;
+  height: 45px;
+  padding: 0 15px; // ДОВЕРСТАТЬ ТОЧКИ ПО МАКЕТУ
 }
 
 .calendar__popup {

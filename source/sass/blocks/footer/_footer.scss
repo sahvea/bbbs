@@ -14,7 +14,8 @@
 }
 
 .footer__logo {
-
+  max-width: 415px;
+  max-height: 76px;
 }
 
 .footer__donate {
@@ -114,7 +115,7 @@
 .footer__column-link {
   text-decoration: none;
   text-transform: uppercase;
-  
+
   color: $background;
   font-family: $protoGrotesk;
   font-size: 14px;
@@ -137,15 +138,15 @@
   .footer__column_content_social {
     grid-row: 3/4;
     grid-column: 1/2;
-    padding-bottom: 30px;
-    padding-top: 20;
+    padding-bottom: 23px;
+    padding-top: 13px;
   }
 
   .footer__column_content_info {
     padding-top: 0;
     grid-row: 2/3;
     grid-column: 1/2;
-    padding-bottom: 20px;
+    padding-bottom: 13px;
     border-bottom: 1px solid $lightGray;
   }
 
@@ -162,6 +163,10 @@
     padding-right: 5px;
   }
 
+  .footer__column-link {
+    line-height: 2.5;
+  }
+
   .footer__logo {
     justify-self: center;
     height: 60%;
@@ -169,7 +174,7 @@
 
   .footer__logo-image {
     max-width: 252px;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
 
   .footer__donate {
@@ -212,15 +217,21 @@
   }
 
   .footer__authors {
-    padding: 0;
+    padding: 5px 0 0;
   }
 
   .footer__design {
-    padding: 0 0 5px;
+    padding: 5px 0 0;
     text-align: center;
   }
 
   .footer__brand {
     text-align: center;
+  }
+}
+
+@include atTablet {
+  .footer {
+    padding: 40px 25px 30px;
   }
 }

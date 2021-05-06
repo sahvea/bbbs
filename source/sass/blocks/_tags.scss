@@ -98,12 +98,12 @@
 }
 
 @include atMobile {
-  .tags {
+  /* .tags {
 
     &_content_long-list {
-      /* max-width: 330px; */
+      max-width: 330px;
     }
-  }
+  } */
   .tags__list {
 
     &_type_long {

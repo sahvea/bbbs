@@ -1,0 +1,47 @@
+.question-form__add-question {
+  margin: 24px 0 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.question-form__input {
+  width: 100%;
+  padding: 11px 30px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  background-color: #fff;
+  font-family: $ptRootUI;
+  font-size: 15px;
+  line-height: 1.4;
+  color: $black;
+
+  &::placeholder {
+    color: $lightGray;
+  }
+}
+
+@include atDesktop1024 {
+  .question-form__add-question {
+    margin-top: 20px;
+  }
+
+  .question-form__input {
+    padding-top: 10px;
+    padding-bottom: 9px;
+  }
+}
+
+@include atMobile {
+  .question-form__add-question {
+    flex-direction: column;
+  }
+
+  .question-form__button {
+    margin-top: 20px;
+    width: 100%;
+  }
+}

@@ -15,6 +15,8 @@
 }
 
 .calendar_type_popup {
+  position: relative;
+  margin: 150px auto;
   padding: 50px 100px;
   max-width: 770px;
   height: 670px;
@@ -56,6 +58,7 @@
   margin: 0;
   padding-top: 30px;
   font-size: 18px;
+  line-height: 1.48;
   font-family: $ptRootUI;
   color: $lightBlack;
 }
@@ -70,7 +73,7 @@
 .calendar__time {
   margin: 0;
   color: $lightBlack;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   border-bottom: 1px solid $lightGray
 }
 
@@ -82,7 +85,7 @@
 .calendar__place {
   margin: 0;
   padding-top: 10px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   border-bottom: 1px solid $lightGray;
   color: $lightBlack;
 }
@@ -169,7 +172,13 @@
   .calendar {
     padding: 30px 15px;
     max-width: 370px;
-    max-height: 382px;
+    height: 382px;
+  }
+
+  .calendar_type_popup {
+    padding: 50px 100px;
+    max-width: 770px;
+    height: 670px;
   }
 
   .calendar__place-left {
@@ -207,6 +216,11 @@
   .calendar__title {
     font-size: 19px;
   }
+
+  .calendar_type_popup {
+    padding: 50px;
+    max-width: 570px;
+  }
 }
 
 @include atDesktop1023 {
@@ -218,6 +232,14 @@
 
   .calendar_unauthorized {
     max-height: 333px;
+  }
+
+  .calendar_type_popup {
+    min-height: 629px;
+  }
+  .calendar__description {
+    font-size: 15px;
+    line-height: 1.5;
   }
 
   .calendar__title_unauthorized {
@@ -257,9 +279,24 @@
     height: 255px;
   }
 
+  .calendar__description {
+    font-size: 12px;
+  }
+
+  .calendar_type_popup {
+    max-width: 450px;
+    padding: 60px 15px 30px;
+  }
+
   .calendar__logo {
     max-width: 70%;
     min-width: 229px;
     max-height: 78px;
+  }
+}
+
+@include atMobile {
+  .calendar_type_popup {
+    max-width: 290px;
   }
 }

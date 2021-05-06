@@ -14,6 +14,12 @@
   color: $black;
 }
 
+.calendar_type_popup {
+  padding: 50px 100px;
+  max-width: 770px;
+  height: 670px;
+}
+
 .calendar_unauthorized {
   padding: 0;
   border-radius: 30px;
@@ -33,6 +39,7 @@
 
 .calendar__weekday {
   margin: 0;
+  text-transform: lowercase;
 }
 
 .calendar__about {
@@ -43,6 +50,14 @@
 .calendar__type {
   margin: 0;
   color: $darkGray;
+}
+
+.calendar__description {
+  margin: 0;
+  padding-top: 30px;
+  font-size: 18px;
+  font-family: $ptRootUI;
+  color: $lightBlack;
 }
 
 .calendar__date {
@@ -122,18 +137,6 @@
 
 .calendar__button-dots {
   margin-left: auto;
-}
-
-.calendar__popup {
-
-}
-
-.calendar__confirm {
-
-}
-
-.calendar__succes {
-
 }
 
 @include atDesktop1440 {

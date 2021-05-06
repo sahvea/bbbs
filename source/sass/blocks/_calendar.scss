@@ -73,12 +73,29 @@
 }
 
 .calendar__description {
-  margin: 0;
-  padding-top: 30px;
-  font-size: 18px;
-  line-height: 1.48;
-  font-family: $ptRootUI;
+  margin-top: 30px;
+  max-height: 182px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: rgba($lightGray, .6) transparent;
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+  &::-webkit-scrollbar-thumb {
+    height: 30px;
+    background-color: rgba($lightGray, .6);
+    border-radius: 5px;
+  }
+}
+
+.calendar__desc-paragraph {
+  margin-top: 10px;
+  padding-right: 5px;
   color: $lightBlack;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
 }
 
 .calendar__date {
@@ -210,6 +227,7 @@
 .calendar__button-dots {
   margin-left: auto;
   padding: 0 15px;
+  width: 48px;
 
   &:hover {
     background-color: $lightBlue;
@@ -219,6 +237,10 @@
 @include atDesktop1440 {
   .calendar__container {
     grid-template-columns: repeat(auto-fill, minmax(370px, max-content));
+  }
+
+  .calendar_type_popup {
+    margin-top: 50px;
   }
 }
 
@@ -315,10 +337,6 @@
   .calendar_type_popup {
     min-height: 629px;
   }
-  .calendar__description {
-    font-size: 15px;
-    line-height: 1.5;
-  }
 
   .calendar__title_unauthorized {
     padding-top: 35px;
@@ -357,7 +375,7 @@
     height: 255px;
   }
 
-  .calendar__description {
+  .calendar__desc-paragraph {
     font-size: 12px;
   }
 

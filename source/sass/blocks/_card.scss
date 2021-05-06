@@ -64,7 +64,7 @@
 }
 
 .card__content {
-  overflow-x: scroll;
+  overflow-y: scroll;
   scrollbar-width: thin;
   scrollbar-color: #e8e6e6 transparent;
   &::-webkit-scrollbar {

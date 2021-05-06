@@ -14,6 +14,37 @@
   color: $black;
 }
 
+.calendar_unauthorized {
+  padding: 0;
+  border-radius: 30px;
+  background-color: $green;
+}
+
+.calendar_selected {
+  background-color: $lightBlue;
+}
+
+.calendar__button_disabled {
+  cursor: unset;
+  border-color: $lightGray;
+  color: $lightGray;
+
+  &:hover {
+    background-color: $white;
+  }
+
+  &:active {
+    background-color: $white;
+    color: $lightGray;
+  }
+
+  &:active:hover {
+    background-color: $white;
+    color: $lightGray;
+    border-color: $lightGray;
+  }
+}
+
 .calendar__container {
   display: grid;
   justify-content: center;
@@ -72,6 +103,29 @@
   max-width: 320px;
 }
 
+.calendar__logo {
+  display: block;
+  box-sizing: border-box;
+  padding-top: 35px;
+  padding-left: 30px;
+  background-image: url('../../../images/svg/calendar_logo.svg');
+  background-repeat: no-repeat;
+  background-size: 252px 46px;
+  background-origin: content-box;
+  background-color: $pink;
+  max-width: 395px;
+  height: 129px;
+  border-radius: 30px 3px 200px 3px;
+}
+
+.calendar__title_unauthorized {
+  padding: 70px 30px;
+  max-width: 510px;
+  border-radius: 400px;
+  background-color: $pink;
+  text-align: center;
+}
+
 .calendar__contact {
   margin: 0;
   padding-top: 10px;
@@ -102,8 +156,7 @@
 
 .calendar__button-dots {
   margin-left: auto;
-  height: 45px;
-  padding: 0 15px; // ДОВЕРСТАТЬ ТОЧКИ ПО МАКЕТУ
+  padding: 0 15px;
 }
 
 .calendar__popup {
@@ -117,3 +170,10 @@
 .calendar__succes {
 
 }
+
+@include atDesktop1024 {
+  .calendar__button-dots {
+    padding: 0 12px;
+  }
+}
+

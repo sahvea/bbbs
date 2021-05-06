@@ -116,7 +116,7 @@
           <p class="calendar__place">Садовническая наб., д. 77 стр. 1 (офис компании Ernst&Young)</p>
           <p class="calendar__contact">Александра, +7 926 356-78-90</p>
           <div class="calendar__submit">
-            <button class="button button_type_calendar button_type_calendar_selected" type="button">Отменить запись</button>
+            <button class="button button_type_calendar button_type_calendar_selected button_type_calendar-sign_up" type="button">Отменить запись</button>
             <p class="calendar__place-left"></p>
             <button class="button calendar__button-dots button_type_calendar button_type_button-dots" type="button">&#8226;&#8226;&#8226;</button>
           </div>
@@ -138,7 +138,7 @@
           <p class="calendar__place">Садовническая наб., д. 77 стр. 1 (офис компании Ernst&Young)</p>
           <p class="calendar__contact">Александра, +7 926 356-78-90</p>
           <div class="calendar__submit">
-            <button class="button button_type_calendar" type="button">Записаться</button>
+            <button class="button button_type_calendar button_type_calendar-sign_up" type="button">Записаться</button>
             <p class="calendar__place-left">Осталось 5 мест</p>
             <button class="button calendar__button-dots button_type_calendar button_type_button-dots" type="button">&#8226;&#8226;&#8226;</button>
           </div>
@@ -182,15 +182,15 @@
           <p class="calendar__place">Садовническая наб., д. 77 стр. 1 (офис компании Ernst&Young)</p>
           <p class="calendar__contact">Александра, +7 926 356-78-90</p>
           <div class="calendar__submit">
-            <button class="button button_type_calendar" type="button">Записаться</button>
+            <button class="button button_type_calendar button_type_calendar-sign_up" type="button">Записаться</button>
             <p class="calendar__place-left">Осталось 5 мест</p>
             <button class="button calendar__button-dots button_type_calendar button_type_button-dots" type="button">&#8226;&#8226;&#8226;</button>
           </div>
         </div>
       </div>
-      <div class="popup">
+      <div class="popup popup_type_description">
         <div class="calendar calendar_type_popup">
-          <button class="popup__close" type="button"></button>
+          <button class="popup__close popup__cancel" type="button"></button>
           <div class="calendar__caption">
             <div class="calendar__info">
               <p class="calendar__type">Волонтёры + дети</p>
@@ -210,10 +210,35 @@
               посвятить теме поиска моральных сил, смыслов и внутреннего ресурса для общения и взаимодействия с нашими подопечными.
             </p>
             <div class="calendar__submit">
-              <button class="button button_type_calendar" type="button">Записаться</button>
+              <button class="button button_type_calendar button_type_confirm" type="button">Записаться</button>
               <p class="calendar__place-left">Осталось 5 мест</p>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="popup popup_type_confirmation">
+        <div class="calendar calendar_type_popup calendar_type_popup-confirmation">
+          <button class="popup__close popup__cancel" type="button"></button>
+          <h2 class="section-title calendar__title_type_popup calendar__title_type_confirmation">
+            Подтвердить запись на мероприятие «Субботний meet up: учимся проходить интервью» 5 декабря с 12:00–14:00
+          </h2>
+          <div class="calendar__buttons">
+            <button class="button button_type_calendar calendar__confirm" type="button">Подтвердить запись</button>
+            <button class="button popup__cancel" type="button">Отменить</button>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup_type_done">
+        <div class="calendar calendar_type_popup calendar_type_popup-done">
+          <div class="calendar__image-done"></div>
+          <button class="popup__close popup__cancel" type="button"></button>
+          <h2 class="section-title calendar__title_type_popup calendar__title_type_popup-done ">
+            Вы записаны на мероприятие «Субботний meet up: учимся проходить интервью» 5 декабря с 12:00–14:00.
+          </h2>
+          <h2 class="section-title calendar__title_type_popup calendar__title_type_popup-done">
+            Если у вас не получится прийти — отмените, пожалуйста, запись.
+          </h2>
+          <button class="button calendar__back popup__cancel" type="button">Вернуться к календарю</button>
         </div>
       </div>
     </section>
@@ -231,7 +256,7 @@
         <p class="footer__authors">Разработка – студенты
           <a href="#" class="footer__production" target="_self">Яндекс.Практикум</a>
         </p>
-        <p class="footer__design">Концепия и дизайн –
+        <p class="footer__design">Концепция и дизайн –
           <a href="#" class="footer__production" target="_self">krkr.design</a>
         </p>
       </div>
@@ -256,6 +281,6 @@
       </ul>
     </nav>
   </footer>
-  <script type="module" src="./scripts/calendar.js"></script>
+  <script type="module" src="./scripts/script.js"></script>
 </body>
 </html>

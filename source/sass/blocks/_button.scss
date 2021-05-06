@@ -32,6 +32,57 @@
     border-color: $darkBlue;
   }
 
+  &_type_calendar {
+    border-color: $blue;
+    color: $blue;
+
+    &:hover {
+      background-color: $lightBlue;
+    }
+
+    &_selected {
+      background-color: $blue;
+      color: $white;
+
+      &:hover {
+        background-color: $darkBlue;
+      }
+
+      &:hover:active {
+        border-color: $darkBlue;
+      }
+    }
+  }
+
+  &_type_button-dots {
+    padding: 0 15px;
+
+    &:hover {
+      background-color: $lightBlue;
+    }
+  }
+
+  &_type_calendar_disabled {
+    cursor: unset;
+    border-color: $lightGray;
+    color: $lightGray;
+
+    &:hover {
+      background-color: $white;
+    }
+
+    &:active {
+      background-color: $white;
+      color: $lightGray;
+    }
+
+    &:active:hover {
+      background-color: $white;
+      color: $lightGray;
+      border-color: $lightGray;
+    }
+  }
+
   // ПЕРЕНЕСТИ ПОТОМ В СТИЛИ КАРТОЧКИ КАЛЕНДАРЯ (ЭЛЕМЕНТОМ)
   &_theme_dark {
     border-color: $blue;
@@ -54,5 +105,9 @@
     padding: 0 15px;
     font-size: 12px;
     line-height: 1.4;
+  }
+
+  .button_type_button-dots {
+    padding: 0 12px;
   }
 }

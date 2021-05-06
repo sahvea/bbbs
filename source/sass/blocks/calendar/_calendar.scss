@@ -24,38 +24,11 @@
   background-color: $lightBlue;
 }
 
-.calendar__button_disabled {
-  cursor: unset;
-  border-color: $lightGray;
-  color: $lightGray;
-
-  &:hover {
-    background-color: $white;
-  }
-
-  &:active {
-    background-color: $white;
-    color: $lightGray;
-  }
-
-  &:active:hover {
-    background-color: $white;
-    color: $lightGray;
-    border-color: $lightGray;
-  }
-}
-
 .calendar__container {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(370px, 560px));
+  grid-template-columns: repeat(auto-fill, minmax(370px, 570px));
   gap: 30px;
-}
-
-@include atDesktop1440 {
-  .calendar__container {
-    grid-template-columns: repeat(auto-fill, minmax(370px, max-content));
-  }
 }
 
 .calendar__weekday {
@@ -147,16 +120,8 @@
   padding-left: 15px;
 }
 
-
-.calendar__button {
-  font-size: 14px;
-  line-height: 1.4;
-  font-family: $ptRootUI;
-}
-
 .calendar__button-dots {
   margin-left: auto;
-  padding: 0 15px;
 }
 
 .calendar__popup {
@@ -171,9 +136,9 @@
 
 }
 
-@include atDesktop1024 {
-  .calendar__button-dots {
-    padding: 0 12px;
+
+@include atDesktop1440 {
+  .calendar__container {
+    grid-template-columns: repeat(auto-fill, minmax(370px, max-content));
   }
 }
-

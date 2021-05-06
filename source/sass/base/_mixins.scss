@@ -40,6 +40,13 @@
   }
 }
 
+//для экранов до 640px
+@mixin atMobileL {
+  @media screen and (max-width: 639px) {
+    @content;
+  }
+}
+
 //для экранов до 576px
 @mixin atMobile {
   @media screen and (max-width: 575px) {

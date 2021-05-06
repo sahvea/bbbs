@@ -1,15 +1,16 @@
-/* .main-card {
-  padding-top: 80px;
-} */
+.questions {
+  max-width: 970px;
+  margin: 0 auto;
+}
 
 @include atDesktop1024 {
-  .main-card {
+  .questions {
     padding-top: 50px;
   }
 }
 
 @include atMobile {
-  .main-card {
+  .questions {
     padding-top: 30px;
   }
 }

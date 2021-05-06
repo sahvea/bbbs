@@ -15,7 +15,6 @@
   border-radius: 30px;
   background-color: #fff;
   font-family: $ptRootUI;
-  font-weight: 400;
   font-size: 15px;
   line-height: 1.4;
   color: $black;
@@ -25,11 +24,24 @@
   }
 }
 
-.question-form__button {
+@include atDesktop1024 {
+  .question-form__add-question {
+    margin-top: 20px;
+  }
 
-  &_disabled {
-    color: #a7a6a6;
-    border-color: #a7a6a6;
-    /* cursor: none; */
+  .question-form__input {
+    padding-top: 10px;
+    padding-bottom: 9px;
+  }
+}
+
+@include atMobile {
+  .question-form__add-question {
+    flex-direction: column;
+  }
+
+  .question-form__button {
+    margin-top: 20px;
+    width: 100%;
   }
 }

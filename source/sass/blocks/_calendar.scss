@@ -15,11 +15,18 @@
 }
 
 .calendar_type_popup {
+  display: flex;
+  flex-direction: column;
   position: relative;
+  z-index: 2;
   margin: 150px auto;
   padding: 50px 100px;
   max-width: 770px;
   height: 670px;
+}
+
+.calendar_type_popup-confirmation {
+  justify-content: center;
 }
 
 .calendar_unauthorized {
@@ -42,6 +49,17 @@
 .calendar__weekday {
   margin: 0;
   text-transform: lowercase;
+}
+
+.calendar__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.calendar__confirm {
+  max-width: 191px;
+  margin-right: 15px;
 }
 
 .calendar__about {
@@ -92,6 +110,42 @@
 
 .calendar__title {
   max-width: 320px;
+}
+
+.calendar__back {
+  max-width: 215px;
+}
+
+.calendar__image-done {
+  background-image: url('../../images/svg/popup_done.svg');
+  background-repeat: no-repeat;
+  align-self: center;
+  margin-bottom: 30px;
+  width: 413px;
+  height: 169px;
+  background-size: 413px 169px;
+}
+
+.calendar__back {
+  align-self: center;
+}
+
+.calendar__title_type_popup {
+  max-width: 570px;
+  text-align: start;
+  margin-bottom: 40px;
+}
+
+.calendar__title_type_popup-done {
+  text-align: center;
+}
+
+.calendar__title_type_confirmation {
+  text-align: center;
+}
+
+.calendar_type_popup-done {
+  justify-content: center;
 }
 
 .calendar__logo {
@@ -298,5 +352,11 @@
 @include atMobile {
   .calendar_type_popup {
     max-width: 290px;
+  }
+
+  .calendar__image-done {
+    background-size: 260px 106px;
+    width: 260px;
+    height: 106px;
   }
 }

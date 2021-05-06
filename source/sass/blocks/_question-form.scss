@@ -1,0 +1,35 @@
+.question-form__add-question {
+  margin: 24px 0 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.question-form__input {
+  width: 100%;
+  padding: 11px 30px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  background-color: #fff;
+  font-family: $ptRootUI;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.4;
+  color: $black;
+
+  &::placeholder {
+    color: $lightGray;
+  }
+}
+
+.question-form__button {
+
+  &_disabled {
+    color: #a7a6a6;
+    border-color: #a7a6a6;
+    /* cursor: none; */
+  }
+}

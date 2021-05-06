@@ -32,7 +32,7 @@
     border-color: $darkBlue;
   }
 
-  &_type_light {
+  &_theme_light {
     border-color: $blue;
     color: $blue;
 
@@ -42,7 +42,6 @@
 
     &:active {
       background-color: $blue;
-      //color: $background;
     }
 
     &:disabled {
@@ -50,27 +49,6 @@
       border-color: $lightGray;
       pointer-events: none;
       user-select: none;
-    }
-
-    /* &_selected {
-      background-color: $blue;
-      color: $white;
-
-      &:hover {
-        background-color: $darkBlue;
-      }
-
-      &:hover:active {
-        border-color: $darkBlue;
-      }
-    } */
-  }
-
-  &_type_button-dots {
-    padding: 0 15px;
-
-    &:hover {
-      background-color: $lightBlue;
     }
   }
 }
@@ -81,9 +59,5 @@
     padding: 0 15px;
     font-size: 12px;
     line-height: 1.4;
-
-    &_type_button-dots {
-      padding: 0 12px;
-    }
   }
 }

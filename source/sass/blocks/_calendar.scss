@@ -183,6 +183,21 @@
   padding-top: 30px;
 }
 
+.calendar__button {
+  &_selected {
+    background-color: $blue;
+    color: $white;
+
+    &:hover {
+      background-color: $darkBlue;
+    }
+
+    &:hover:active {
+      border-color: $darkBlue;
+    }
+  }
+}
+
 .calendar__place-left {
   margin: 0;
   font-size: 14px;
@@ -194,6 +209,11 @@
 
 .calendar__button-dots {
   margin-left: auto;
+  padding: 0 15px;
+
+  &:hover {
+    background-color: $lightBlue;
+  }
 }
 
 @include atDesktop1440 {
@@ -269,6 +289,10 @@
 
   .calendar__title {
     font-size: 19px;
+  }
+
+  .calendar__button-dots {
+    padding: 0 12px;
   }
 
   .calendar_type_popup {

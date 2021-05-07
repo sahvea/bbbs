@@ -3,10 +3,10 @@ const popupConfirm = document.querySelector('.popup_type_confirmation');
 const popupDone = document.querySelector('.popup_type_done');
 const popups = document.querySelectorAll('.popup');
 const popupCalendarButtonClose = document.querySelector('.popup__close');
-const buttonDots = document.querySelectorAll('.button_type_button-dots');
-const buttonConfirm = document.querySelector('.button_type_confirm');
+const buttonDots = document.querySelectorAll('.calendar__button-dots');
+const buttonConfirm = document.querySelector('.button_action_confirm');
 const buttonDone = document.querySelector('.calendar__confirm');
-const buttonsCalendar = document.querySelectorAll('.button_type_calendar-sign_up');
+const buttonsCalendar = document.querySelectorAll('.calendar__button_action_sign-up');
 
 function openPopup(popup) {
   popup.classList.add('popup_opened');

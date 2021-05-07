@@ -12,29 +12,31 @@
 
 .page__section {
   margin: 0 auto;
-  padding: 0 75px;
+  padding: 80px 75px 0;
 }
 
 @include atDesktop1440 {
   .page__section {
-    padding: 0 135px;
+    padding-left: 135px;
+    padding-right: 135px;
   }
 }
 
 @include atDesktop1024 {
   .page__section {
-    padding: 0 127px;
+    padding: 40px 127px 0;
   }
 }
 
 @include atTablet {
   .page__section {
-    padding: 0 60px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
 @include atMobile {
   .page__section {
-    padding: 0 15px;
+    padding: 20px 15px 0;
   }
 }

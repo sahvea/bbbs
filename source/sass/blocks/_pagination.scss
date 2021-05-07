@@ -32,3 +32,15 @@
     }
   }
 }
+
+@include atDesktop1024 {
+  .pagination {
+    padding-top: 60px;
+  }
+}
+
+@include atMobile {
+  .pagination {
+    padding-top: 30px;
+  }
+}

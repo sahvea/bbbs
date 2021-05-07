@@ -1,0 +1,203 @@
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+//блог заголовка
+
+.about__title {
+  align-self: center;
+  padding-bottom: 50px;
+  max-width: 1170px;
+  text-align: center;
+}
+
+// блок лого
+
+.about__logo {
+  align-self: center;
+  background-image: url('../../images/svg/calendar_logo.svg');
+  background-repeat: no-repeat;
+  background-size: 357px 65px;
+  width: 357px;
+  height: 65px;
+
+}
+
+// блок круга с текстом
+
+.about__us {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.about__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 570px;
+  height: 570px;
+  border-radius: 50%;
+  background-color: $yellow;
+}
+
+.about__caption {
+  background-color: $white;
+  padding: 50px 30px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  width: 600px;
+  height: 570px;
+  overflow-y: scroll;
+}
+
+.about__main-text {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+//блок цитаты
+
+.about__quote {
+  align-self: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  max-width: 1170px;
+  text-align: center;
+  border-top: 1px solid $lightGray;
+  border-bottom: 1px solid $lightGray;
+}
+
+// блок карточек
+
+.about__cards {
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.about__card-container {
+  display: block;
+}
+
+.about__card {
+  padding: 0;
+  justify-content: center;
+  height: 120px;
+  border-radius: 70px;
+}
+
+.about__content {
+  height: 265px;
+  max-height: 369px;
+}
+
+.about__card-link {
+  margin-top: auto;
+  align-self: center;
+}
+
+
+//адаптив
+
+@include atDesktop1440 {
+  .about__title {
+    max-width: 1030px;
+  }
+
+  .about__quote {
+    max-width: 964px;
+  }
+}
+
+@include atDesktop1380 {
+  .about__us {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@include atDesktop1279 {
+    .about__circle {
+    max-width: 370px;
+    max-height: 358px;
+  }
+
+  .about__caption {
+    padding: 30px 15px;
+    max-width: 570px;
+    max-height: 373px;
+  }
+}
+
+@include atDesktop1024 {
+  .about__logo {
+    width: 252px;
+    height: 46px;
+    background-size: 252px 46px;
+  }
+
+  .about__title {
+    padding-bottom: 30px;
+  }
+
+  .about__us {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .about__quote {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .about__cards {
+    grid-template-columns: 1fr;
+    padding-top: 50px;
+  }
+
+  .about__card {
+    height: 70px;
+  }
+
+  .about__content {
+    max-height: 200px;
+  }
+}
+
+@include atTablet {
+  .about__caption {
+    max-width: 500px;
+  }
+
+  .about__us {
+    padding-top: 30px;
+  }
+}
+
+@include atMobile {
+  .about__caption {
+    width: 290px;
+    max-height: 688px;
+  }
+
+  .about__circle {
+    width: 290px;
+    height: 280px;
+  }
+
+  .about__content {
+    max-height: 300px;
+  }
+
+  .about__title {
+    padding-bottom: 20px;
+  }
+}

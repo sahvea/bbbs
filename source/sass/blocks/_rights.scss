@@ -1,0 +1,26 @@
+.rights {
+  width: 420px;
+  height: 420px;
+}
+
+.rights__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 420px);
+  grid-template-rows: 1fr [first-line] 1px 1fr [second-line] 1px 1fr [third-line] 1px 1fr;
+  grid-auto-rows: min-content 1fr;
+  gap: 80px 30px;
+}
+
+.rights__line {
+  grid-column: 1 / -1;
+  background: $black;
+  &_stage_first {
+    grid-row-start: first-line;
+  }
+  &_stage_second {
+    grid-row-start: second-line;
+  }
+  &_stage_third {
+    grid-row-start: third-line;
+  }
+}

@@ -1,6 +1,9 @@
-.rights {
-  max-width: 420px;
-  max-height: 420px;
+.rights__card {
+  max-width: 100%;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 .rights__container {
@@ -10,22 +13,34 @@
   gap: 80px 30px;
 }
 
+.rights__content {
+  position: absolute;
+  padding: 30px;
+}
+
+.rights__rubric {
+  margin-top: 17px;
+}
+
 .rights__line {
   grid-column: 1 / -1;
   background: $black;
+
   &_stage_first {
     grid-row-start: first-line;
   }
+
   &_stage_second {
     grid-row-start: second-line;
   }
+
   &_stage_third {
     grid-row-start: third-line;
   }
 }
 
 @include atDesktop1639 {
-  .rights {
+  .rights__card {
     &:nth-last-of-type(-n+4) {
       display: none;
     }
@@ -33,24 +48,42 @@
 }
 
 @include atDesktop1440 {
-
   .rights__container {
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   }
 }
 
 @include atDesktop1199 {
-  .rights {
-    &:nth-last-of-type(-n+8) {
+  .rights__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr [third-line] 1px 1fr;
+    gap: 80px 30px;
+  }
+
+  .rights__card {
+    &:nth-last-of-type(-n+12) {
+      display: none;
+    }
+  }
+
+  .rights__line {
+    &:nth-of-type(-n+2) {
       display: none;
     }
   }
 }
 
-@include atDesktop1023 {
-  .rights {
-    &:nth-last-of-type(-n+12) {
-      display: none;
+@include atTablet {
+
+  .rights__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr [first-line] 1px 1fr [second-line] 1px 1fr [third-line] 1px 1fr;
+    gap: 30px;
+  }
+
+  .rights__line {
+    &:nth-of-type(-n+2) {
+      display: block;
     }
   }
 }

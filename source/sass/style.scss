@@ -5,21 +5,26 @@
 @import './base/mixins.scss';
 // page
 @import './blocks/page.scss';
-// header
-@import './blocks/header.scss';
-// menu
-@import './blocks/menu.scss';
 // main
 @import './blocks/main.scss';
-// buttons
-@import './blocks/button.scss';
 // типография
 @import './blocks/main-title.scss';
 @import './blocks/section-title.scss';
+@import './blocks/chapter-title.scss';
 @import './blocks/paragraph.scss';
 @import './blocks/link.scss';
 @import './blocks/caption.scss';
 @import './blocks/rubric.scss';
+// buttons
+@import './blocks/button.scss';
+// header
+@import './blocks/header.scss';
+// menu
+@import './blocks/menu.scss';
+// lead
+@import './blocks/lead.scss';
+// tags
+@import './blocks/tags.scss';
 
 // cards
 @import './blocks/card-container.scss';
@@ -28,11 +33,7 @@
 // calendar
 @import './blocks/calendar.scss';
 @import './blocks/popup.scss';
-// секции
-// lead
-@import './blocks/lead.scss';
-// tags
-@import './blocks/tags.scss';
+
 // cards
 @import './blocks/main-card.scss';
 @import './blocks/cards-row.scss';

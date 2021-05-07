@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>UI Kit</title>
+  <title>Читать и смотреть</title>
 </head>
 <body class="page">
   <header class="header page__section">
@@ -21,21 +21,38 @@
         <li class="menu__list-item">
           <a href="./questions.html" class="menu__link">Вопросы</a>
         </li>
-        <li class="menu__list-item">
+        <li class="menu__list-item menu__dropdown-item">
           <a href="./read-watch-main.html" class="menu__link">Читать и смотреть</a>
+          <ul class="menu__dropdown-list">
+            <li class="menu__dropdown-list-item">
+              <a href="#" class="link menu__dropdown-link">Справочник</a>
+            </li>
+            <li class="menu__dropdown-list-item">
+              <a href="#" class="link menu__dropdown-link">Видео</a>
+            </li>
+            <li class="menu__dropdown-list-item">
+              <a href="#" class="link menu__dropdown-link">Статьи</a>
+            </li>
+            <li class="menu__dropdown-list-item">
+              <a href="#" class="link menu__dropdown-link">Фильмы</a>
+            </li>
+            <li class="menu__dropdown-list-item">
+              <a href="./books.html" class="link menu__dropdown-link">Книги</a>
+            </li>
+          </ul>
         </li>
         <li class="menu__list-item">
           <a href="#" class="menu__link">Права детей</a>
         </li>
         <li class="menu__list-item">
-          <a href="#" class="menu__link">Истории</a>
+          <a href="./books.html" class="menu__link">Истории</a>
         </li>
       </ul>
-      <div class="menu__burger">
-        <div class="menu__burger-line"></div>
-        <div class="menu__burger-line"></div>
-        <div class="menu__burger-line"></div>
-      </div>
+      <button class="menu__burger" type="button">
+        <span class="menu__burger-line"></span>
+        <span class="menu__burger-line"></span>
+        <span class="menu__burger-line"></span>
+      </button>
       <ul class="menu__button-list">
         <li class="menu__button-item">
           <button class="menu__button menu__button_type_search" type="button" aria-label="Поиск" title="Поиск"></button>
@@ -48,19 +65,8 @@
   </header>
 
   <main class="main">
-    <section class="kit page__section">
-      <h1 class="main-title main-title_type_test">Заголовок h1</h1>
-      <h2 class="section-title section-title_type_test">Заголовок h2</h2>
-      <h3 class="chapter-title">Заголовок h3</h3>
-      <a href="#" class="link"><h3 class="chapter-title chapter-title_clickable">Заголовок h3 кликабельный</h3></a>
-      <p class="paragraph paragraph_type_test">Настоящие дружеские отношения строятся на взаимном интересе, доверии и привязанности. Когда наставник для ребенка становится именно другом, а не просто знакомым или волонтером, то подопечный начинает быть искренне заинтересован в общении, начинает ждать встреч, звонить по телефону.</p>
-      <a href="#" class="link link_type_test">Кликабельные элементы</a>
-      <p class="caption caption_type_test">Подпись</p>
-      <a href="#" class=" section-title section-title_clickable section-title_type_test">Кликабельные заголовки, название мероприятий</a>
+    <section class="page__section">
 
-      <button class="button">Обычная кнопка</button>
-      <button class="button button_theme_light">Кнопка календаря и форм</button>
-      <button class="button footer__button">Кнопка футера</button>
 
     </section>
   </main>

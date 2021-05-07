@@ -1,12 +1,19 @@
 .cards-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(3, minmax(290px, 1fr));
+  gap: 80px 30px;
+}
+
+@include atDesktop1440 {
+  .cards-row {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
 }
 
 @include atDesktop1024 {
   .cards-row {
     padding-top: 50px;
+    row-gap: 30px;
   }
 }
 

@@ -18,32 +18,28 @@
   max-height: 76px;
 }
 
-.footer__donate {
-  padding-top: 20px;
-  max-width: 169px;
-  text-decoration: none;
-  font-size: 15px;
-  line-height: 1.25;
-  letter-spacing: .2px;
-}
-
 .footer__button {
+  margin-top: 20px;
+  max-width: 169px;
   border-color: $background;
   color: $background;
-  font-size: 15px;
 
   &:hover {
-    background-color: $background;
-    color: $darkBlue;
+    background-color: transparent;
+    color: $lightBlue;
+    border-color: $lightBlue;
   }
 
   &:active {
-    border-color: $black;
+    background-color: transparent;
+    color: $lightBlue;
+    border-color: $lightBlue;
   }
 
   &:active:hover {
-    background-color: $blue;
-    border-color: $blue;
+    background-color: transparent;
+    color: $lightBlue;
+    border-color: $lightBlue;
   }
 }
 
@@ -173,8 +169,8 @@
     margin-bottom: 40px;
   }
 
-  .footer__donate {
-    padding-top: 0;
+  .footer__button {
+    margin-top: 0;
     justify-self: center;
     grid-row: 4/5;
     max-width: 134px;

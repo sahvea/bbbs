@@ -8,12 +8,17 @@
 
   &_clickable {
     color: $blue;
+    text-decoration: none;
     transition: .2s linear;
 
     &:hover {
       color: $darkBlue;
     }
   }
+}
+
+.chapter-title_type_test {
+  margin-top: 40px;
 }
 
 @include atDesktop1024 {

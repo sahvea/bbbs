@@ -1,0 +1,292 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 375px 0;
+}
+
+.article__title {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.article__subtitle {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.article__description {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.article__image {
+  display: block;
+  background-image: url('../../images/article/main-image.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1170px;
+  height: 769px;
+  border-radius: 30px;
+}
+
+.article__figure {
+  margin: 0;
+}
+
+.article__figcaption {
+  padding-top: 10px;
+  font-size: 14px;
+  color: $darkGray;
+}
+
+.article__container {
+  width: 769px;
+}
+
+.article__symptoms {
+  background-color: $white;
+  padding: 50px;
+  max-width: 769px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.article__paragraphs {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $lightGray;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.article__text {
+  padding-bottom: 80px;
+}
+
+.article__main {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.article__information {
+  padding-top: 80px;
+}
+
+.article__paragraph {
+  background-color: $yellow;
+  box-sizing: border-box;
+  padding: 50px;
+  border-radius: 30px;
+}
+
+.article__image-small {
+  background-image: url('../../images/article/small-image.jpg');
+  background-repeat: no-repeat;
+  background-size: 69px;
+  width: 69px;
+  height: 69px;
+  border-radius: 50%;
+}
+
+.article__link-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 80px;
+  max-width: 686px;
+}
+
+.article__link {
+  display: flex;
+  align-items: center;
+  color: $blue;
+
+  &:hover {
+    color: $darkBlue;
+  }
+}
+
+.article__button-right {
+  margin-left: 30px;
+  background-image: url('../../images/article/button_right.svg');
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@include atDesktop1440 {
+  .article {
+    padding: 80px 235px 0;
+  }
+
+  .article__image {
+    width: 970px;
+    height: 637px;
+  }
+}
+
+@include atDesktop1024 {
+  .article {
+    padding: 30px 127px 0;
+  }
+
+  .article__container {
+    width: 570px;
+  }
+
+  .article__image {
+    width: 770px;
+    height: 507px;
+  }
+
+  .article__description {
+    padding-bottom: 40px;
+  }
+
+  .article__figcaption {
+    font-size: 12px;
+  }
+
+  .article__main {
+    padding-bottom: 20px;
+  }
+
+  .article__text {
+    padding-bottom: 30px;
+  }
+
+  .article__subtitle {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  .article__information {
+    padding-top: 30px;
+  }
+
+  .article__link-box {
+    max-width: 570px;
+    padding-top: 30px;
+  }
+
+  .article__paragraph {
+    padding: 30px;
+  }
+
+  .article__symptoms {
+    padding: 30px;
+  }
+
+  .article__paragraphs {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  .article__title {
+    font-size: 37px;
+  }
+
+  .article__button-right {
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@include atTabletL {
+  .article__image {
+    width: 534px;
+    height: 350px;
+  }
+
+  .article__link-box {
+    max-width: 290px;
+  }
+
+  .article__button-right {
+    margin-left: 0;
+    padding-right: 20px;
+  }
+
+  .article__image-small {
+    margin-right: 15px;
+  }
+
+  .article__link {
+    max-width: 206px;
+  }
+}
+
+@include atTablet {
+  .article {
+    padding: 30px 60px 0;
+  }
+
+  .article__container {
+    max-width: 534px;
+  }
+}
+
+@include atMobileL {
+  .article__title {
+    font-size: 23px;
+    line-height: 1.3;
+  }
+
+  .article {
+    padding-top: 30px;
+  }
+
+  .article__image {
+    width: 534px;
+    height: 350px;
+  }
+}
+
+@include atMobile {
+  .article {
+    padding: 10px 15px 0;
+  }
+
+  .article__description {
+    padding-bottom: 20px;
+    line-height: 1.25;
+  }
+
+  .article__image {
+    width: 290px;
+    height: 191px;
+  }
+
+  .article__container {
+    max-width: 290px;
+  }
+
+  .article__main {
+    padding-bottom: 30px;
+  }
+
+  .article__text {
+    padding-bottom: 30px;
+  }
+
+  .article__symptoms {
+    padding: 30px 15px;
+  }
+
+  .article__paragraph {
+    padding: 30px 15px;
+  }
+}

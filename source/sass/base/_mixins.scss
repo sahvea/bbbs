@@ -49,6 +49,13 @@
   }
 }
 
+//для экранов до 900px
+@mixin atTabletL {
+  @media screen and (max-width: 900px) {
+    @content;
+  }
+}
+
 //для экранов до 768px
 @mixin atTablet {
   @media screen and (max-width: 767px) {

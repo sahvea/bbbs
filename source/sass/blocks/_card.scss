@@ -71,8 +71,29 @@
   text-align: center;
 }
 
+.card__title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  box-orient: vertical;
+}
+
 .card__title-caption {
   margin-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  box-orient: vertical;
 }
 
 .card__img {
@@ -113,6 +134,10 @@
   &_position_main-card {
     margin-top: 95px;
   }
+
+  &_type_main-article {
+    margin-top: 120px;
+  }
 }
 
 .card__paragraph {
@@ -124,7 +149,11 @@
 }
 
 @include atDesktop1440 {
-
+  .card__img {
+    &_position_main-article {
+      margin-top: 10px;
+    }
+  }
 }
 
 @include atDesktop1024 {
@@ -146,6 +175,10 @@
   .card__img {
     margin-top: 60px;
     height: 345px;
+
+    &_position_main-article {
+      margin-top: 40px;
+    }
   }
 
   .card__annotation-caption {
@@ -168,5 +201,9 @@
   .card__img {
     margin-top: 40px;
     height: 142px;
+
+    &_position_main-article {
+      margin-top: 20px;
+    }
   }
 }

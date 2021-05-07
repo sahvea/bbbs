@@ -34,6 +34,32 @@
     padding-top: 47px;
     padding-bottom: 30px;
   }
+
+  &_form_square {
+    border-radius: unset;
+    &::before {
+      content: '';
+      padding-bottom: 100%;
+    }
+  }
+
+  &_form_circle {
+    border-radius: 50%;
+    &::before {
+      content: '';
+      padding-bottom: 100%;
+    }
+  }
+
+  &_form_arch {
+    border-radius: unset;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    &::before {
+      content: '';
+      padding-bottom: 100%;
+    }
+  }
 }
 
 .card__rubric {

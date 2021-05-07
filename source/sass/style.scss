@@ -38,6 +38,13 @@
 // article
 @import './blocks/article.scss';
 
+// rights
+@import './blocks/rights.scss';
+
+// секции
+// lead
+@import './blocks/lead.scss';
+
 // tags
 @import './blocks/tags.scss';
 
@@ -52,6 +59,9 @@
 
 // read and watch
 @import './blocks/preview.scss';
+
+//pagination
+@import './blocks/pagination';
 // footer
 @import './blocks/footer.scss';
 

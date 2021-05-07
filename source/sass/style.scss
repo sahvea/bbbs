@@ -16,6 +16,7 @@
 // типография
 @import './blocks/main-title.scss';
 @import './blocks/section-title.scss';
+@import './blocks/section-subtitle.scss';
 @import './blocks/paragraph.scss';
 @import './blocks/link.scss';
 @import './blocks/caption.scss';
@@ -28,6 +29,10 @@
 // calendar
 @import './blocks/calendar.scss';
 @import './blocks/popup.scss';
+
+//about
+@import './blocks/about.scss';
+
 // секции
 // lead
 @import './blocks/lead.scss';

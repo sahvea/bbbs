@@ -10,7 +10,10 @@
 // типография
 @import './blocks/main-title.scss';
 @import './blocks/section-title.scss';
+
 @import './blocks/chapter-title.scss';
+@import './blocks/section-subtitle.scss';
+
 @import './blocks/paragraph.scss';
 @import './blocks/link.scss';
 @import './blocks/caption.scss';
@@ -33,6 +36,18 @@
 // calendar
 @import './blocks/calendar.scss';
 @import './blocks/popup.scss';
+
+//about
+@import './blocks/about.scss';
+
+// article
+@import './blocks/article.scss';
+
+// секции
+// lead
+@import './blocks/lead.scss';
+// tags
+@import './blocks/tags.scss';
 
 // cards
 @import './blocks/main-card.scss';

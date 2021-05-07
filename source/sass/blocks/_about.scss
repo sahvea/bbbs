@@ -45,20 +45,16 @@
 }
 
 .about__caption {
-  background-color: $white;
-  padding: 50px 30px;
-  box-sizing: border-box;
-  border-radius: 30px;
+  padding: 52px 30px;
   width: 600px;
   height: 570px;
-  overflow-y: scroll;
 }
 
 .about__main-text {
-  margin-bottom: 30px;
+  margin-top: 30px;
 
-  &:last-child {
-    margin-bottom: 0;
+  &:first-of-type {
+    margin-top: 0;
   }
 }
 

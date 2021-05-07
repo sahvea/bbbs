@@ -5,22 +5,29 @@
 @import './base/mixins.scss';
 // page
 @import './blocks/page.scss';
-// header
-@import './blocks/header.scss';
-// menu
-@import './blocks/menu.scss';
 // main
 @import './blocks/main.scss';
-// buttons
-@import './blocks/button.scss';
 // типография
 @import './blocks/main-title.scss';
 @import './blocks/section-title.scss';
+
+@import './blocks/chapter-title.scss';
 @import './blocks/section-subtitle.scss';
+
 @import './blocks/paragraph.scss';
 @import './blocks/link.scss';
 @import './blocks/caption.scss';
 @import './blocks/rubric.scss';
+// buttons
+@import './blocks/button.scss';
+// header
+@import './blocks/header.scss';
+// menu
+@import './blocks/menu.scss';
+// lead
+@import './blocks/lead.scss';
+// tags
+@import './blocks/tags.scss';
 
 // cards
 @import './blocks/card-container.scss';
@@ -41,14 +48,18 @@
 @import './blocks/lead.scss';
 // tags
 @import './blocks/tags.scss';
+
 // cards
 @import './blocks/main-card.scss';
 @import './blocks/cards-row.scss';
-// question
+// questions
 @import './blocks/questions.scss';
 @import './blocks/question.scss';
 @import './blocks/add-question.scss';
-@import './blocks/question-form';
+@import './blocks/question-form.scss';
+
+// read and watch
+@import './blocks/preview.scss';
 // footer
 @import './blocks/footer.scss';
 

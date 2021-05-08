@@ -30,6 +30,10 @@
     padding-bottom: 30px;
   }
 
+  &_content_book {
+    padding: 30px;
+  }
+
   &_type_main {
     padding-top: 47px;
     padding-bottom: 30px;
@@ -170,6 +174,10 @@
       padding-right: 7px;
       padding-bottom: 30px;
     }
+
+    &_content_book {
+      padding: 30px;
+    }
   }
 
   .card__img {
@@ -204,6 +212,10 @@
 
     &_position_main-article {
       margin-top: 20px;
+    }
+
+    &_content_book {
+      padding: 30px;
     }
   }
 }

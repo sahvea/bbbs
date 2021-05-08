@@ -10,6 +10,10 @@
     //grid-template-rows: minmax(630px, 660px);
     justify-content: center;
   }
+
+  &_type_book {
+    grid-template-rows: 1fr 222px;
+  }
 }
 
 @include atDesktop1440 {
@@ -17,6 +21,12 @@
 
     &_type_main {
       grid-template-columns: 1fr 1fr;
+    }
+
+    &_type_book {
+      &:nth-last-of-type(-n+4) {
+        display: none;
+      }
     }
   }
 }
@@ -28,6 +38,14 @@
     &_type_main {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 188px;
+    }
+
+    &_type_book {
+      grid-template-rows: 1fr 188px;
+
+      &:nth-last-of-type(-n+4) {
+        display: none;
+      }
     }
   }
 }

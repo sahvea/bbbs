@@ -33,9 +33,38 @@
   cursor: pointer;
 }
 
+.popup__container {
+  margin: 150px auto 0;
+  box-sizing: border-box;
+  position: relative;
+  max-width: 75vw;
+  max-height: 75vh;
+
+  &_type_video {
+    padding: 30px 30px 50px;
+    margin-top: 50px;
+    width: 1770px;
+    height: 1770px;
+  }
+}
+
+@include atDesktop1440 {
+  .popup__container {
+
+    &_type_video {
+      width: 1170px;
+      height: 1125px;
+    }
+  }
+}
+
 @include atMobileL {
   .popup__close {
     top: 15px;
     right: 15px;
+  }
+
+  .popup_type_video {
+    display: none;
   }
 }

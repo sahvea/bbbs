@@ -7,6 +7,14 @@
   height: 236px;
   object-fit: cover;
   cursor: pointer;
+
+  &_position_main-video {
+    height: auto;
+  }
+}
+
+.card__video-img {
+  width: 100%;
 }
 
 .video__rubric-list {
@@ -28,11 +36,19 @@
 @include atDesktop1440 {
   .video__img {
     height: 208px;
+
+    &_position_main-video {
+      height: auto;
+    }
   }
 }
 
 @include atMobile {
   .video__img {
     height: 163px;
+
+    &_position_main-video {
+      height: auto;
+    }
   }
 }

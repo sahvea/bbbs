@@ -11,6 +11,12 @@
     justify-content: center;
   }
 
+  &_type_main-video {
+    grid-template-columns: 32% 68%;
+    grid-template-rows: 1fr;
+    justify-content: center;
+  }
+
   &_type_article {
     grid-template-rows: 224px 222px;
   }
@@ -22,12 +28,6 @@
     &_type_main {
       grid-template-columns: 1fr 1fr;
     }
-
-    &_type_book {
-      &:nth-last-of-type(-n+4) {
-        display: none;
-      }
-    }
   }
 }
 
@@ -37,6 +37,11 @@
     &_type_main {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 188px;
+    }
+
+    &_type_main-video {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 147px;
     }
 
     &_type_article {

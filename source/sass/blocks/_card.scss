@@ -9,7 +9,7 @@
   box-sizing: border-box;
   overflow: hidden;
 
-  // цвета плашек
+  // цвета карточек
   &_color_yellow {
     background-color: $yellow;
   }
@@ -40,6 +40,10 @@
     padding: 0;
   }
 
+  &_content_video-preview {
+    padding: 30px;
+  }
+
   // главная карточка на страницах Куда пойти и Статьи
   &_type_main {
     padding-top: 47px;
@@ -47,7 +51,7 @@
   }
 
   &_form_square {
-    border-radius: unset;
+    border-radius: 3px;
     &::before {
       content: '';
       padding-bottom: 100%;
@@ -64,9 +68,7 @@
   }
 
   &_form_arch {
-    border-radius: unset;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
+    border-radius: 300px 300px 3px 3px;
     &::before {
       content: '';
       padding-bottom: 100%;
@@ -136,6 +138,17 @@
   object-position: center;
 }
 
+// видео на карточке попапа
+.card__video-iframe {
+  margin: 0;
+  padding-bottom: 30px;
+  width: 100%;
+  height: 100%;
+  max-width: 1710px;
+  max-height: 962px;
+  border: none;
+}
+
 // карточка с аннотацией
 .card__content {
   overflow-y: scroll;
@@ -183,6 +196,11 @@
       margin-top: 10px;
     }
   }
+
+  .card__video-iframe {
+    max-width: 1100px;
+    max-height: 625px;
+  }
 }
 
 @include atDesktop1024 {
@@ -206,6 +224,11 @@
 
     &_content_video {
       padding: 0;
+    }
+
+    &_content_video-preview {
+      padding: 15px;
+      grid-row: 2;
     }
   }
 
@@ -246,10 +269,6 @@
 
     &_position_main-article {
       margin-top: 20px;
-    }
-
-    &_content_book {
-      padding: 30px;
     }
   }
 }

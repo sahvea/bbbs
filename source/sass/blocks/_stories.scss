@@ -1,0 +1,52 @@
+.stories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1170px;
+}
+
+.stories__title {
+  padding-bottom: 40px;
+}
+
+.stories__description {
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.stories__tags {
+  padding-top: 0;
+  padding-bottom: 40px;
+}
+
+.stories__list {
+  max-width: 1120px;
+  overflow-x: scroll;
+  box-sizing: border-box;
+}
+
+.stories__arrow {
+  margin-left: 15px;
+}
+
+.stories__image {
+  padding-bottom: 50px;
+}
+
+@include atDesktop1380 {
+  .stories__tags {
+    align-self: start;
+
+    &_content_long-list {
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -1px;
+        width: 40px;
+        height: 100%;
+        background: linear-gradient(90deg, transparent 0%, $background 100%);
+      }
+    }
+  }
+}

@@ -1,8 +1,8 @@
 .rubric {
   margin: 0;
-  height: 17px;
+  box-sizing: border-box;
   display: inline-block;
-  padding: 0 7px;
+  padding: 2px 7px;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, .3);
   font-family: $ptRootUI;

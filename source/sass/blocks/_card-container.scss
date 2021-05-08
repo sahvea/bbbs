@@ -2,7 +2,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 224px 222px;
+  grid-template-rows: 1fr 222px;
 
   &_type_main {
     grid-template-columns: 66% 34%;
@@ -11,8 +11,8 @@
     justify-content: center;
   }
 
-  &_type_book {
-    grid-template-rows: 1fr 222px;
+  &_type_article {
+    grid-template-rows: 224px 222px;
   }
 }
 
@@ -33,20 +33,16 @@
 
 @include atDesktop1024 {
   .card-container {
-    grid-template-rows: 176px 188px;
 
     &_type_main {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 188px;
     }
 
-    &_type_book {
-      grid-template-rows: 1fr 188px;
-
-      &:nth-last-of-type(-n+4) {
-        display: none;
-      }
+    &_type_article {
+      grid-template-rows: 176px 188px;
     }
+
   }
 }
 

@@ -1,5 +1,11 @@
 .header {
   padding-top: 40px;
+  transition: .2s linear;
+}
+
+.heder_displayed {
+  background-color: #fff;
+  border-radius: 0px 0px 30px 30px;
 }
 
 @include atDesktop1024 {

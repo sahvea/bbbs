@@ -61,6 +61,11 @@
   border-bottom: 1px solid $background;
   text-decoration: none;
   color: $background;
+  transition: .2s linear;
+
+  &:hover {
+    color: $lightBlue;
+  }
 }
 
 .footer__design {
@@ -107,11 +112,17 @@
 .footer__column-link {
   text-decoration: none;
   text-transform: uppercase;
-
+  white-space: nowrap;
   color: $background;
   font-family: $protoGrotesk;
   font-size: 14px;
+  line-height: 1.2;
   letter-spacing: .2px;
+  transition: .2s linear;
+
+  &:hover {
+    color: $lightBlue;
+  }
 }
 
 @include atDesktop1279 {

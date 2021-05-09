@@ -4,17 +4,14 @@
   flex-direction: column;
   align-items: center;
   max-width: 1170px;
-  overflow: hidden;
+  padding-top: 40px;
 
-  &:after {
+  &:nth-child(5)::before {
     content: '';
-    border-bottom: 1px solid $lightGray;
-    max-width: 1170px;
+    display: block;
     width: 100%;
-  }
-
-  &:last-of-type:after {
-    border-bottom: none;
+    padding-top: 80px;
+    border-top: 1px solid $lightGray;
   }
 }
 
@@ -27,13 +24,14 @@
 }
 
 .stories__description {
+  margin: auto;
+  max-width: 970px;
   padding-bottom: 25px;
   text-align: center;
 }
 
 .stories__tags {
   padding-top: 0;
-  margin-bottom: 40px;
 }
 
 .stories__list {
@@ -45,7 +43,6 @@
     display: none;
   }
 }
-
 
 .stories__arrow {
   margin-left: 15px;
@@ -78,31 +75,20 @@
 .stories__parahraphs {
   padding-bottom: 30px;
 
-  &:last-child {
+  &:last-of-type {
     padding-bottom: 50px;
   }
 }
 
 .stories__paragraph {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 .stories__images-box {
   display: flex;
   align-items: center;
-  position: relative;
   padding-top: 80px;
-  padding-bottom: 80px;
-
-  &:after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 2;
-    background-color: red;
-  }
-
+  padding-bottom: 40px;
 }
 
 .stories__slide {
@@ -119,9 +105,9 @@
 
   &:after {
     content: '';
+    padding: 30px 0;
     display: block;
     margin: 0 auto;
-    padding: 30px 0;
     border-bottom: 1px solid $lightGray;
     max-width: 770px;
   }
@@ -154,7 +140,7 @@
   background-image: url('../../images/svg/arrow-right-black.svg');
 }
 
-@include atDesktop1380 {
+@include atDesktop1440 {
   .stories__tags {
     display: grid;
     align-self: start;
@@ -175,12 +161,16 @@
 }
 
 @include atDesktop1024 {
+  .stories {
+    padding-top: 30px;
+  }
+
   .stories__title {
     padding-bottom: 23px;
   }
 
-  .stories__tags {
-    margin-bottom: 30px;
+  .stories__description {
+    max-width: 770px;
   }
 
   .stories__image {
@@ -239,5 +229,29 @@
 @include atMobileL {
   .stories__slide {
     max-width: 260px;
+  }
+}
+
+@include atMobile {
+  .stories {
+    padding-top: 30px;
+
+    &:nth-child(5)::before {
+      padding-top: 50px;
+    }
+  }
+
+  .stories__paragraph {
+    padding-bottom: 20px;
+  }
+
+  .stories__quote-text {
+    &:after {
+      padding: 20px 0;
+    }
+
+    &:before {
+      padding: 20px 0;
+    }
   }
 }

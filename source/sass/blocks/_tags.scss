@@ -15,10 +15,6 @@
   &_type_long {
     flex-wrap: wrap;
   }
-
-  /* &:first-of-type {
-    margin-top: 0;
-  } */
 }
 
 .tags__list-item {
@@ -49,7 +45,6 @@
         top: 0;
         right: -1px;
         width: 40px;
-        z-index: 1;
         height: 100%;
         background: linear-gradient(90deg, transparent 0%, $background 100%);
       }
@@ -82,7 +77,6 @@
       top: 0;
       right: -1px;
       width: 40px;
-      z-index: 1;
       height: 100%;
       background: linear-gradient(90deg, transparent 0%, $background 100%);
     }
@@ -97,18 +91,11 @@
   }
 }
 
-@include atMobile {
-  /* .tags {
-
-    &_content_long-list {
-      max-width: 330px;
-    }
-  } */
+/* @include atMobile {
   .tags__list {
 
     &_type_long {
       flex-wrap: nowrap;
-      /* max-width: 330px; */
     }
   }
-}
+} */

@@ -32,7 +32,7 @@ gulp.task('css', function () {
 });
 
 gulp.task('scripts', function () {
-	return gulp.src('source/scripts/**/*.js')
+	return gulp.src('source/scripts/*.js')
 		.pipe(sourcemap.init())
 		.pipe(babel({
 			presets: ['@babel/preset-env']
@@ -66,7 +66,8 @@ gulp.task('copy', function () {
     'source/vendor/fonts/**/*.{woff,woff2,ttf}',
     'source/vendor/**/*.css',
     'source/images/**',
-    'source/*.ico'
+    'source/*.ico',
+    'source/scripts/**/*.js'
   ], {
     base: 'source'
   })

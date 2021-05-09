@@ -1,0 +1,54 @@
+.video {
+  position: relative;
+}
+
+.video__img {
+  width: 100%;
+  height: 236px;
+  object-fit: cover;
+  cursor: pointer;
+
+  &_position_main-video {
+    height: auto;
+  }
+}
+
+.card__video-img {
+  width: 100%;
+}
+
+.video__rubric-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.video__rubric {
+  background-color: rgba(255, 255, 255, .6);
+}
+
+@include atDesktop1440 {
+  .video__img {
+    height: 208px;
+
+    &_position_main-video {
+      height: auto;
+    }
+  }
+}
+
+@include atMobile {
+  .video__img {
+    height: 163px;
+
+    &_position_main-video {
+      height: auto;
+    }
+  }
+}

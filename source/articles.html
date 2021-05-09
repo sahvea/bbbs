@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Книги</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Статьи</title>
 </head>
 <body class="page">
   <header class="header page__section">
@@ -66,32 +66,38 @@
 
   <main class="main">
     <section class="lead page__section">
-      <h1 class="main-title">Книги</h1>
-      <div class="tags">
-        <ul class="tags__list">
-          <li class="tags__list-item">
-            <button class="button tags__button tags__button_active" type="button">Все</button>
-          </li>
-          <li class="tags__list-item">
-            <button class="button tags__button" type="button">Научные</button>
-          </li>
-          <li class="tags__list-item">
-            <button class="button tags__button" type="button">Художественные</button>
-          </li>
-        </ul>
-      </div>
+      <h1 class="main-title">Статьи</h1>
     </section>
 
-    <section class="cards-grid cards-grid_content_small-cards page__section">
-      <article class="card-container card-pagination">
-        <div class="card card_content_book">
-          <div class="book book_color_pink">
-            <h2 class="section-title book__title">Жизнь после утраты</h2>
-            <div class="book__info">
-              <p class="caption book__author">Волкан Вамик, Зинтл Элизабет</p>
-              <p class="caption book__year">2011 год</p>
+    <section class="main-card page__section">
+      <article class="card-container card-container_type_main">
+        <div class="card card_type_main card_color_yellow">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Симбиоз со знаком «плюс» и симбиоз со знаком «минус» – для чего нужен переходный возраст</h2>
+            <p class="caption card__title-caption">Ирина Стасенко, педагог-психолог</p>
+          </div>
+          <img src="./images/where-to-go/img-xl.jpg" alt="переходный возраст" class="card__img card__img_position_main-article">
+          <a href="./article.html" class="link card__link">читать на сайте</a>
+        </div>
+        <div class="card card_content_annotation card_type_main">
+          <div class="card__content">
+            <div class="card__annotation card__annotation_position_main-card card__annotation_type_main-article">
+              <p class="paragraph card__paragraph">Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга,  потом понимать чуть лучше и, Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга,  потом понимать чуть лучше и,</p>
+              <p class="paragraph card__paragraph">Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не по Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется.</p>
             </div>
           </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="cards-grid page__section">
+      <article class="card-container card-container_type_article">
+        <div class="card card_color_green">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Причины подростковой агрессии</h2>
+            <p class="caption card__title-caption">Ирина Стасенко, педагог-психолог</p>
+          </div>
+          <a href="./article.html" class="link card__link">читать на сайте</a>
         </div>
         <div class="card card_content_annotation">
           <div class="card__content">
@@ -103,15 +109,13 @@
         </div>
       </article>
 
-      <article class="card-container card-pagination">
-        <div class="card card_content_book">
-          <div class="book book_color_blue">
-            <h2 class="section-title book__title">Жизнь после утраты. Психология горевания</h2>
-            <div class="book__info">
-              <p class="caption book__author">Волкан Вамик,</p>
-              <p class="caption book__year">2011 год</p>
-            </div>
+      <article class="card-container card-container_type_article">
+        <div class="card card_color_yellow">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Самоубийство в подростковом возрасте. Интервью с психологом</h2>
+            <p class="caption card__title-caption">Ирина Стасенко, педагог-психолог</p>
           </div>
+          <a href="./article.html" class="link card__link">читать на сайте</a>
         </div>
         <div class="card card_content_annotation">
           <div class="card__content">
@@ -123,15 +127,31 @@
         </div>
       </article>
 
-      <article class="card-container card-pagination">
-        <div class="card card_content_book">
-          <div class="book book_color_pink">
-            <h2 class="section-title book__title">Жизнь после утраты</h2>
-            <div class="book__info">
-              <p class="caption book__author">Волкан Вамик, Зинтл Элизабет</p>
-              <p class="caption book__year">2011 год</p>
+      <article class="card-container card-container_type_article">
+        <div class="card card_color_pink">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Причины подростковой агрессии</h2>
+            <p class="caption card__title-caption">Ирина Стасенко, педагог-психолог</p>
+          </div>
+          <a href="./article.html" class="link card__link">читать на сайте</a>
+        </div>
+        <div class="card card_content_annotation">
+          <div class="card__content">
+            <div class="card__annotation">
+              <p class="paragraph card__paragraph">Аннотация книги в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется.</p>
+              <p class="paragraph card__paragraph">Аннотация статьи в несколько абзацев. Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. Аннотация статьи в несколько абзацев.</p>
             </div>
           </div>
+        </div>
+      </article>
+
+      <article class="card-container card-container_type_article">
+        <div class="card card_color_blue">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Девиантное повидение детей-сирот</h2>
+            <p class="caption card__title-caption">Ирина Стасенко, педагог-психолог</p>
+          </div>
+          <a href="./article.html" class="link card__link">читать на сайте</a>
         </div>
         <div class="card card_content_annotation">
           <div class="card__content">
@@ -143,15 +163,31 @@
         </div>
       </article>
 
-      <article class="card-container card-pagination">
-        <div class="card card_content_book">
-          <div class="book book_color_blue">
-            <h2 class="section-title book__title">Жизнь после утраты. Психология горевания</h2>
-            <div class="book__info">
-              <p class="caption book__author">Волкан Вамик,</p>
-              <p class="caption book__year">2011 год</p>
+      <article class="card-container card-container_type_article">
+        <div class="card card_color_pink">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Симбиоз со знаком «плюс» и симбиоз со знаком «минус» – для чего нужен переходный</h2>
+            <p class="caption card__title-caption">Ирина Стасенко, педагог-психолог</p>
+          </div>
+          <a href="./article.html" class="link card__link">читать на сайте</a>
+        </div>
+        <div class="card card_content_annotation">
+          <div class="card__content">
+            <div class="card__annotation">
+              <p class="paragraph card__paragraph">Аннотация книги в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется.</p>
+              <p class="paragraph card__paragraph">Аннотация статьи в несколько абзацев. Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. Аннотация статьи в несколько абзацев.</p>
             </div>
           </div>
+        </div>
+      </article>
+
+      <article class="card-container card-container_type_article">
+        <div class="card card_color_green">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Самоубийство в подростковом возрасте. Интервью с психологом</h2>
+            <p class="caption card__title-caption">Ирина Стасенко, педагог-психолог</p>
+          </div>
+          <a href="./article.html" class="link card__link">читать на сайте</a>
         </div>
         <div class="card card_content_annotation">
           <div class="card__content">
@@ -163,15 +199,13 @@
         </div>
       </article>
 
-      <article class="card-container card-pagination">
-        <div class="card card_content_book">
-          <div class="book book_color_pink">
-            <h2 class="section-title book__title">Жизнь после утраты</h2>
-            <div class="book__info">
-              <p class="caption book__author">Волкан Вамик, Зинтл Элизабет</p>
-              <p class="caption book__year">2011 год</p>
-            </div>
+      <article class="card-container card-container_type_article">
+        <div class="card card_color_yellow">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Причины подростковой агрессии</h2>
+            <p class="caption card__title-caption">Ирина Стасенко, педагог-психолог</p>
           </div>
+          <a href="./article.html" class="link card__link">читать на сайте</a>
         </div>
         <div class="card card_content_annotation">
           <div class="card__content">
@@ -183,15 +217,31 @@
         </div>
       </article>
 
-      <article class="card-container card-pagination">
-        <div class="card card_content_book">
-          <div class="book book_color_blue">
-            <h2 class="section-title book__title">Жизнь после утраты. Психология горевания</h2>
-            <div class="book__info">
-              <p class="caption book__author">Волкан Вамик,</p>
-              <p class="caption book__year">2011 год</p>
+      <article class="card-container card-container_type_article">
+        <div class="card card_color_green">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Самоубийство в подростковом возрасте. Интервью с психологом</h2>
+            <p class="caption card__title-caption">Ирина Стасенко, педагог-психолог</p>
+          </div>
+          <a href="./article.html" class="link card__link">читать на сайте</a>
+        </div>
+        <div class="card card_content_annotation">
+          <div class="card__content">
+            <div class="card__annotation">
+              <p class="paragraph card__paragraph">Аннотация книги в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется.</p>
+              <p class="paragraph card__paragraph">Аннотация статьи в несколько абзацев. Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. Аннотация статьи в несколько абзацев.</p>
             </div>
           </div>
+        </div>
+      </article>
+
+      <article class="card-container card-container_type_article">
+        <div class="card card_color_blue">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Причины подростковой агрессии</h2>
+            <p class="caption card__title-caption">Ирина Стасенко, педагог-психолог</p>
+          </div>
+          <a href="./article.html" class="link card__link">читать на сайте</a>
         </div>
         <div class="card card_content_annotation">
           <div class="card__content">
@@ -203,15 +253,31 @@
         </div>
       </article>
 
-      <article class="card-container card-pagination">
-        <div class="card card_content_book">
-          <div class="book book_color_pink">
-            <h2 class="section-title book__title">Жизнь после утраты</h2>
-            <div class="book__info">
-              <p class="caption book__author">Волкан Вамик, Зинтл Элизабет</p>
-              <p class="caption book__year">2011 год</p>
+      <article class="card-container card-container_type_article">
+        <div class="card card_color_pink">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Девиантное повидение детей-сирот</h2>
+            <p class="caption card__title-caption">Ирина Стасенко, педагог-психолог</p>
+          </div>
+          <a href="./article.html" class="link card__link">читать на сайте</a>
+        </div>
+        <div class="card card_content_annotation">
+          <div class="card__content">
+            <div class="card__annotation">
+              <p class="paragraph card__paragraph">Аннотация книги в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется.</p>
+              <p class="paragraph card__paragraph">Аннотация статьи в несколько абзацев. Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. Аннотация статьи в несколько абзацев.</p>
             </div>
           </div>
+        </div>
+      </article>
+
+      <article class="card-container card-container_type_article">
+        <div class="card card_color_blue">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Симбиоз со знаком «плюс» и симбиоз со знаком «минус» – для чего нужен переходный</h2>
+            <p class="caption card__title-caption">Ирина Стасенко, педагог-психолог</p>
+          </div>
+          <a href="./article.html" class="link card__link">читать на сайте</a>
         </div>
         <div class="card card_content_annotation">
           <div class="card__content">
@@ -223,180 +289,18 @@
         </div>
       </article>
 
-      <article class="card-container card-pagination">
-        <div class="card card_content_book">
-          <div class="book book_color_blue">
-            <h2 class="section-title book__title">Жизнь после утраты. Психология горевания</h2>
-            <div class="book__info">
-              <p class="caption book__author">Волкан Вамик,</p>
-              <p class="caption book__year">2011 год</p>
-            </div>
+      <article class="card-container card-container_type_article">
+        <div class="card card_color_yellow">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Самоубийство в подростковом возрасте. Интервью с психологом</h2>
+            <p class="caption card__title-caption">Ирина Стасенко, педагог-психолог</p>
           </div>
+          <a href="./article.html" class="link card__link">читать на сайте</a>
         </div>
         <div class="card card_content_annotation">
           <div class="card__content">
             <div class="card__annotation">
-              <p class="paragraph card__paragraph">Аннотация книги, статьи, фильма в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется.</p>
-              <p class="paragraph card__paragraph">Аннотация статьи в несколько абзацев. Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. Аннотация статьи в несколько абзацев.</p>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="card-container card-pagination">
-        <div class="card card_content_book">
-          <div class="book book_color_pink">
-            <h2 class="section-title book__title">Жизнь после утраты</h2>
-            <div class="book__info">
-              <p class="caption book__author">Волкан Вамик, Зинтл Элизабет</p>
-              <p class="caption book__year">2011 год</p>
-            </div>
-          </div>
-        </div>
-        <div class="card card_content_annotation">
-          <div class="card__content">
-            <div class="card__annotation">
-              <p class="paragraph card__paragraph">Аннотация книги, статьи, фильма в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется.</p>
-              <p class="paragraph card__paragraph">Аннотация статьи в несколько абзацев. Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. Аннотация статьи в несколько абзацев.</p>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="card-container card-pagination">
-        <div class="card card_content_book">
-          <div class="book book_color_blue">
-            <h2 class="section-title book__title">Жизнь после утраты. Психология горевания</h2>
-            <div class="book__info">
-              <p class="caption book__author">Волкан Вамик,</p>
-              <p class="caption book__year">2011 год</p>
-            </div>
-          </div>
-        </div>
-        <div class="card card_content_annotation">
-          <div class="card__content">
-            <div class="card__annotation">
-              <p class="paragraph card__paragraph">Аннотация книги, статьи, фильма в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется.</p>
-              <p class="paragraph card__paragraph">Аннотация статьи в несколько абзацев. Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. Аннотация статьи в несколько абзацев.</p>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="card-container card-pagination">
-        <div class="card card_content_book">
-          <div class="book book_color_pink">
-            <h2 class="section-title book__title">Жизнь после утраты</h2>
-            <div class="book__info">
-              <p class="caption book__author">Волкан Вамик, Зинтл Элизабет</p>
-              <p class="caption book__year">2011 год</p>
-            </div>
-          </div>
-        </div>
-        <div class="card card_content_annotation">
-          <div class="card__content">
-            <div class="card__annotation">
-              <p class="paragraph card__paragraph">Аннотация книги, статьи, фильма в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется.</p>
-              <p class="paragraph card__paragraph">Аннотация статьи в несколько абзацев. Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. Аннотация статьи в несколько абзацев.</p>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="card-container card-pagination">
-        <div class="card card_content_book">
-          <div class="book book_color_blue">
-            <h2 class="section-title book__title">Жизнь после утраты. Психология горевания</h2>
-            <div class="book__info">
-              <p class="caption book__author">Волкан Вамик,</p>
-              <p class="caption book__year">2011 год</p>
-            </div>
-          </div>
-        </div>
-        <div class="card card_content_annotation">
-          <div class="card__content">
-            <div class="card__annotation">
-              <p class="paragraph card__paragraph">Аннотация книги, статьи, фильма в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется.</p>
-              <p class="paragraph card__paragraph">Аннотация статьи в несколько абзацев. Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. Аннотация статьи в несколько абзацев.</p>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="card-container card-pagination">
-        <div class="card card_content_book">
-          <div class="book book_color_pink">
-            <h2 class="section-title book__title">Жизнь после утраты</h2>
-            <div class="book__info">
-              <p class="caption book__author">Волкан Вамик, Зинтл Элизабет</p>
-              <p class="caption book__year">2011 год</p>
-            </div>
-          </div>
-        </div>
-        <div class="card card_content_annotation">
-          <div class="card__content">
-            <div class="card__annotation">
-              <p class="paragraph card__paragraph">Аннотация книги, статьи, фильма в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется.</p>
-              <p class="paragraph card__paragraph">Аннотация статьи в несколько абзацев. Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. Аннотация статьи в несколько абзацев.</p>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="card-container card-pagination">
-        <div class="card card_content_book">
-          <div class="book book_color_blue">
-            <h2 class="section-title book__title">Жизнь после утраты. Психология горевания</h2>
-            <div class="book__info">
-              <p class="caption book__author">Волкан Вамик,</p>
-              <p class="caption book__year">2011 год</p>
-            </div>
-          </div>
-        </div>
-        <div class="card card_content_annotation">
-          <div class="card__content">
-            <div class="card__annotation">
-              <p class="paragraph card__paragraph">Аннотация книги, статьи, фильма в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется.</p>
-              <p class="paragraph card__paragraph">Аннотация статьи в несколько абзацев. Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. Аннотация статьи в несколько абзацев.</p>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="card-container card-pagination">
-        <div class="card card_content_book">
-          <div class="book book_color_pink">
-            <h2 class="section-title book__title">Жизнь после утраты</h2>
-            <div class="book__info">
-              <p class="caption book__author">Волкан Вамик, Зинтл Элизабет</p>
-              <p class="caption book__year">2011 год</p>
-            </div>
-          </div>
-        </div>
-        <div class="card card_content_annotation">
-          <div class="card__content">
-            <div class="card__annotation">
-              <p class="paragraph card__paragraph">Аннотация книги, статьи, фильма в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется.</p>
-              <p class="paragraph card__paragraph">Аннотация статьи в несколько абзацев. Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. Аннотация статьи в несколько абзацев.</p>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="card-container card-pagination">
-        <div class="card card_content_book">
-          <div class="book book_color_blue">
-            <h2 class="section-title book__title">Жизнь после утраты. Психология горевания</h2>
-            <div class="book__info">
-              <p class="caption book__author">Волкан Вамик,</p>
-              <p class="caption book__year">2011 год</p>
-            </div>
-          </div>
-        </div>
-        <div class="card card_content_annotation">
-          <div class="card__content">
-            <div class="card__annotation">
-              <p class="paragraph card__paragraph">Аннотация книги, статьи, фильма в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется.</p>
+              <p class="paragraph card__paragraph">Аннотация книги в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется.</p>
               <p class="paragraph card__paragraph">Аннотация статьи в несколько абзацев. Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. Аннотация статьи в несколько абзацев.</p>
             </div>
           </div>

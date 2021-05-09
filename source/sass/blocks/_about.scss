@@ -1,12 +1,12 @@
 .about {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 //блог заголовка
 
 .about__title {
-  align-self: center;
   padding-bottom: 50px;
   max-width: 1170px;
   text-align: center;
@@ -15,63 +15,57 @@
 // блок лого
 
 .about__logo {
-  align-self: center;
-  background-image: url('../../images/svg/calendar_logo.svg');
-  background-repeat: no-repeat;
-  background-size: 357px 65px;
   width: 357px;
-  height: 65px;
-
+  object-fit: contain;
 }
 
 // блок круга с текстом
 
 .about__us {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  display: flex;
+  padding: 80px 0;
+  display: grid;
+  grid-template-columns: 570px 600px;
+  grid-template-rows: 570px;
   justify-content: center;
-  width: 100%;
 }
 
 .about__circle {
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 570px;
-  height: 570px;
-  border-radius: 50%;
-  background-color: $yellow;
+  border-radius: 100%;
 }
 
 .about__caption {
-  background-color: $white;
-  padding: 50px 30px;
-  box-sizing: border-box;
-  border-radius: 30px;
-  width: 600px;
-  height: 570px;
-  overflow-y: scroll;
+  padding-top: 50px;
+  padding-right: 25px;
+  padding-bottom: 50px;
 }
 
 .about__main-text {
-  margin-bottom: 30px;
+  margin-top: 30px;
 
-  &:last-child {
-    margin-bottom: 0;
+  &:first-of-type {
+    margin-top: 0;
   }
 }
 
 //блок цитаты
 
 .about__quote {
-  align-self: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  max-width: 1170px;
+  margin: 0;
+  padding: 60px 0;
+  width: 100%;
   text-align: center;
   border-top: 1px solid $lightGray;
   border-bottom: 1px solid $lightGray;
+}
+
+.about__quote-text {
+  display: inline-block;
+  max-width: 1170px;
+  color: #1a1a1a;
 }
 
 // блок карточек
@@ -84,26 +78,22 @@
 }
 
 .about__card-container {
-  display: block;
+  grid-template-rows: 120px minmax(265px, 1fr);
 }
 
 .about__card {
   padding: 0;
   justify-content: center;
-  height: 120px;
   border-radius: 70px;
 }
 
-.about__content {
-  height: 265px;
-  max-height: 369px;
+.about__card-content {
+  margin-bottom: 30px;
 }
 
 .about__card-link {
-  margin-top: auto;
   align-self: center;
 }
-
 
 //адаптив
 
@@ -112,36 +102,30 @@
     max-width: 1030px;
   }
 
-  .about__quote {
+  .about__quote-text {
     max-width: 964px;
   }
 }
 
 @include atDesktop1380 {
   .about__us {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 570px;
+    grid-template-rows: 358px 373px;
   }
-}
 
-@include atDesktop1279 {
-    .about__circle {
-    max-width: 370px;
-    max-height: 358px;
+  .about__circle {
+    width: 370px;
+    justify-self: center;
   }
 
   .about__caption {
     padding: 30px 15px;
-    max-width: 570px;
-    max-height: 373px;
   }
 }
 
 @include atDesktop1024 {
   .about__logo {
     width: 252px;
-    height: 46px;
-    background-size: 252px 46px;
   }
 
   .about__title {
@@ -149,13 +133,15 @@
   }
 
   .about__us {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 0;
   }
 
   .about__quote {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 0;
+  }
+
+  .about__quote-text {
+    max-width: 770px;
   }
 
   .about__cards {
@@ -163,38 +149,34 @@
     padding-top: 50px;
   }
 
-  .about__card {
-    height: 70px;
+  .about__card-container {
+    max-width: 570px;
+    grid-template-rows: 70px 1fr;
   }
 
-  .about__content {
-    max-height: 200px;
+  .about__card-content {
+    margin-bottom: 15px;
   }
 }
 
 @include atTablet {
-  .about__caption {
-    max-width: 500px;
-  }
-
   .about__us {
     padding-top: 30px;
+    grid-template-columns: 1fr;
   }
 }
 
 @include atMobile {
+  .about__us {
+    grid-template-rows: 280px 1fr;
+  }
+
   .about__caption {
-    width: 290px;
     max-height: 688px;
   }
 
   .about__circle {
     width: 290px;
-    height: 280px;
-  }
-
-  .about__content {
-    max-height: 300px;
   }
 
   .about__title {

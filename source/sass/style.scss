@@ -5,49 +5,60 @@
 @import './base/mixins.scss';
 // page
 @import './blocks/page.scss';
-// header
-@import './blocks/header.scss';
-// menu
-@import './blocks/menu.scss';
 // main
 @import './blocks/main.scss';
-// buttons
-@import './blocks/button.scss';
 // типография
 @import './blocks/main-title.scss';
 @import './blocks/section-title.scss';
-@import './blocks/section-subtitle.scss';
+@import './blocks/chapter-title.scss';
 @import './blocks/paragraph.scss';
 @import './blocks/link.scss';
 @import './blocks/caption.scss';
 @import './blocks/rubric.scss';
+// buttons
+@import './blocks/button.scss';
+// header
+@import './blocks/header.scss';
+// menu
+@import './blocks/menu.scss';
+// tags
+@import './blocks/tags.scss';
 
 // cards
 @import './blocks/card-container.scss';
 @import './blocks/card.scss';
+@import './blocks/main-card.scss';
+@import './blocks/cards-grid.scss';
+@import './blocks/book.scss';
+@import './blocks/video.scss';
+@import './blocks/card-pagination.scss';
 
 // calendar
 @import './blocks/calendar.scss';
 @import './blocks/popup.scss';
 
-//about
-@import './blocks/about.scss';
+// stories
+@import './blocks/stories.scss';
 
-// секции
-// lead
-@import './blocks/lead.scss';
-// tags
-@import './blocks/tags.scss';
-// cards
-@import './blocks/main-card.scss';
-@import './blocks/cards-row.scss';
-// question
+// questions
 @import './blocks/questions.scss';
 @import './blocks/question.scss';
 @import './blocks/add-question.scss';
-@import './blocks/question-form';
+@import './blocks/question-form.scss';
+
+// about
+@import './blocks/about.scss';
+
+// rights
+@import './blocks/rights.scss';
+
+// read and watch
+@import './blocks/preview.scss';
+// article
+@import './blocks/article.scss';
+@import './blocks/next-page.scss';
+
+//pagination
+@import './blocks/pagination';
 // footer
 @import './blocks/footer.scss';
-
-
-

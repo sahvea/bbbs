@@ -1,29 +1,29 @@
-.section-subtitle {
+.chapter-title {
   margin: 0;
   font-family: $protoGrotesk;
   font-weight: 300;
   font-size: 44px;
-  line-height: 1.15;
+  line-height: 1.1;
   color: $black;
 
   &_clickable {
-    display: inline-block;
+    color: $blue;
     text-decoration: none;
     transition: .2s linear;
 
     &:hover {
-      color: $blue;
+      color: $darkBlue;
     }
   }
 }
 
-.section-subtitle_type_test {
+.chapter-title_type_test {
   margin-top: 40px;
 }
 
 @include atDesktop1024 {
-  .section-subtitle {
-    font-size: 19px;
-    line-height: 1.2;
+  .chapter-title {
+    font-size: 23px;
+    line-height: 1.3;
   }
 }

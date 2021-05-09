@@ -2,12 +2,23 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 224px 222px;
+  grid-template-rows: 1fr 222px;
 
   &_type_main {
     grid-template-columns: 66% 34%;
-    grid-template-rows: minmax(630px, 660px);
+    grid-template-rows: 630px;
+    //grid-template-rows: minmax(630px, 660px);
     justify-content: center;
+  }
+
+  &_type_main-video {
+    grid-template-columns: 32% 68%;
+    grid-template-rows: 1fr;
+    justify-content: center;
+  }
+
+  &_type_article {
+    grid-template-rows: 224px 222px;
   }
 }
 
@@ -22,12 +33,21 @@
 
 @include atDesktop1024 {
   .card-container {
-    grid-template-rows: 176px 188px;
 
     &_type_main {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 188px;
     }
+
+    &_type_main-video {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 147px;
+    }
+
+    &_type_article {
+      grid-template-rows: 176px 188px;
+    }
+
   }
 }
 

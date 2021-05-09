@@ -7,7 +7,8 @@
   left: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, .5);
-  transition: visibility .3s, opacity .3s ease;
+  backdrop-filter: blur(3px);
+  transition: visibility .1s, opacity .1s linear;
 }
 
 .popup_opened {
@@ -46,6 +47,46 @@
     width: 1770px;
     height: 1770px;
   }
+}
+
+.popup_type_popup-sign-in {
+  justify-content: start;
+  height: 559px;
+}
+.popup__title_type_sign-in {
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.popup__sign-in {
+  text-align: center;
+  padding-bottom: 30px;
+
+  &:nth-of-type(2) {
+    padding-bottom: 50px;
+  }
+}
+
+.popup__input {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  height: 30px;
+  background-color: $background;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+}
+
+.popup__forgot-password {
+  margin: 0;
+  padding-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $darkGray;
+}
+
+.popup__enter {
+  width: 85px;
 }
 
 @include atDesktop1440 {

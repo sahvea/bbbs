@@ -73,7 +73,33 @@
       </button>
       <ul class="menu__button-list">
         <li class="menu__button-item">
-          <button class="menu__button menu__button_type_search" type="button" aria-label="Поиск" title="Поиск"></button>
+
+          <form class="search" name="search-form">
+            <button class="menu__button menu__button_type_search search__button" type="submit" aria-label="Поиск" title="Поиск"></button>
+
+            <div class="search__options menu__search-options">
+              <input type="text" name="search" placeholder="Поиск" value="" class="search__input paragraph">
+              <ul class="search__option-list">
+                <li class="search__option-item">
+                  <a href="./article.html" class="search__title-link section-title section-title_clickable">Причины подростковой агрессии</a>
+                  <a href="./article.html" class="link search__link">статьи</a>
+                </li>
+                <li class="search__option-item">
+                  <a href="./video.html" class="search__title-link section-title section-title_clickable">Агрессивное поведение детей-сирот</a>
+                  <a href="./video.html" class="link search__link">видео</a>
+                </li>
+                <li class="search__option-item">
+                  <a href="./questions.html" class="search__title-link section-title section-title_clickable">Что делать если ваш младший агрессивно себя ведет, решил закрыть пару?</a>
+                  <a href="./questions.html" class="link search__link">вопросы</a>
+                </li>
+                <li class="search__option-item">
+                  <a href="./books.html" class="search__title-link section-title section-title_clickable">Как реагировать на агрессивное поведения ребенка</a>
+                  <a href="./books.html" class="link search__link">книги</a>
+                </li>
+              </ul>
+            </div>
+          </form>
+
         </li>
         <li class="menu__button-item">
           <button class="menu__button menu__button_type_user" type="button" aria-label="Личный кабинет" title="Личный кабинет" onclick="document.location=''"></button>

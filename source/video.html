@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Видео</title>
+</head>
+<body class="page">
+  <header class="header page__section">
+    <nav class="menu">
+      <a href="./index.html" target="_self" class="menu__logo"></a>
+      <ul class="menu__list">
+        <li class="menu__list-item">
+          <a href="./calendar.html" class="menu__link">Календарь</a>
+        </li>
+        <li class="menu__list-item">
+          <a href="./place.html" class="menu__link">Куда пойти</a>
+        </li>
+        <li class="menu__list-item">
+          <a href="./questions.html" class="menu__link">Вопросы</a>
+        </li>
+        <li class="menu__list-item menu__dropdown-item">
+          <a href="./read-watch-main.html" class="menu__link">Читать и смотреть</a>
+          <ul class="menu__dropdown-list">
+            <li class="menu__dropdown-list-item">
+              <a href="#" class="link menu__dropdown-link">Справочник</a>
+            </li>
+            <li class="menu__dropdown-list-item">
+              <a href="./video.html" class="link menu__dropdown-link">Видео</a>
+            </li>
+            <li class="menu__dropdown-list-item">
+              <a href="./articles.html" class="link menu__dropdown-link">Статьи</a>
+            </li>
+            <li class="menu__dropdown-list-item">
+              <a href="./films.html" class="link menu__dropdown-link">Фильмы</a>
+            </li>
+            <li class="menu__dropdown-list-item">
+              <a href="./books.html" class="link menu__dropdown-link">Книги</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__list-item">
+          <a href="./rights.html" class="menu__link">Права детей</a>
+        </li>
+        <li class="menu__list-item">
+          <a href="./books.html" class="menu__link">Истории</a>
+        </li>
+      </ul>
+      <button class="menu__burger" type="button">
+        <span class="menu__burger-line"></span>
+        <span class="menu__burger-line"></span>
+        <span class="menu__burger-line"></span>
+      </button>
+      <ul class="menu__button-list">
+        <li class="menu__button-item">
+          <button class="menu__button menu__button_type_search" type="button" aria-label="Поиск" title="Поиск"></button>
+        </li>
+        <li class="menu__button-item">
+          <button class="menu__button menu__button_type_user" type="button" aria-label="Личный кабинет" title="Личный кабинет"></button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="lead page__section">
+      <h1 class="main-title">Видео</h1>
+      <div class="tags">
+        <ul class="tags__list">
+          <li class="tags__list-item">
+            <button class="button tags__button tags__button_active" type="button">Все</button>
+          </li>
+          <li class="tags__list-item">
+            <button class="button tags__button" type="button">Ресурсная группа</button>
+          </li>
+          <li class="tags__list-item">
+            <button class="button tags__button" type="button">Эксперт</button>
+          </li>
+          <li class="tags__list-item">
+            <button class="button tags__button" type="button">Пары</button>
+          </li>
+          <li class="tags__list-item">
+            <button class="button tags__button" type="button">События</button>
+          </li>
+          <li class="tags__list-item">
+            <button class="button tags__button" type="button">Медиа о нас</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="main-card page__section">
+      <article class="card-container card-container_type_main-video">
+        <div class="card card_color_yellow card_content_video-preview">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Эфир с выпускником нашей программы</h2>
+            <p class="caption card__title-caption">Иван Рустаев, выпускник программы</p>
+          </div>
+          <a href="#" class="link card__link link_action_open-video">смотреть видео</a>
+        </div>
+        <div class="card card_content_video video">
+          <img src="./images/video/video-main.jpg" alt="Превью видео" class="video__img video__img_position_main-video">
+        </div>
+      </article>
+    </section>
+
+    <section class="cards-grid cards-grid_content_small-cards page__section">
+      <article class="card card_content_video card-pagination">
+        <div class="video">
+          <img src="./images/video/video-ex-1.png" alt="Превью видео" class="video__img">
+        </div>
+        <div class="card__video-info">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Меняется смысл –  меняется жизнь</h2>
+            <p class="caption card__title-caption">Прямой эфир с актрисой театра и кино Эмилией Спивак</p>
+          </div>
+          <a href="#" class="link card__link link_action_open-video">смотреть видео</a>
+        </div>
+      </article>
+
+      <article class="card card_content_video card-pagination">
+        <div class="video">
+          <img src="./images/video/video-ex-2.png" alt="Превью видео" class="video__img">
+        </div>
+        <div class="card__video-info">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Что в силах волонтера-наставника?</h2>
+            <p class="caption card__title-caption">Иван Рустаев, волонтер-наставник</p>
+          </div>
+          <a href="#" class="link card__link link_action_open-video">смотреть видео</a>
+        </div>
+      </article>
+
+      <article class="card card_content_video card-pagination">
+        <div class="video">
+          <img src="./images/video/video-ex-3.png" alt="Превью видео" class="video__img">
+        </div>
+        <div class="card__video-info">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Творчество, наставничество, дети</h2>
+            <p class="caption card__title-caption">Виктория Ямина, Виктория Ямина, волонтеры</p>
+          </div>
+          <a href="#" class="link card__link link_action_open-video">смотреть видео</a>
+        </div>
+      </article>
+
+      <article class="card card_content_video card-pagination">
+        <div class="video">
+          <img src="./images/video/video-ex-4.png" alt="Превью видео" class="video__img">
+        </div>
+        <div class="card__video-info">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Дружба – меняет мир</h2>
+            <p class="caption card__title-caption">Прямой эфир с актрисой театра и кино Эмилией Спивак</p>
+          </div>
+          <a href="#" class="link card__link link_action_open-video">смотреть видео</a>
+        </div>
+      </article>
+
+      <article class="card card_content_video card-pagination">
+        <div class="video">
+          <img src="./images/video/video-ex-1.png" alt="Превью видео" class="video__img">
+        </div>
+        <div class="card__video-info">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Меняется смысл –  меняется жизнь</h2>
+            <p class="caption card__title-caption">Прямой эфир с актрисой театра и кино Эмилией Спивак</p>
+          </div>
+          <a href="#" class="link card__link link_action_open-video">смотреть видео</a>
+        </div>
+      </article>
+
+      <article class="card card_content_video card-pagination">
+        <div class="video">
+          <img src="./images/video/video-ex-2.png" alt="Превью видео" class="video__img">
+        </div>
+        <div class="card__video-info">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Что в силах волонтера-наставника?</h2>
+            <p class="caption card__title-caption">Иван Рустаев, волонтер-наставник</p>
+          </div>
+          <a href="#" class="link card__link link_action_open-video">смотреть видео</a>
+        </div>
+      </article>
+
+      <article class="card card_content_video card-pagination">
+        <div class="video">
+          <img src="./images/video/video-ex-3.png" alt="Превью видео" class="video__img">
+        </div>
+        <div class="card__video-info">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Творчество, наставничество, дети</h2>
+            <p class="caption card__title-caption">Виктория Ямина, Виктория Ямина, волонтеры</p>
+          </div>
+          <a href="#" class="link card__link link_action_open-video">смотреть видео</a>
+        </div>
+      </article>
+
+      <article class="card card_content_video card-pagination">
+        <div class="video">
+          <img src="./images/video/video-ex-4.png" alt="Превью видео" class="video__img">
+        </div>
+        <div class="card__video-info">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Дружба – меняет мир</h2>
+            <p class="caption card__title-caption">Прямой эфир с актрисой театра и кино Эмилией Спивак</p>
+          </div>
+          <a href="#" class="link card__link link_action_open-video">смотреть видео</a>
+        </div>
+      </article>
+
+      <article class="card card_content_video card-pagination">
+        <div class="video">
+          <img src="./images/video/video-ex-1.png" alt="Превью видео" class="video__img">
+        </div>
+        <div class="card__video-info">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Меняется смысл –  меняется жизнь</h2>
+            <p class="caption card__title-caption">Прямой эфир с актрисой театра и кино Эмилией Спивак</p>
+          </div>
+          <a href="#" class="link card__link link_action_open-video">смотреть видео</a>
+        </div>
+      </article>
+
+      <article class="card card_content_video card-pagination">
+        <div class="video">
+          <img src="./images/video/video-ex-2.png" alt="Превью видео" class="video__img">
+        </div>
+        <div class="card__video-info">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Что в силах волонтера-наставника?</h2>
+            <p class="caption card__title-caption">Иван Рустаев, волонтер-наставник</p>
+          </div>
+          <a href="#" class="link card__link link_action_open-video">смотреть видео</a>
+        </div>
+      </article>
+
+      <article class="card card_content_video card-pagination">
+        <div class="video">
+          <img src="./images/video/video-ex-3.png" alt="Превью видео" class="video__img">
+        </div>
+        <div class="card__video-info">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Творчество, наставничество, дети</h2>
+            <p class="caption card__title-caption">Виктория Ямина, Виктория Ямина, волонтеры</p>
+          </div>
+          <a href="#" class="link card__link link_action_open-video">смотреть видео</a>
+        </div>
+      </article>
+
+      <article class="card card_content_video card-pagination">
+        <div class="video">
+          <img src="./images/video/video-ex-4.png" alt="Превью видео" class="video__img">
+        </div>
+        <div class="card__video-info">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Дружба – меняет мир</h2>
+            <p class="caption card__title-caption">Прямой эфир с актрисой театра и кино Эмилией Спивак</p>
+          </div>
+          <a href="#" class="link card__link link_action_open-video">смотреть видео</a>
+        </div>
+      </article>
+
+      <article class="card card_content_video card-pagination">
+        <div class="video">
+          <img src="./images/video/video-ex-1.png" alt="Превью видео" class="video__img">
+        </div>
+        <div class="card__video-info">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Меняется смысл –  меняется жизнь</h2>
+            <p class="caption card__title-caption">Прямой эфир с актрисой театра и кино Эмилией Спивак</p>
+          </div>
+          <a href="#" class="link card__link link_action_open-video">смотреть видео</a>
+        </div>
+      </article>
+
+      <article class="card card_content_video card-pagination">
+        <div class="video">
+          <img src="./images/video/video-ex-2.png" alt="Превью видео" class="video__img">
+        </div>
+        <div class="card__video-info">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Что в силах волонтера-наставника?</h2>
+            <p class="caption card__title-caption">Иван Рустаев, волонтер-наставник</p>
+          </div>
+          <a href="#" class="link card__link link_action_open-video">смотреть видео</a>
+        </div>
+      </article>
+
+      <article class="card card_content_video card-pagination">
+        <div class="video">
+          <img src="./images/video/video-ex-3.png" alt="Превью видео" class="video__img">
+        </div>
+        <div class="card__video-info">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Творчество, наставничество, дети</h2>
+            <p class="caption card__title-caption">Виктория Ямина, Виктория Ямина, волонтеры</p>
+          </div>
+          <a href="#" class="link card__link link_action_open-video">смотреть видео</a>
+        </div>
+      </article>
+
+      <article class="card card_content_video card-pagination">
+        <div class="video">
+          <img src="./images/video/video-ex-4.png" alt="Превью видео" class="video__img">
+        </div>
+        <div class="card__video-info">
+          <div class="card__title-wrap">
+            <h2 class="section-title card__title">Дружба – меняет мир</h2>
+            <p class="caption card__title-caption">Прямой эфир с актрисой театра и кино Эмилией Спивак</p>
+          </div>
+          <a href="#" class="link card__link link_action_open-video">смотреть видео</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="pagination page__section">
+      <nav class="pagination__nav" aria-label="Навигация по страницам">
+        <ul class="pagination__list">
+          <li class="pagination__list-item section-title"><a href="#" class="pagination__link pagination__link_active">1</a></li>
+          <li class="pagination__list-item section-title"><a href="#" class="pagination__link">2</a></li>
+          <li class="pagination__list-item section-title"><a href="#" class="pagination__link">3</a></li>
+          <li class="pagination__list-item section-title"><a href="#" class="pagination__link">4</a></li>
+          <li class="pagination__list-item section-title"><a href="#" class="pagination__link">5</a></li>
+          <li class="pagination__list-item section-title">...</li>
+          <li class="pagination__list-item section-title"><a href="#" class="pagination__link">18</a></li>
+        </ul>
+      </nav>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#" class="footer__logo" target="_self">
+      <img class="footer__logo-image" src="./images/svg/footer-logo.svg" alt="Логотип Старшие Братья Старшие Сестры России">
+    </a>
+    <button class="button footer__button" type="button">Помочь деньгами</button>
+    <div class="footer__column footer__column_content_concept">
+      <p class="footer__brand">&copy; Старшие Братья Старшие Сестры</p>
+      <div class="footer__copyright">
+        <p class="footer__authors">Разработка – студенты
+          <a href="https://praktikum.yandex.ru/" class="footer__production" target="_blank">Яндекс.Практикум</a>
+        </p>
+        <p class="footer__design">Концепция и дизайн –
+          <a href="https://krkr.design/" class="footer__production" target="_blank">krkr.design</a>
+        </p>
+      </div>
+    </div>
+    <nav class="footer__column footer__column_content_info">
+      <ul class="footer__column-list">
+        <li class="footer__column-links"><a href="./about.html" class="footer__column-link" target="_self">о проекте</a></li>
+        <li class="footer__column-links"><a href="./calendar.html" class="footer__column-link" target="_self">календарь</a></li>
+        <li class="footer__column-links"><a href="./place.html" class="footer__column-link" target="_self">куда пойти</a></li>
+        <li class="footer__column-links"><a href="./questions.html" class="footer__column-link" target="_self">вопросы</a></li>
+        <li class="footer__column-links"><a href="./read-watch-main.html" class="footer__column-link" target="_self">читать и смотреть</a></li>
+        <li class="footer__column-links"><a href="./rights.html" class="footer__column-link" target="_self">права детей</a></li>
+        <li class="footer__column-links"><a href="./stories.html" class="footer__column-link" target="_self">истории</a></li>
+      </ul>
+    </nav>
+    <nav class="footer__column footer__column_content_social">
+      <ul class="footer__column-list">
+        <li class="footer__column-links"><a href="#" class="footer__column-link" target="_blank">facebook</a></li>
+        <li class="footer__column-links"><a href="#" class="footer__column-link" target="_blank">vkontakte</a></li>
+        <li class="footer__column-links"><a href="#" class="footer__column-link" target="_blank">instagram</a></li>
+        <li class="footer__column-links"><a href="#" class="footer__column-link" target="_blank">youtube</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <div class="popup popup_type_video">
+    <div class="popup__container popup__container_type_video card">
+      <iframe class="card__video-iframe" src="https://www.youtube.com/embed/U4QCyP_klLk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="card__title-wrap">
+        <h2 class="section-title card__title">Что в силах волонтера-наставника?</h2>
+        <p class="caption card__title-caption">Иван Рустаев, волонтер-наставник</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/video/video.js"></script>
+</body>
+</html>

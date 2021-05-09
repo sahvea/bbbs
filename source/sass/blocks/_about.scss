@@ -23,27 +23,24 @@
 
 .about__us {
   padding: 80px 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: 570px 600px;
+  grid-template-rows: 570px;
   justify-content: center;
 }
 
 .about__circle {
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 570px;
-  height: 570px;
   border-radius: 100%;
-  background-color: $yellow;
 }
 
 .about__caption {
-  justify-content: center;
   padding-top: 50px;
   padding-right: 25px;
   padding-bottom: 50px;
-  max-width: 600px;
-  max-height: 570px;
 }
 
 .about__main-text {
@@ -112,23 +109,21 @@
 
 @include atDesktop1380 {
   .about__us {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 570px;
+    grid-template-rows: 358px 373px;
   }
-}
 
-@include atDesktop1024 {
-    .about__circle {
-    max-width: 370px;
-    max-height: 358px;
+  .about__circle {
+    width: 370px;
+    justify-self: center;
   }
 
   .about__caption {
     padding: 30px 15px;
-    max-width: 570px;
-    max-height: 373px;
   }
+}
 
+@include atDesktop1024 {
   .about__logo {
     width: 252px;
   }
@@ -165,23 +160,23 @@
 }
 
 @include atTablet {
-  .about__caption {
-    max-width: 500px;
-  }
-
   .about__us {
     padding-top: 30px;
+    grid-template-columns: 1fr;
   }
 }
 
 @include atMobile {
+  .about__us {
+    grid-template-rows: 280px 1fr;
+  }
+
   .about__caption {
     max-height: 688px;
   }
 
   .about__circle {
     width: 290px;
-    height: 280px;
   }
 
   .about__title {

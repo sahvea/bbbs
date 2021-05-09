@@ -1,0 +1,10 @@
+// удаление лишних карточек при переполнении
+// заданного кол-ва строк
+
+@include atDesktop1440 {
+  .card-pagination {
+    &:nth-last-of-type(-n+4) {
+      display: none;
+    }
+  }
+}

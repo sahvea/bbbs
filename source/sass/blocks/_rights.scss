@@ -1,9 +1,8 @@
 .rights__card {
-  max-width: 100%;
-  justify-content: center;
-  text-align: center;
-  box-sizing: border-box;
+  flex-direction: row;
+  align-items: unset;
   padding: 0;
+  overflow: hidden;
 }
 
 .rights__container {
@@ -13,13 +12,9 @@
   gap: 80px 30px;
 }
 
-.rights__content {
-  position: absolute;
-  padding: 30px;
-}
-
 .rights__rubric {
   margin-top: 17px;
+  align-self: center;
 }
 
 .rights__line {
@@ -37,6 +32,17 @@
   &_stage_third {
     grid-row-start: third-line;
   }
+}
+
+.rights__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: auto;
+  text-align: center;
+  flex: 1;
+  padding: 20px;
+  text-decoration: none;
 }
 
 .rights__article-lead {

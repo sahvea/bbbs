@@ -7,7 +7,9 @@
   border-radius: 30px;
   background-color: #fff;
   box-sizing: border-box;
+  overflow: hidden;
 
+  // цвета карточек
   &_color_yellow {
     background-color: $yellow;
   }
@@ -24,27 +26,41 @@
     background-color: $lightBlue;
   }
 
+  // разделение по наполнению
   &_content_annotation {
     align-items: flex-start;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px;
   }
 
+  &_content_book {
+    padding: 30px;
+  }
+
+  &_content_video {
+    padding: 0;
+  }
+
+  &_content_video-preview {
+    padding: 30px;
+  }
+
+  // главная карточка на страницах Куда пойти и Статьи
   &_type_main {
     padding-top: 47px;
     padding-bottom: 30px;
   }
 
   &_form_square {
-    border-radius: unset;
+    border-radius: 3px;
     &::before {
       content: '';
       padding-bottom: 100%;
     }
   }
 
+  // разделение по формам
   &_form_circle {
-    border-radius: 50%;
+    border-radius: 100%;
     &::before {
       content: '';
       padding-bottom: 100%;
@@ -52,9 +68,7 @@
   }
 
   &_form_arch {
-    border-radius: unset;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
+    border-radius: 300px 300px 3px 3px;
     &::before {
       content: '';
       padding-bottom: 100%;
@@ -62,15 +76,23 @@
   }
 }
 
-.card__rubric {
-  position: absolute;
-  top: 15px;
-}
-
+// обертки
 .card__title-wrap {
   text-align: center;
 }
 
+.card__video-info {
+  box-sizing: border-box;
+  padding: 15px 30px;
+  text-align: center;
+  width: 100%;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// текстовые элементы
 .card__title {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -96,6 +118,16 @@
   box-orient: vertical;
 }
 
+.card__link {
+  margin-top: auto;
+}
+
+.card__rubric {
+  position: absolute;
+  top: 15px;
+}
+
+// фото на главной карточке
 .card__img {
   margin-top: 70px;
   margin-bottom: 15px;
@@ -106,10 +138,18 @@
   object-position: center;
 }
 
-.card__link {
-  margin-top: auto;
+// видео на карточке попапа
+.card__video-iframe {
+  margin: 0;
+  padding-bottom: 30px;
+  width: 100%;
+  height: 100%;
+  max-width: 1710px;
+  max-height: 962px;
+  border: none;
 }
 
+// карточка с аннотацией
 .card__content {
   overflow-y: scroll;
   scrollbar-width: thin;
@@ -148,11 +188,18 @@
   }
 }
 
+//адаптация
+
 @include atDesktop1440 {
   .card__img {
     &_position_main-article {
       margin-top: 10px;
     }
+  }
+
+  .card__video-iframe {
+    max-width: 1100px;
+    max-height: 625px;
   }
 }
 
@@ -170,6 +217,24 @@
       padding-right: 7px;
       padding-bottom: 30px;
     }
+
+    &_content_book {
+      padding: 30px;
+    }
+
+    &_content_video {
+      padding: 0;
+    }
+
+    &_content_video-preview {
+      padding: 15px;
+      grid-row: 2;
+    }
+  }
+
+  .card__video-info {
+    padding: 15px;
+    height: 147px;
   }
 
   .card__img {

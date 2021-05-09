@@ -67,7 +67,7 @@ gulp.task('copy', function () {
     'source/vendor/**/*.css',
     'source/images/**',
     'source/*.ico',
-    'source/scripts/calendar/calendar.js'
+    'source/scripts/**/*.js'
   ], {
     base: 'source'
   })

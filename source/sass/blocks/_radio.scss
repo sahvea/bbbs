@@ -1,0 +1,45 @@
+.radio {
+  position: relative;
+
+  &__button-girl {
+    position: absolute;
+    top: 17px;
+    left: 225px;
+  }
+
+  &__button-boy {
+    position: absolute;
+    top: 17px;
+    left: 25px;
+  }
+}
+
+@include atDesktop1024 {
+  .radio {
+    &__button-girl {
+      left: 180px
+    }
+  }
+}
+
+@include atMobileL {
+  .radio {
+    &__button-girl {
+      left: 170px;
+    }
+  }
+}
+
+@include atMobile {
+  .radio {
+    &__button-girl {
+      top: 13px;
+      left: 160px;
+    }
+
+    &__button-boy {
+      top: 13px;
+
+    }
+  }
+}

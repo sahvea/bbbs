@@ -7,8 +7,37 @@
   left: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, .5);
-  backdrop-filter: blur(3px);
-  transition: visibility .1s, opacity .1s linear;
+  transition: visibility .3s, opacity .3s linear;
+
+  &_type_sign-in {
+    backdrop-filter: blur(7px);
+  }
+
+  &_type_recommendation {
+    min-height: 700px;
+
+    &-finish {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__box-inputs {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__textarea {
+    box-sizing: border-box;
+    resize: none;
+    padding: 15px 20px;
+    min-height: 50px;
+    max-height: 100px;
+    background-color: $background;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+  }
 }
 
 .popup_opened {
@@ -68,13 +97,31 @@
 }
 
 .popup__input {
+  box-sizing: border-box;
   padding: 10px 20px;
   margin-bottom: 20px;
-  height: 30px;
+  height: 48px;
   background-color: $background;
   border-radius: 30px;
   outline: none;
   border: none;
+
+  &_required::placeholder {
+    color: red;
+  }
+
+  &_type_low {
+    width: 170px;
+  }
+
+  &_type_middle {
+    width: 270px;
+  }
+
+  &_type_radio {
+    padding-left: 50px;
+  }
+
 }
 
 .popup__forgot-password {
@@ -105,6 +152,14 @@
   }
 }
 
+@include atDesktop1024 {
+  .popup__input {
+    &_type_low {
+      width: 155px;
+    }
+  }
+}
+
 @include atMobileL {
   .popup__close {
     top: 15px;
@@ -114,9 +169,20 @@
   .popup_type_video {
     display: none;
   }
+
+  .popup__input {
+    &_type_low {
+      width: 125px;
+    }
+  }
 }
 
 @include atMobile {
+  .popup__box-inputs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .popup__sign-in {
     padding-bottom: 20px;
 
@@ -126,7 +192,7 @@
   }
 
   .popup__input {
-    height: 20px;
+    height: 40px;
     margin-bottom: 10px;
 
     &:last-of-type {

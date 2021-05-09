@@ -1,6 +1,7 @@
 const header = document.querySelector('.header');
 const menu = document.querySelector('.menu');
 const menuBurger = document.querySelector('.menu__burger');
+const menuBurgerActive = document.querySelector('.menu__burger_active');
 const menuListSWrap = document.querySelector('.menu__lists-wrap');
 const menuListSocial = document.querySelector('.menu__list_type_social');
 const searchButton = document.querySelector('.search__button');

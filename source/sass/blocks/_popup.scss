@@ -99,6 +99,12 @@
   }
 }
 
+@include atDesktop1023 {
+  .popup_type_popup-sign-in {
+    min-height: 546px;
+  }
+}
+
 @include atMobileL {
   .popup__close {
     top: 15px;
@@ -107,5 +113,28 @@
 
   .popup_type_video {
     display: none;
+  }
+}
+
+@include atMobile {
+  .popup__sign-in {
+    padding-bottom: 20px;
+
+    &:nth-of-type(2) {
+      padding-bottom: 30px;
+    }
+  }
+
+  .popup__input {
+    height: 20px;
+    margin-bottom: 10px;
+
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
+  }
+
+  .popup__enter {
+    width: 65px;
   }
 }

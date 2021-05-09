@@ -68,13 +68,6 @@
   }
 }
 
-@include atDesktop1639 {
-  .rights__card {
-    &:nth-last-of-type(-n+4) {
-      display: none;
-    }
-  }
-}
 
 @include atDesktop1440 {
   .rights__container {
@@ -95,12 +88,6 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr [third-line] 1px 1fr;
     gap: 80px 30px;
-  }
-
-  .rights__card {
-    &:nth-last-of-type(-n+12) {
-      display: none;
-    }
   }
 
   .rights__line {

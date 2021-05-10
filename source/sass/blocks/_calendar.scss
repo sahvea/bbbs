@@ -4,31 +4,16 @@
   justify-content: space-between;
   padding: 30px;
   box-sizing: border-box;
-  max-width: 570px;
-  height: 414px;
   border-radius: 30px;
   background-color: $white;
   font-size: 14px;
   line-height: 1.4;
   font-family: $ptRootUI;
   color: $black;
-}
 
-.calendar_unauthorized {
-  padding: 0;
-  border-radius: 30px;
-  background-color: $green;
-}
-
-.calendar_selected {
-  background-color: $lightBlue;
-}
-
-.calendar__container {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(370px, 570px));
-  gap: 30px;
+  &_selected {
+    background-color: $lightBlue;
+  }
 }
 
 .calendar__weekday {
@@ -52,6 +37,27 @@
   justify-content: space-between;
   padding-top: 10px;
 }
+
+.calendar__info-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.calendar__info-item {
+  padding: 10px 0;
+  border-bottom: 1px solid $lightGray;
+
+  &:first-of-type {
+    padding-top: 0;
+  }
+
+  &:last-of-type {
+    padding-bottom: 0;
+    border: none;
+  }
+}
+
 
 .calendar__type {
   margin: 0;
@@ -89,13 +95,12 @@
   font-size: 100px;
   line-height: 1;
   margin: 0;
+  padding-left: 15px;
 }
 
 .calendar__time {
   margin: 0;
   color: $lightBlack;
-  padding-bottom: 10px;
-  border-bottom: 1px solid $lightGray
 }
 
 .calendar__info {
@@ -105,9 +110,6 @@
 
 .calendar__place {
   margin: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid $lightGray;
   color: $lightBlack;
 }
 
@@ -144,32 +146,8 @@
   text-align: center;
 }
 
-.calendar__logo {
-  display: block;
-  box-sizing: border-box;
-  padding-top: 35px;
-  padding-left: 30px;
-  background-image: url('../../../images/svg/calendar_logo.svg');
-  background-repeat: no-repeat;
-  background-size: 252px 46px;
-  background-origin: content-box;
-  background-color: $pink;
-  max-width: 395px;
-  height: 129px;
-  border-radius: 30px 3px 200px 3px;
-}
-
-.calendar__title_unauthorized {
-  padding: 70px 30px;
-  max-width: 510px;
-  border-radius: 400px;
-  background-color: $pink;
-  text-align: center;
-}
-
 .calendar__contact {
   margin: 0;
-  padding-top: 10px;
   color: $black;
 }
 
@@ -213,13 +191,11 @@
   }
 }
 
-@include atDesktop1440 {
-  .calendar__container {
-    grid-template-columns: repeat(auto-fill, minmax(370px, max-content));
-  }
-}
-
 @include atDesktop1279 {
+  .calendar {
+    padding: 30px 15px;
+  }
+
   .calendar__caption {
     font-size: 12px;
   }
@@ -240,44 +216,13 @@
     max-width: 246px;
   }
 
-  .calendar {
-    padding: 30px 15px;
-    max-width: 370px;
-    height: 382px;
-  }
-
   .calendar__place-left {
     padding-left: 10px;
     font-size: 12px;
   }
-
-  .calendar__title_unauthorized {
-    padding: 80px 15px;
-    max-width: 340px;
-    border-radius: 70px 70px 30px 30px;
-    font-size: 19px;
-    line-height: 1.2;
-  }
-
-  .calendar_unauthorized {
-    padding: 0;
-    max-height: 382px;
-  }
-
-  .calendar__logo {
-    padding-top: 27px;
-    padding-left: 15px;
-    max-width: 267px;
-    min-height: 90px;
-    background-size: 164px 30px;
-  }
 }
 
 @include atDesktop1024 {
-  .calendar__container {
-    grid-template-columns: repeat(auto-fit, 360px);
-  }
-
   .calendar__title {
     font-size: 19px;
   }
@@ -288,66 +233,17 @@
   }
 }
 
-@include atDesktop1023 {
-  .calendar__container {
-    grid-template-columns: repeat(auto-fit, 289px);
-    gap: 15px;
-    padding: 30px 15px;
-  }
-
-  .calendar_unauthorized {
-    max-height: 333px;
-  }
-
-  .calendar__title_unauthorized {
-    padding-top: 35px;
-    padding-left: 15px;
-    padding-bottom: 35px;
-  }
-
-  .calendar__logo {
-    max-width: 229px;
-    min-height: 78px;
-  }
-}
-
 @include atMobileL {
-  .calendar__container {
-    grid-template-columns: auto;
-    gap: 30px;
-  }
-
-  .calendar_unauthorized {
-    height: 333px;
-  }
-
-  .calendar__title {
-    max-width: 166px;
-    max-height: 100%;
-  }
-
-  .calendar {
-    max-width: 570px;
-    max-height: 382px;
-  }
-
-  .calendar__title_unauthorized {
-    max-width: 570px;
-    height: 255px;
-  }
-
   .calendar__desc-paragraph {
     font-size: 12px;
-  }
-
-  .calendar__logo {
-    max-width: 70%;
-    min-width: 229px;
-    max-height: 78px;
   }
 }
 
 @include atMobile {
+  .calendar__title {
+    max-width: 166px;
+  }
+
   .calendar__image-done {
     background-size: 260px 106px;
     width: 260px;

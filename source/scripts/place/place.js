@@ -3,7 +3,7 @@ const spanRecommend = document.querySelector('.recommendation__span');
 const popupRecommend = document.querySelector('.recommendation');
 const formRecommend = document.querySelector('.popup__container_type_recommendation')
 const buttonFormSubmit = document.querySelector('.recommendation__submit');
-const popupRecommendFinish = document.querySelector('.popup_type_finish');
+const popupRecommendFinish = document.querySelector('.popup__container_type_recommendation-finish');
 const textArea = document.querySelector('.popup__textarea');
 
 function openPopup(popup) {

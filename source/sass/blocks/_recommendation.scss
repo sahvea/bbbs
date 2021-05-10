@@ -21,6 +21,7 @@
 
   &__submit {
     margin-left: auto;
+    align-self: center;
   }
 
   &__logo {
@@ -32,6 +33,8 @@
   }
 
   &__add-place {
+    align-self: center;
+    margin: 0;
     padding-left: 20px;
     color: $lightGray;
     font-size: 15px;
@@ -42,5 +45,12 @@
 
   &__add-button {
 
+  }
+}
+
+@include atMobile {
+  .recommendation__submit {
+    margin-top: 10px;
+    margin-left: 0;
   }
 }

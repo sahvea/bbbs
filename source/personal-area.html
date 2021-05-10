@@ -70,7 +70,7 @@
   </section>
 
   <section class="page__section personal-area__lead">
-    <h2 class="section-title personal-area__title">Составьте историю вашей дружбы с младшим. Эта страница доступна только вам.</h2>
+    <h2 class="section-title personal-area__subtitle">Составьте историю вашей дружбы с младшим. Эта страница доступна только вам.</h2>
     <div class="card-container card-container_type_personal-area">
       <div class="card personal-area__card personal-area__card_type_add-photo">
         <button class="personal-area__add-photo-button"></button>
@@ -81,30 +81,40 @@
           <input type="text" class="personal-area__form-input" placeholder="Место встречи">
           <input type="date" class="personal-area__form-input" placeholder="Дата __________">
           <input type="text" class="personal-area__form-input personal-area__form-input_type_textarea" placeholder="Опишите вашу встречу, какие чувства вы испытывали, что понравилось / не понравилось">
-          <div class="personal-area__rate">emoji</div>
+          <div class="personal-area__rate">
+            <div class="personal-area__rate-good"></div>
+            <div class="personal-area__rate-neutral"></div>
+            <div class="personal-area__rate-bad"></div>
+            <p class="personal-area__rate-label">Оцените проведенное время</p>
+          </div>
           <div class="personal-area__buttons">
-            <button type="reset">Удалить</button>
-            <button type="submit">Добавить</button>
+            <button class="button" type="reset">Удалить</button>
+            <button class="button" disabled>Добавить</button>
           </div>
         </form>
       </div>
     </div>
 
-    <div class="card-container card-container_type_personal-area">
-      <img src="./images/personal-area/personal-area-katya.jpg" alt="" class="card personal-area__card personal-area__card_type_photo">
-      <div class="card personal-area__card personal-area__card_type_content">
-        <h2 class="section-title personal-area__card-title">Парк Горького</h2>
-        <div class="personal-area__card-date">
-          <p class="personal-area__card-month calendar__weekday personal-area__card-weekday">декабрь, 2020</p>
-          <p class="calendar__date personal-area__card-day">05</p>
+    <div class="card-container card-container_type_content">
+      <img src="./images/personal-area/personal-area-katya.jpg" alt="Катя" class="card personal-area__card personal-area__card_type_photo">
+      <div class="personal-area__container">
+        <div class="card personal-area__box">
+          <div class="card personal-area__text-box">
+            <h2 class="section-title personal-area__card-title">Парк Горького</h2>
+            <p class="card__content personal-area__card-text paragraph">
+              Описание в несколько срок. Подробное описание. Опишите вашу встречу, какие чувства вы испытывали, что понравилось не понравилось. Описание в несколько срок. Подробное описание. Подробное описание.
+              Опишите вашу встречу, какие чувства вы испытывали, что понравилось не понравилось.  Описание в несколько срок. Подробное описание. Опишите вашу встречу, какие чувства вы испытывали, что понравилось
+              не понравилось. Описание в несколько срок. Подробное описание. Подробное описание. Опишите вашу встречу, какие чувства вы испытывали, что понравилось не понравилось. чувства вы испытывали, что понравилось не понравилось.
+            </p>
+          </div>
+          <div class="personal-area__card-date">
+            <p class="personal-area__card-month calendar__weekday personal-area__card-weekday">декабрь, 2020</p>
+            <p class="calendar__date personal-area__card-day">05</p>
+          </div>
         </div>
-        <div class="card__content personal-area__card-text">
-          text
-        </div>
-        <div class="personal-area__rate">emoji</div>
-        <div class="personal-area__buttons">
-          <button type="reset">Удалить</button>
-          <button type="submit">Добавить</button>
+        <div class="personal-area__actions">
+          <div class="personal-area__rate-good"></div>
+          <button class="button personal-area__delete" type="button">Удалить</button>
         </div>
       </div>
     </div>

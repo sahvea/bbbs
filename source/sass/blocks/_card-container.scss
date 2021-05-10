@@ -3,36 +3,62 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 222px;
+  justify-content: center;
 
-  &_type_main {
+  &_type_main-article {
     grid-template-columns: 66% 34%;
     grid-template-rows: 630px;
-    //grid-template-rows: minmax(630px, 660px);
-    justify-content: center;
   }
 
   &_type_main-video {
     grid-template-columns: 32% 68%;
     grid-template-rows: 1fr;
-    justify-content: center;
   }
 
   &_type_article {
     grid-template-rows: 224px 222px;
   }
 
+  &_type_identical {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 520px;
+    gap: 30px;
+  }
+
+  &_type_iframe {
+    grid-template-columns: 420px 1fr;
+    grid-template-rows: 627px;
+    gap: 30px;
+  }
+
   &_type_personal-area {
+    padding-bottom: 80px;
+    max-width: 1170px;
     grid-template-columns: minmax(290px, 470px) minmax(max-content, 1fr);
     grid-template-rows: minmax(290px, 1fr);
     font-family: $protoGrotesk;
+  }
+
+  &_type_content {
+    padding-bottom: 80px;
+    display: flex;
+    max-width: 1170px;
   }
 }
 
 @include atDesktop1440 {
   .card-container {
 
-    &_type_main {
+    &_type_main-article {
       grid-template-columns: 1fr 1fr;
+    }
+
+    &_type_identical {
+      grid-template-rows: 414px;
+    }
+
+    &_type_iframe {
+      grid-template-columns: 370px 1fr;
     }
   }
 }
@@ -40,7 +66,7 @@
 @include atDesktop1024 {
   .card-container {
 
-    &_type_main {
+    &_type_main-article {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 188px;
     }
@@ -54,15 +80,32 @@
       grid-template-rows: 176px 188px;
     }
 
+    &_type_identical {
+      grid-template-rows: 382px;
+    }
+
+    &_type_iframe {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 552px;
+    }
+
     &_type_personal-area {
       grid-template-columns: 290px 1fr;
     }
-
   }
 }
 
 @include atTabletL {
   .card-container {
+    &_type_identical {
+      grid-template-columns: 1fr;
+      grid-template-rows: 382px 290px;
+    }
+
+    &_type_iframe {
+      grid-template-columns: 1fr;
+      grid-template-rows: 433px 1fr;
+    }
 
     &_type_personal-area {
       grid-template-columns: 1fr;
@@ -73,5 +116,13 @@
 @include atMobile {
   .card-container {
     grid-template-columns: minmax(290px, 450px);
+
+    &_type_identical {
+      grid-template-columns: minmax(290px, 450px);
+    }
+
+    &_type_iframe {
+      grid-template-columns: minmax(290px, 450px);
+    }
   }
 }

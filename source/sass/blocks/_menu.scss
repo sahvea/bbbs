@@ -110,16 +110,15 @@
 }
 
 .menu__button-list {
-  margin: 0;
+  margin: 5px 0 0;
   padding: 0;
   list-style-type: none;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .menu__button-item {
-  height: 20px;
   transition: .15s ease-in;
 
   &:first-of-type {
@@ -127,6 +126,7 @@
   }
 
   &:last-of-type {
+    height: 20px;
     padding-left: 20px;
     border-left: .7px solid $lightGray;
   }
@@ -135,6 +135,7 @@
 .menu__button {
   width: 20px;
   height: 20px;
+  margin: 0;
   padding: 0;
   background-position: center;
   background-size: contain;
@@ -161,17 +162,47 @@
   display: none;
 }
 
+// меню для поиска
+.menu_state_search {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: 600px;
+  justify-items: start;
+  align-items: start;
+
+  & .menu__logo {
+    grid-column: 1;
+  }
+
+  & .menu__lists-wrap {
+    display: none;
+  }
+
+  & .menu__button-list {
+    grid-column: 2;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  & .menu__button-item {
+    &:first-of-type {
+      width: 100%;
+    }
+  }
+}
+
 
 @include atDesktop1380 {
   .menu {
     display: grid;
-    grid-template-columns: 70px 1fr 40px;
+    grid-template-columns: 60px 1fr 40px;
     grid-template-rows: 30px 1fr;
     justify-items: center;
+    align-items: start;
   }
 
   .menu__button-list {
-    grid-column: 1 / 2;
+    grid-column: 1;
     grid-row: 1;
     justify-self: start;
   }
@@ -179,7 +210,6 @@
   .menu__button-item {
     &:first-of-type {
       padding-right: 0;
-      padding-left: 5px;
     }
 
     &:last-of-type {
@@ -190,16 +220,17 @@
   }
 
   .menu__logo {
-    grid-column: 2 / 3;
+    grid-column: 2;
     grid-row: 1;
     font-size: 17.5px;
     line-height: 1;
   }
 
   .menu__burger {
-    grid-column: 3 / 4;
+    grid-column: 3;
     grid-row: 1;
     display: flex;
+    align-self: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -217,6 +248,7 @@
     }
   }
 
+  // аткивное состояние кнопки бургера
   .menu__burger_active .menu__burger-line {
     background-color: $blue;
 
@@ -294,5 +326,42 @@
   .menu__user-link {
     color: $lightGray;
     text-decoration: none;
+    transition: .2s linear;
+
+    &:hover {
+      color: $darkGray;
+    }
+  }
+
+  // меню для поиска
+  .menu_state_search {
+    grid-template-columns: 60px 1fr 40px;
+    grid-template-rows: 30px 500px;
+    justify-items: center;
+    position: relative;
+
+    & .menu__button-list {
+      grid-column: 1;
+    }
+
+    & .menu__logo {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    & .menu__burger {
+      grid-column: 3;
+      grid-row: 1;
+    }
+
+    & .menu__search-options {
+      grid-column: 1 / 4;
+      grid-row: 2;
+      justify-self: start;
+    }
+
+    /* & .menu__user-info {
+      display: none;
+    } */
   }
 }

@@ -40,8 +40,19 @@
     padding: 0;
   }
 
+  &_content_media {
+    padding: 0;
+    justify-content: center;
+  }
+
   &_content_video-preview {
     padding: 30px;
+  }
+
+  &_content_quote {
+    padding-top: 120px;
+    padding-bottom: 30px;
+    height: 490px;
   }
 
   // главная карточка на страницах Куда пойти и Статьи
@@ -77,6 +88,16 @@
 }
 
 // обертки
+.card__link-wrap {
+  width: 100%;
+  text-decoration: none;
+
+  &_content_article-img {
+    margin-top: 70px;
+    margin-bottom: 15px;
+  }
+}
+
 .card__title-wrap {
   text-align: center;
 }
@@ -127,15 +148,43 @@
   top: 15px;
 }
 
+.card__quote {
+  margin: 0 auto;
+  max-width: 970px;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.card__media-link {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  background-color: rgba($black, .6);
+}
+
 // фото на главной карточке
 .card__img {
-  margin-top: 70px;
-  margin-bottom: 15px;
   width: 100%;
   height: 394px;
   border-radius: 15px;
   object-fit: cover;
   object-position: center;
+}
+
+// фото на карточке c главной страницы
+.card__media-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 // видео на карточке попапа
@@ -146,6 +195,12 @@
   height: 100%;
   max-width: 1710px;
   max-height: 962px;
+  border: none;
+}
+
+.card__iframe {
+  width: 100%;
+  height: 100%;
   border: none;
 }
 
@@ -188,8 +243,6 @@
   }
 }
 
-//адаптация
-
 @include atDesktop1440 {
   .card__img {
     &_position_main-article {
@@ -226,9 +279,19 @@
       padding: 0;
     }
 
+    &_content_media {
+      padding: 0;
+    }
+
     &_content_video-preview {
       padding: 15px;
       grid-row: 2;
+    }
+
+    &_content_quote {
+      padding-top: 30px;
+      padding-bottom: 15px;
+      height: 312px;
     }
   }
 
@@ -237,8 +300,13 @@
     height: 147px;
   }
 
+  .card__link-wrap {
+    &_content_article-img {
+      margin-top: 60px;
+    }
+  }
+
   .card__img {
-    margin-top: 60px;
     height: 345px;
 
     &_position_main-article {
@@ -260,11 +328,40 @@
   .card__paragraph {
     margin-top: 10px;
   }
+
+  .card__quote {
+    max-width: 690px;
+    font-size: 19px;
+    line-height: 1.2;
+  }
+
 }
 
 @include atMobile {
+  .card {
+    &_content_quote {
+      max-width: 450px;
+      margin: 0 auto;
+    }
+
+    &_content_video {
+      max-width: 450px;
+      margin: 0 auto;
+    }
+
+    &_content_media {
+      max-width: 450px;
+    }
+
+  }
+
+  .card__link-wrap {
+    &_content_article-img {
+      margin-top: 40px;
+    }
+  }
+
   .card__img {
-    margin-top: 40px;
     height: 142px;
 
     &_position_main-article {

@@ -1,0 +1,45 @@
+.calendar-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(470px, 1fr));
+  grid-template-rows: 414px;
+  grid-auto-rows: 414px;
+  gap: 30px;
+}
+
+@include atDesktop1440 {
+  .calendar-container {
+    grid-template-columns: repeat(2, minmax(370px, 1fr));
+  }
+}
+
+@include atDesktop1279 {
+  .calendar-container {
+    grid-template-rows: 382px;
+    grid-auto-rows: 382px;
+  }
+}
+
+@include atDesktop1024 {
+  .calendar-container {
+    padding-top: 50px;
+  }
+}
+
+@include atDesktop1023 {
+  .calendar-container {
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  }
+}
+
+@include atTablet {
+  .calendar-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@include atMobile {
+  .calendar-container {
+    padding-top: 30px;
+  }
+}

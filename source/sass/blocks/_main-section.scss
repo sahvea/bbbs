@@ -1,0 +1,21 @@
+.main-section {
+  padding-top: 30px;
+}
+
+@include atDesktop1024 {
+  .main-section {
+    padding-top: 30px;
+  }
+}
+
+@include atTablet {
+  .main-section {
+    padding-top: 30px;
+  }
+}
+
+@include atMobile {
+  .main-section {
+    padding-top: 30px;
+  }
+}

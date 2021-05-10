@@ -14,12 +14,20 @@
   }
 }
 
+//для вопросов на главной странице
+@mixin atDesktop1400 {
+  @media screen and (max-width: 1400px) {
+    @content;
+  }
+}
+
 //для экранов до 1380px (для меню)
 @mixin atDesktop1380 {
   @media screen and (max-width: 1380px) {
     @content;
   }
 }
+
 
 //для экранов до 1280px (для футера)
 @mixin atDesktop1279 {

@@ -1,5 +1,5 @@
 .personal-area__lead {
-  border-bottom: 1px solid $darkGray;
+
   //padding: 50px 0;
 }
 
@@ -15,28 +15,82 @@
   &_type_photo {
     padding: 0;
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    width: 470px;
+    height: 470px;
   }
 }
 
+.personal-area__container {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  background-color: $white;
+  border-radius: 30px;
+}
+
+.personal-area__text-box {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-area__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.personal-area__buttons {
+  display: flex;
+}
+
+.personal-area__card-date {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
 .personal-area__card-weekday {
+  width: 100px;
+  font-family: $ptRootUI;
   font-size: 14px;
   line-height: 1.36;
   margin-bottom: 5px;
 }
 
+.personal-area__actions {
+  padding: 15px 30px 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .personal-area__card-day {
   font-size: 60px;
+  text-align: end;
 }
 
 .personal-area__card-text {
-  width: 100%;
+  width: 520px;
+  max-height: 286px;
 }
 
 .personal-area__title {
   color: $lightBlack;
   text-align: center;
+  padding-bottom: 50px;
+  border-bottom: 1px solid $darkGray;
+}
+
+.personal-area__card-title {
+  align-self: flex-start;
+  padding-bottom: 30px;
+}
+
+.personal-area__subtitle {
+  color: $lightBlack;
+  text-align: center;
+  padding-bottom: 50px;
 }
 
 .personal-area__form {
@@ -64,6 +118,47 @@
     min-height: 286px;
   }
 }
+
+.personal-area__rate {
+  display: flex;
+  align-items: center;
+
+  &-good {
+    background-image: url('../../images/personal-area/good.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 26px;
+    height: 26px;
+    padding-right: 15px;
+  }
+
+  &-neutral {
+    background-image: url('../../images/personal-area/neutral.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 26px;
+    height: 26px;
+    padding-right: 15px;
+  }
+
+  &-bad {
+    background-image: url('../../images/personal-area/bad.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 26px;
+    height: 26px;
+    padding-right: 15px;
+  }
+
+  &-label {
+    font-size: 14px;
+    color: $lightGray;
+  }
+}
+
 
 .personal-area__add-photo-button {
   display: flex;

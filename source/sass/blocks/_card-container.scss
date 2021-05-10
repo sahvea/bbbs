@@ -4,7 +4,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 222px;
 
-  &_type_main {
+  &_type_main-article {
     grid-template-columns: 66% 34%;
     grid-template-rows: 630px;
     //grid-template-rows: minmax(630px, 660px);
@@ -20,13 +20,24 @@
   &_type_article {
     grid-template-rows: 224px 222px;
   }
+
+  &_type_identical {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 520px;
+    gap: 30px;
+    justify-content: center;
+  }
 }
 
 @include atDesktop1440 {
   .card-container {
 
-    &_type_main {
+    &_type_main-article {
       grid-template-columns: 1fr 1fr;
+    }
+
+    &_type_identical {
+      grid-template-rows: 414px;
     }
   }
 }
@@ -34,7 +45,7 @@
 @include atDesktop1024 {
   .card-container {
 
-    &_type_main {
+    &_type_main-article {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 188px;
     }
@@ -48,6 +59,19 @@
       grid-template-rows: 176px 188px;
     }
 
+    &_type_identical {
+      grid-template-rows: 382px;
+    }
+
+  }
+}
+
+@include atTabletL {
+  .card-container {
+    &_type_identical {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 290px;
+    }
   }
 }
 

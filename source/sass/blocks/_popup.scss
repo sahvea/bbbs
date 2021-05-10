@@ -60,6 +60,14 @@
       max-width: 400px;
       max-height: 547px;
     }
+
+    &_type_lk {
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px 30px;
+      width: 470px;
+      height: 238px;
+    }
   }
 
   &__box {
@@ -97,6 +105,12 @@
     border-radius: 30px;
     border: none;
     outline: none;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 228px;
   }
 }
 
@@ -196,12 +210,22 @@
     }
   }
 
+  .popup__buttons {
+    width: 170px;
+  }
+
   .popup__container {
     padding: 50px;
     max-width: 570px;
 
     &_type_cities {
       max-width: 320px;
+    }
+
+    &_type_lk {
+      padding: 50px 15px;
+      width: 320px;
+      height: 216px;
     }
   }
 }

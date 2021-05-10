@@ -44,6 +44,12 @@
     padding: 30px;
   }
 
+  &_content_quote {
+    padding-top: 120px;
+    padding-bottom: 30px;
+    height: 490px;
+  }
+
   // главная карточка на страницах Куда пойти и Статьи
   &_type_main {
     padding-top: 47px;
@@ -127,6 +133,11 @@
   top: 15px;
 }
 
+.card__quote {
+  max-width: 970px;
+  text-align: center;
+}
+
 // фото на главной карточке
 .card__img {
   margin-top: 70px;
@@ -188,8 +199,6 @@
   }
 }
 
-//адаптация
-
 @include atDesktop1440 {
   .card__img {
     &_position_main-article {
@@ -230,6 +239,12 @@
       padding: 15px;
       grid-row: 2;
     }
+
+    &_content_quote {
+      padding-top: 30px;
+      padding-bottom: 15px;
+      height: 312px;
+    }
   }
 
   .card__video-info {
@@ -260,6 +275,11 @@
   .card__paragraph {
     margin-top: 10px;
   }
+
+  .card__quote {
+    max-width: 690px;
+  }
+
 }
 
 @include atMobile {

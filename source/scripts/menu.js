@@ -19,3 +19,9 @@ function toggleSearchButton() {
   searchOptions.classList.toggle('search__options_visible');
 }
 
+menuBurger.addEventListener('click', toggleMenuBurger);
+searchButton.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  toggleSearchButton();
+});
+

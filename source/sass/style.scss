@@ -7,6 +7,7 @@
 @import './blocks/page.scss';
 // main
 @import './blocks/main.scss';
+@import './blocks/main-section.scss';
 // типография
 @import './blocks/main-title.scss';
 @import './blocks/section-title.scss';
@@ -24,7 +25,6 @@
 @import './blocks/search.scss';
 // tags
 @import './blocks/tags.scss';
-
 // cards
 @import './blocks/card-container.scss';
 @import './blocks/card.scss';
@@ -33,39 +33,30 @@
 @import './blocks/book.scss';
 @import './blocks/video.scss';
 @import './blocks/card-pagination.scss';
-
 // calendar
 @import './blocks/calendar.scss';
 @import './blocks/popup.scss';
-
 // stories
 @import './blocks/stories.scss';
-
 //place
 @import './blocks/recommendation.scss';
 @import './blocks/radio.scss';
-
 // questions
 @import './blocks/questions.scss';
 @import './blocks/question.scss';
 @import './blocks/add-question.scss';
 @import './blocks/question-form.scss';
-
 // about
 @import './blocks/about.scss';
-
 // rights
 @import './blocks/rights.scss';
-
 //catalog
 @import './blocks/catalog.scss';
-
 // read and watch
 @import './blocks/preview.scss';
 // article
 @import './blocks/article.scss';
 @import './blocks/next-page.scss';
-
 //pagination
 @import './blocks/pagination.scss';
 // footer

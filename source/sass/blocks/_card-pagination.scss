@@ -6,5 +6,33 @@
     &:nth-last-of-type(-n+4) {
       display: none;
     }
+
+    &_page_main {
+      &:nth-last-of-type(-n+1) {
+        display: none;
+      }
+    }
+  }
+}
+
+@include atDesktop1279 {
+  .card-pagination {
+
+    &_page_main {
+      &:nth-last-of-type(-n+2) {
+        display: none;
+      }
+    }
+  }
+}
+
+@include atTabletL {
+  .card-pagination {
+
+    &_page_main {
+      &:nth-last-of-type(-n+3) {
+        display: none;
+      }
+    }
   }
 }

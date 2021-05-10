@@ -238,37 +238,6 @@
           </div>
         </div>
       </article>
-      <div class="popup recommendation">
-        <form class="calendar calendar_type_popup popup_type_recommendation">
-          <button class="popup__close popup__cancel" type="button"></button>
-          <legend class="section-title recommendation__popup-title">Если вы были в интересном месте и хотите порекомендовать его другим наставникам – заполните форму, и мы добавим вашу рекомендацию.</legend>
-          <div class="popup__box-inputs">
-            <input type="text" name="place" class="popup__input popup__input_type_middle" required placeholder="Название*">
-            <input type="text" name="website" class="popup__input popup__input_type_middle" placeholder="Сайт">
-          </div>
-          <input type="text" name="address" class="popup__input" required placeholder="Адрес*">
-          <div class="popup__box-inputs radio">
-            <input type="text" name="boy" id="boy" class="popup__input popup__input_type_low popup__input_type_radio" disabled placeholder="Мальчик">
-            <input type="radio" class="radio__button-boy" name="sex" required>
-            <input type="text" name="girl" id="girl" class="popup__input popup__input_type_low popup__input_type_radio" disabled placeholder="Девочка">
-            <input type="radio" class="radio__button-girl" name="sex" required>
-            <input type="number" name="age" class="popup__input popup__input_type_low" required placeholder="Возраст*">
-          </div>
-          <input type="text" name="type" class="popup__input" required placeholder="Тип отдыха*">
-          <textarea oninput="auto_grow(this)" class="popup__textarea" maxlength="230" required placeholder="Комментарий* Поделитесь впечатлениями о проведенном времени"></textarea>
-          <div class="popup__box-inputs">
-            <button class="button button_theme_light" type="button">+</button>
-            <button class="button button_theme_light recommendation__submit" type="submit">Отправить</button>
-          </div>
-        </form>
-      </div>
-      <div class="popup recommendation popup_type_finish">
-        <form class="calendar calendar_type_popup popup_type_recommendation popup_type_recommendation-finish">
-          <button class="popup__close popup__cancel" type="button"></button>
-          <div class="recommendation__logo"></div>
-          <h2 class="section-title recommendation__popup-title">Спасибо, мы проверим информацию, и скоро все пользователи смогут увидеть вашу рекомендацию</h2>
-        </form>
-      </div>
     </section>
   </main>
 
@@ -309,6 +278,38 @@
     </nav>
   </footer>
 
+  <div class="popup recommendation">
+    <form class="popup__container popup__container_type_recommendation" novalidate>
+      <button class="popup__close popup__cancel" type="button"></button>
+      <legend class="section-title recommendation__popup-title">Если вы были в интересном месте и хотите порекомендовать его другим наставникам – заполните форму, и мы добавим вашу рекомендацию.</legend>
+      <div class="popup__box-inputs">
+        <input type="text" name="place" class="popup__input popup__input_type_middle" required placeholder="Название*">
+        <input type="text" name="website" class="popup__input popup__input_type_middle" placeholder="Сайт">
+      </div>
+      <input type="text" name="address" class="popup__input" required placeholder="Адрес*">
+      <div class="popup__box-inputs radio">
+        <input type="text" name="boy" id="boy" class="popup__input popup__input_type_low popup__input_type_radio" disabled placeholder="Мальчик">
+        <input type="radio" class="radio__button-boy" name="sex" required>
+        <input type="text" name="girl" id="girl" class="popup__input popup__input_type_low popup__input_type_radio" disabled placeholder="Девочка">
+        <input type="radio" class="radio__button-girl" name="sex" required>
+        <input type="number" name="age" class="popup__input popup__input_type_low" required placeholder="Возраст*">
+      </div>
+      <input type="text" name="type" class="popup__input" required placeholder="Тип отдыха*">
+      <textarea class="popup__textarea" required placeholder="Комментарий* Поделитесь впечатлениями о проведенном времени"></textarea>
+      <div class="popup__box-inputs">
+        <button class="button button_theme_light recommendation__add-button" type="button">+</button>
+        <p class="recommendation__add-place">Добавить фото</p>
+        <button class="button button_theme_light recommendation__submit" type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>
+  <div class="popup recommendation">
+    <form class="popup__container popup__container_type_recommendation popup__container_type_recommendation-finish">
+      <button class="popup__close popup__cancel" type="button"></button>
+      <div class="recommendation__logo"></div>
+      <legend class="section-title recommendation__popup-title">Спасибо, мы проверим информацию, и скоро все пользователи смогут увидеть вашу рекомендацию</legend>
+    </form>
+  </div>
   <script src="./scripts/place/place.js"></script>
   <script src="./scripts/script.js"></script>
 </body>

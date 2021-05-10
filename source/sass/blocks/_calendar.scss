@@ -14,21 +14,6 @@
   color: $black;
 }
 
-.calendar_type_popup {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 2;
-  margin: 150px auto;
-  padding: 50px 100px;
-  max-width: 770px;
-  height: 670px;
-}
-
-.calendar_type_popup-confirmation {
-  justify-content: center;
-}
-
 .calendar_unauthorized {
   padding: 0;
   border-radius: 30px;
@@ -67,6 +52,7 @@
   justify-content: space-between;
   padding-top: 10px;
 }
+
 .calendar__type {
   margin: 0;
   color: $darkGray;
@@ -131,6 +117,7 @@
 
 .calendar__back {
   max-width: 215px;
+  align-self: center;
 }
 
 .calendar__image-done {
@@ -141,10 +128,6 @@
   width: 413px;
   height: 169px;
   background-size: 413px 169px;
-}
-
-.calendar__back {
-  align-self: center;
 }
 
 .calendar__title_type_popup {
@@ -159,10 +142,6 @@
 
 .calendar__title_type_confirmation {
   text-align: center;
-}
-
-.calendar_type_popup-done {
-  justify-content: center;
 }
 
 .calendar__logo {
@@ -238,10 +217,6 @@
   .calendar__container {
     grid-template-columns: repeat(auto-fill, minmax(370px, max-content));
   }
-
-  .calendar_type_popup {
-    margin-top: 50px;
-  }
 }
 
 @include atDesktop1279 {
@@ -269,12 +244,6 @@
     padding: 30px 15px;
     max-width: 370px;
     height: 382px;
-  }
-
-  .calendar_type_popup {
-    padding: 50px 100px;
-    max-width: 770px;
-    height: 670px;
   }
 
   .calendar__place-left {
@@ -317,11 +286,6 @@
     padding: 0 12px;
     width: 40px;
   }
-
-  .calendar_type_popup {
-    padding: 50px;
-    max-width: 570px;
-  }
 }
 
 @include atDesktop1023 {
@@ -333,10 +297,6 @@
 
   .calendar_unauthorized {
     max-height: 333px;
-  }
-
-  .calendar_type_popup {
-    min-height: 629px;
   }
 
   .calendar__title_unauthorized {
@@ -380,11 +340,6 @@
     font-size: 12px;
   }
 
-  .calendar_type_popup {
-    max-width: 450px;
-    padding: 60px 15px 30px;
-  }
-
   .calendar__logo {
     max-width: 70%;
     min-width: 229px;
@@ -393,10 +348,6 @@
 }
 
 @include atMobile {
-  .calendar_type_popup {
-    max-width: 290px;
-  }
-
   .calendar__image-done {
     background-size: 260px 106px;
     width: 260px;

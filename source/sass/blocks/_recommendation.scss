@@ -30,4 +30,17 @@
     width: 250px;
     height: 250px;
   }
+
+  &__add-place {
+    padding-left: 20px;
+    color: $lightGray;
+    font-size: 15px;
+    line-height: 1.26;
+    font-family: $protoGrotesk;
+    letter-spacing: .2px;
+  }
+
+  &__add-button {
+
+  }
 }

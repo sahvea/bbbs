@@ -1,9 +1,10 @@
 const modals = document.querySelectorAll('.popup');
-const placeSpan = document.querySelector('.recommendation__span');
+const spanRecommend = document.querySelector('.recommendation__span');
 const popupRecommend = document.querySelector('.recommendation');
-const formRecommend = document.querySelector('.popup_type_recommendation')
-const formSubmitButton = document.querySelector('.recommendation__submit');
+const formRecommend = document.querySelector('.popup__container_type_recommendation')
+const buttonFormSubmit = document.querySelector('.recommendation__submit');
 const popupRecommendFinish = document.querySelector('.popup_type_finish');
+const textArea = document.querySelector('.popup__textarea');
 
 function openPopup(popup) {
   formRecommend.reset();
@@ -36,9 +37,9 @@ function closePopupByEsc(evt) {
   }
 }
 
-function auto_grow(element) {
-  element.style.height = "5px";
-  element.style.height = (element.scrollHeight)+"px";
+function autoGrow() {
+  textArea.style.height = "5px";
+  textArea.style.height = (textArea.scrollHeight) + "px";
 }
 
 function popupAddRecommend(evt) {
@@ -47,5 +48,6 @@ function popupAddRecommend(evt) {
   openPopup(popupRecommendFinish);
 }
 
-formSubmitButton.addEventListener('click', popupAddRecommend);
-placeSpan.addEventListener('click', () => openPopup(popupRecommend));
+textArea.addEventListener('input', autoGrow);
+buttonFormSubmit.addEventListener('click', popupAddRecommend);
+spanRecommend.addEventListener('click', () => openPopup(popupRecommend));

@@ -9,17 +9,64 @@
   background-color: rgba(0, 0, 0, .5);
   transition: visibility .3s, opacity .3s linear;
 
-  &_type_sign-in {
-    backdrop-filter: blur(7px);
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+    margin: 125px auto;
+    padding: 50px 100px;
+    border-radius: 30px;
+    max-width: 770px;
+    background-color: $white;
+    font-family: $ptRootUI;
+    box-sizing: border-box;
+
+    &_type_recommendation {
+
+      &-finish {
+        align-items: center;
+      }
+    }
+
+    &_type_done {
+      justify-content: center;
+      height: 670px;
+    }
+
+    &_type_confirmation {
+      height: 670px;
+      justify-content: center;
+    }
+
+    &_type_sign-in {
+      justify-content: space-between;
+      height: 559px;
+    }
+
+    &_type_calendar {
+      height: 670px;
+    }
   }
 
-  &_type_recommendation {
-    min-height: 700px;
+  &__box {
+    margin: 150px auto 0;
+    box-sizing: border-box;
+    position: relative;
+    max-width: 75vw;
+    max-height: 75vh;
 
-    &-finish {
-      justify-content: center;
-      align-items: center;
+    &_type_video {
+      padding: 30px 30px 50px;
+      margin-top: 50px;
+      width: 1770px;
+      height: 1770px;
     }
+  }
+
+  &_type_sign-in {
+    backdrop-filter: blur(7px);
   }
 
   &__box-inputs {
@@ -31,6 +78,7 @@
     box-sizing: border-box;
     resize: none;
     padding: 15px 20px;
+    margin-bottom: 10px;
     min-height: 50px;
     max-height: 100px;
     background-color: $background;
@@ -63,25 +111,6 @@
   cursor: pointer;
 }
 
-.popup__container {
-  margin: 150px auto 0;
-  box-sizing: border-box;
-  position: relative;
-  max-width: 75vw;
-  max-height: 75vh;
-
-  &_type_video {
-    padding: 30px 30px 50px;
-    margin-top: 50px;
-    width: 1770px;
-    height: 1770px;
-  }
-}
-
-.popup_type_popup-sign-in {
-  justify-content: start;
-  height: 559px;
-}
 .popup__title_type_sign-in {
   padding-bottom: 15px;
   text-align: center;
@@ -121,7 +150,6 @@
   &_type_radio {
     padding-left: 50px;
   }
-
 }
 
 .popup__forgot-password {
@@ -138,17 +166,10 @@
 
 @include atDesktop1440 {
   .popup__container {
-
     &_type_video {
       width: 1170px;
       height: 1125px;
     }
-  }
-}
-
-@include atDesktop1023 {
-  .popup_type_popup-sign-in {
-    min-height: 546px;
   }
 }
 
@@ -157,6 +178,11 @@
     &_type_low {
       width: 155px;
     }
+  }
+
+  .popup__container {
+    padding: 50px;
+    max-width: 570px;
   }
 }
 
@@ -170,6 +196,11 @@
     display: none;
   }
 
+  .popup__container {
+    max-width: 450px;
+    padding: 60px 15px 30px;
+  }
+
   .popup__input {
     &_type_low {
       width: 125px;
@@ -178,6 +209,10 @@
 }
 
 @include atMobile {
+  .popup__container {
+    max-width: 290px;
+  }
+
   .popup__box-inputs {
     display: flex;
     flex-wrap: wrap;

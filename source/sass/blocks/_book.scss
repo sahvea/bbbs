@@ -1,0 +1,67 @@
+.book {
+  width: 240px;
+  height: 320px;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #fff;
+
+  &_color_pink {
+    background-color: $pink;
+  }
+
+  &_color_blue {
+    background-color: $lightBlue;
+  }
+}
+
+.book__info {
+  box-sizing: border-box;
+  min-height: 77px;
+  padding-top: 20px;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  box-orient: vertical;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 66px;
+    height: 1px;
+    background-color: $black;
+  }
+}
+
+@include atDesktop1024 {
+  .book {
+    width: 200px;
+    height: 272px;
+    padding: 15px;
+    display: flex;
+  }
+
+  .book__info {
+    min-height: 66px;
+    padding-top: 15px;
+    position: relative;
+
+    &::before {
+      width: 60px;
+    }
+  }
+}

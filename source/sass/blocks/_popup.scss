@@ -1,0 +1,206 @@
+.popup {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  transition: visibility .3s, opacity .3s linear;
+
+  &_type_sign-in {
+    backdrop-filter: blur(7px);
+  }
+
+  &_type_recommendation {
+    min-height: 700px;
+
+    &-finish {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__box-inputs {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__textarea {
+    box-sizing: border-box;
+    resize: none;
+    padding: 15px 20px;
+    min-height: 50px;
+    max-height: 100px;
+    background-color: $background;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+  }
+}
+
+.popup_opened {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup__close {
+  padding: 0;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-image: url('../../images/svg/popup_close.svg');
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: $blue;
+  cursor: pointer;
+}
+
+.popup__container {
+  margin: 150px auto 0;
+  box-sizing: border-box;
+  position: relative;
+  max-width: 75vw;
+  max-height: 75vh;
+
+  &_type_video {
+    padding: 30px 30px 50px;
+    margin-top: 50px;
+    width: 1770px;
+    height: 1770px;
+  }
+}
+
+.popup_type_popup-sign-in {
+  justify-content: start;
+  height: 559px;
+}
+.popup__title_type_sign-in {
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.popup__sign-in {
+  text-align: center;
+  padding-bottom: 30px;
+
+  &:nth-of-type(2) {
+    padding-bottom: 50px;
+  }
+}
+
+.popup__input {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  height: 48px;
+  background-color: $background;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+
+  &_required::placeholder {
+    color: red;
+  }
+
+  &_type_low {
+    width: 170px;
+  }
+
+  &_type_middle {
+    width: 270px;
+  }
+
+  &_type_radio {
+    padding-left: 50px;
+  }
+
+}
+
+.popup__forgot-password {
+  margin: 0;
+  padding-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $darkGray;
+}
+
+.popup__enter {
+  width: 85px;
+}
+
+@include atDesktop1440 {
+  .popup__container {
+
+    &_type_video {
+      width: 1170px;
+      height: 1125px;
+    }
+  }
+}
+
+@include atDesktop1023 {
+  .popup_type_popup-sign-in {
+    min-height: 546px;
+  }
+}
+
+@include atDesktop1024 {
+  .popup__input {
+    &_type_low {
+      width: 155px;
+    }
+  }
+}
+
+@include atMobileL {
+  .popup__close {
+    top: 15px;
+    right: 15px;
+  }
+
+  .popup_type_video {
+    display: none;
+  }
+
+  .popup__input {
+    &_type_low {
+      width: 125px;
+    }
+  }
+}
+
+@include atMobile {
+  .popup__box-inputs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .popup__sign-in {
+    padding-bottom: 20px;
+
+    &:nth-of-type(2) {
+      padding-bottom: 30px;
+    }
+  }
+
+  .popup__input {
+    height: 40px;
+    margin-bottom: 10px;
+
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
+  }
+
+  .popup__enter {
+    width: 65px;
+  }
+}

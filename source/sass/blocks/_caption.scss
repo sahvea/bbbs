@@ -1,0 +1,19 @@
+.caption {
+  margin: 0;
+  font-family: $ptRootUI;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  color: $darkGray;
+}
+
+.caption_type_test {
+  margin-top: 20px;
+}
+
+@include atDesktop1024 {
+  .caption {
+    font-size: 12px;
+  }
+}

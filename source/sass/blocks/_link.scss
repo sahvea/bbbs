@@ -1,0 +1,21 @@
+.link {
+  display: inline-block;
+  font-family: $protoGrotesk;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.3;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+  color: $blue;
+}
+
+.link_type_test {
+  margin-top: 40px;
+}
+
+@include atDesktop1024 {
+  .link {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+}

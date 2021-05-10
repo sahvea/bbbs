@@ -1,0 +1,86 @@
+// Названия миксинов соответствуют контрольным точкам в макете
+
+//для экранов до 1640px (для прав детей)
+@mixin atDesktop1639 {
+  @media screen and (max-width: 1639px) {
+    @content;
+  }
+}
+
+//для экранов до 1450px
+@mixin atDesktop1440 {
+  @media screen and (max-width: 1450px) {
+    @content;
+  }
+}
+
+//для вопросов на главной странице
+@mixin atDesktop1400 {
+  @media screen and (max-width: 1400px) {
+    @content;
+  }
+}
+
+//для экранов до 1380px (для меню)
+@mixin atDesktop1380 {
+  @media screen and (max-width: 1380px) {
+    @content;
+  }
+}
+
+
+//для экранов до 1280px (для футера)
+@mixin atDesktop1279 {
+  @media screen and (max-width: 1279px) {
+    @content;
+  }
+}
+
+//для экранов до 1024px (для футера)
+@mixin atDesktop1023 {
+  @media screen and (max-width: 1023px) {
+    @content;
+  }
+}
+
+//для экранов до 1200px (для прав детей)
+@mixin atDesktop1199 {
+  @media screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
+//для экранов до 1100px
+@mixin atDesktop1024 {
+  @media screen and (max-width: 1100px) {
+    @content;
+  }
+}
+
+//для экранов до 900px
+@mixin atTabletL {
+  @media screen and (max-width: 900px) {
+    @content;
+  }
+}
+
+//для экранов до 768px
+@mixin atTablet {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+//для экранов до 640px
+@mixin atMobileL {
+  @media screen and (max-width: 639px) {
+    @content;
+  }
+}
+
+//для экранов до 576px
+@mixin atMobile {
+  @media screen and (max-width: 575px) {
+    @content;
+  }
+}

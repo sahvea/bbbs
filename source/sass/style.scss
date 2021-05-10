@@ -1,7 +1,65 @@
-/* Общие настройки и стили*/
+// Общие настройки и стили
 @import '../vendor/normalize.css';
 @import '../vendor/fonts/fonts.css';
-@import '../sass/base/variables.scss';
-@import '../sass/base/mixins.scss';
-/* test */
-@import '../sass/blocks/test.scss';
+@import './base/variables.scss';
+@import './base/mixins.scss';
+// page
+@import './blocks/page.scss';
+// main
+@import './blocks/main.scss';
+@import './blocks/main-section.scss';
+// типография
+@import './blocks/main-title.scss';
+@import './blocks/section-title.scss';
+@import './blocks/chapter-title.scss';
+@import './blocks/paragraph.scss';
+@import './blocks/link.scss';
+@import './blocks/caption.scss';
+@import './blocks/rubric.scss';
+// buttons
+@import './blocks/button.scss';
+// header
+@import './blocks/header.scss';
+// menu
+@import './blocks/menu.scss';
+@import './blocks/search.scss';
+// tags
+@import './blocks/tags.scss';
+// cards
+@import './blocks/card-container.scss';
+@import './blocks/card.scss';
+@import './blocks/main-card.scss';
+@import './blocks/cards-grid.scss';
+@import './blocks/book.scss';
+@import './blocks/video.scss';
+@import './blocks/card-pagination.scss';
+@import './blocks/stub.scss';
+// calendar
+@import './blocks/calendar.scss';
+@import './blocks/popup.scss';
+// stories
+@import './blocks/stories.scss';
+//place
+@import './blocks/recommendation.scss';
+@import './blocks/radio.scss';
+// questions
+@import './blocks/questions.scss';
+@import './blocks/question.scss';
+@import './blocks/add-question.scss';
+@import './blocks/question-form.scss';
+@import './blocks/main-questions.scss';
+// about
+@import './blocks/about.scss';
+// rights
+@import './blocks/rights.scss';
+//catalog
+@import './blocks/catalog.scss';
+// read and watch
+@import './blocks/preview.scss';
+// article
+@import './blocks/article.scss';
+@import './blocks/next-page.scss';
+//pagination
+@import './blocks/pagination.scss';
+// footer
+@import './blocks/footer.scss';

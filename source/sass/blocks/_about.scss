@@ -1,0 +1,185 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+//блог заголовка
+
+.about__title {
+  padding-bottom: 50px;
+  max-width: 1170px;
+  text-align: center;
+}
+
+// блок лого
+
+.about__logo {
+  width: 357px;
+  object-fit: contain;
+}
+
+// блок круга с текстом
+
+.about__us {
+  padding: 80px 0;
+  display: grid;
+  grid-template-columns: 570px 600px;
+  grid-template-rows: 570px;
+  justify-content: center;
+}
+
+.about__circle {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.about__caption {
+  padding-top: 50px;
+  padding-right: 25px;
+  padding-bottom: 50px;
+}
+
+.about__main-text {
+  margin-top: 30px;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+//блок цитаты
+
+.about__quote {
+  margin: 0;
+  padding: 60px 0;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid $lightGray;
+  border-bottom: 1px solid $lightGray;
+}
+
+.about__quote-text {
+  display: inline-block;
+  max-width: 1170px;
+  color: #1a1a1a;
+}
+
+// блок карточек
+
+.about__cards {
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.about__card-container {
+  grid-template-rows: 120px minmax(265px, 1fr);
+}
+
+.about__card {
+  padding: 0;
+  justify-content: center;
+  border-radius: 70px;
+}
+
+.about__card-content {
+  margin-bottom: 30px;
+}
+
+.about__card-link {
+  align-self: center;
+}
+
+//адаптив
+
+@include atDesktop1440 {
+  .about__title {
+    max-width: 1030px;
+  }
+
+  .about__quote-text {
+    max-width: 964px;
+  }
+}
+
+@include atDesktop1380 {
+  .about__us {
+    grid-template-columns: 570px;
+    grid-template-rows: 358px 373px;
+  }
+
+  .about__circle {
+    width: 370px;
+    justify-self: center;
+  }
+
+  .about__caption {
+    padding: 30px 15px;
+  }
+}
+
+@include atDesktop1024 {
+  .about__logo {
+    width: 252px;
+  }
+
+  .about__title {
+    padding-bottom: 30px;
+  }
+
+  .about__us {
+    padding: 50px 0;
+  }
+
+  .about__quote {
+    padding: 30px 0;
+  }
+
+  .about__quote-text {
+    max-width: 770px;
+  }
+
+  .about__cards {
+    grid-template-columns: 1fr;
+    padding-top: 50px;
+  }
+
+  .about__card-container {
+    max-width: 570px;
+    grid-template-rows: 70px 1fr;
+  }
+
+  .about__card-content {
+    margin-bottom: 15px;
+  }
+}
+
+@include atTablet {
+  .about__us {
+    padding-top: 30px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@include atMobile {
+  .about__us {
+    grid-template-rows: 280px 1fr;
+  }
+
+  .about__caption {
+    max-height: 688px;
+  }
+
+  .about__circle {
+    width: 290px;
+  }
+
+  .about__title {
+    padding-bottom: 20px;
+  }
+}

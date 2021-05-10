@@ -1,0 +1,16 @@
+.questions {
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+@include atDesktop1024 {
+  .questions {
+    padding-top: 50px;
+  }
+}
+
+@include atMobile {
+  .questions {
+    padding-top: 30px;
+  }
+}

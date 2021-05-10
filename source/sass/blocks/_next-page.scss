@@ -1,0 +1,50 @@
+.next-page {
+  margin-right: auto;
+  padding-top: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.next-page__img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+
+.next-page__link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+}
+
+.next-page__title {
+  color: $blue;
+  padding: 0 30px;
+}
+
+.next-page__arrow-icon {
+  width: 30px;
+}
+
+@include atDesktop1024 {
+  .next-page {
+    padding-top: 30px;
+  }
+
+  .next-page__arrow-icon {
+    width: 20px;
+    padding-right: 25px;
+  }
+}
+
+@include atMobile {
+  .next-page__title {
+    padding-left: 15px;
+  }
+
+  .next-page__arrow-icon {
+    padding-right: 5px;
+  }
+}

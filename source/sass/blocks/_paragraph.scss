@@ -1,0 +1,19 @@
+.paragraph {
+  margin: 0;
+  font-family: $ptRootUI;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  color: $black;
+}
+
+.paragraph_type_test {
+  padding-top: 50px;
+  max-width: 472px;
+}
+
+@include atDesktop1024 {
+  .paragraph {
+    font-size: 15px;
+  }
+}

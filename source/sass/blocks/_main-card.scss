@@ -1,0 +1,11 @@
+@include atDesktop1024 {
+  .main-card {
+    padding-top: 50px;
+  }
+}
+
+@include atMobile {
+  .main-card {
+    padding-top: 30px;
+  }
+}

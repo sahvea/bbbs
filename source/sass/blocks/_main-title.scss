@@ -1,0 +1,20 @@
+.main-title {
+  margin: 0;
+  font-family: $protoGrotesk;
+  font-weight: 300;
+  font-size: 74px;
+  line-height: 108%;
+  color: $black;
+  text-align: center;
+}
+
+.main-title_type_test {
+  margin-top: 40px;
+}
+
+@include atDesktop1024 {
+  .main-title {
+    font-size: 37px;
+    line-height: 105%;
+  }
+}

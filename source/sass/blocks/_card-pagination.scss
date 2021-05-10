@@ -46,6 +46,16 @@
   }
 }
 
+@include atDesktop1217 {
+  .card-pagination {
+    &_type_shapes {
+      &:nth-last-of-type(-n+8) {
+        display: none;
+      }
+    }
+  }
+}
+
 @include atTabletL {
   .card-pagination {
 

@@ -101,9 +101,14 @@
           </form>
         </li>
         <li class="menu__button-item">
-          <button class="menu__button menu__button_type_user" type="button" aria-label="Личный кабинет" title="Личный кабинет" onclick="document.location='./place_active.html'"></button>
+          <button class="menu__button menu__button_type_active-user" type="button" aria-label="Личный кабинет" title="Личный кабинет" onclick="document.location='./place.html'"></button>
         </li>
       </ul>
+
+      <div class="menu__user-info">
+        <a href="#" class="paragraph menu__user-link menu__user-link_type_city">Москва. Изменить город</a>
+        <a href="#" class="paragraph menu__user-link menu__user-link_type_exit">Выйти</a>
+      </div>
     </nav>
   </header>
 
@@ -152,6 +157,11 @@
           </li>
         </ul>
       </div>
+
+      <div class="card place-card">
+        <h2 class="section-title place-card__text">Если вы были в интересном месте и хотите порекомендовать его другим наставникам – <span class="place-card__span-accent">заполните форму</span>, и мы добавим вашу рекомендацию.</h2>
+      </div>
+
     </section>
 
     <section class="main-card page__section">
@@ -281,6 +291,65 @@
     </nav>
   </footer>
 
+  <div class="popup recommendation">
+    <form class="popup__container popup__container_type_recommendation" novalidate>
+      <button class="popup__close popup__cancel" type="button"></button>
+      <legend class="section-title recommendation__popup-title">Если вы были в интересном месте и хотите порекомендовать его другим наставникам – заполните форму, и мы добавим вашу рекомендацию.</legend>
+      <div class="popup__box-inputs">
+        <input type="text" name="place" class="popup__input popup__input_type_middle" required placeholder="Название*">
+        <input type="text" name="website" class="popup__input popup__input_type_middle" placeholder="Сайт">
+      </div>
+      <input type="text" name="address" class="popup__input" required placeholder="Адрес*">
+      <div class="popup__box-inputs radio">
+        <input type="text" name="boy" id="boy" class="popup__input popup__input_type_low popup__input_type_radio" disabled placeholder="Мальчик">
+        <input type="radio" class="radio__button-boy" name="sex" required>
+        <input type="text" name="girl" id="girl" class="popup__input popup__input_type_low popup__input_type_radio" disabled placeholder="Девочка">
+        <input type="radio" class="radio__button-girl" name="sex" required>
+        <input type="number" name="age" class="popup__input popup__input_type_low" required placeholder="Возраст*">
+      </div>
+      <input type="text" name="type" class="popup__input" required placeholder="Тип отдыха*">
+      <textarea class="popup__textarea" required placeholder="Комментарий* Поделитесь впечатлениями о проведенном времени"></textarea>
+      <div class="popup__box-inputs">
+        <button class="button button_theme_light recommendation__add-button" type="button"></button>
+        <p class="recommendation__add-place">Добавить фото</p>
+        <button class="button button_theme_light recommendation__submit" type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="popup recommendation recommendation_type_finish">
+    <form class="popup__container popup__container_type_recommendation popup__container_type_recommendation-finish">
+      <button class="popup__close popup__cancel" type="button"></button>
+      <div class="recommendation__logo"></div>
+      <legend class="section-title recommendation__popup-title">Спасибо, мы проверим информацию, и скоро все пользователи смогут увидеть вашу рекомендацию</legend>
+    </form>
+  </div>
+
+  <div class="popup pupup_type_cities cities">
+    <div class="popup__container popup__container_type_cities">
+      <h2 class="cities__title section-title">Выберите ваш город</h2>
+      <ul class="cities__capitals">
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Москва</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Санкт-Петербург</a></li>
+      </ul>
+      <ul class="cities__region">
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Алексин</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Барнаул</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Екатеринбург</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Зубцов</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Калининград</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Киреевск</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Коломна</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Новомосковск</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Орехово-Зуево</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Тверь</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Тула</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="./scripts/cities/cities.js"></script>
+  <script src="./scripts/place/place.js"></script>
   <script src="./scripts/script.js"></script>
 </body>
 </html>

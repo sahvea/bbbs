@@ -1,5 +1,5 @@
 const modals = document.querySelectorAll('.popup');
-const spanRecommend = document.querySelector('.recommendation__span');
+const spanRecommend = document.querySelector('.place-card__span-accent');
 const popupRecommend = document.querySelector('.recommendation');
 const formRecommend = document.querySelector('.popup__container_type_recommendation')
 const buttonFormSubmit = document.querySelector('.recommendation__submit');

@@ -32,6 +32,13 @@
     border-color: $darkBlue;
   }
 
+  &:disabled {
+    color: $lightGray;
+    border-color: $lightGray;
+    pointer-events: none;
+    user-select: none;
+  }
+
   &_theme_light {
     border-color: $blue;
     color: $blue;

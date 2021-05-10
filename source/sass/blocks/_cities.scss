@@ -1,0 +1,62 @@
+.cities {
+  box-sizing: border-box;
+
+  &__title {
+    padding-bottom: 30px;
+    font-size: 23px;
+  }
+
+  &__name {
+    padding-bottom: 10px;
+    text-align: center;
+
+    &:last-of-type {
+      padding-bottom: 15px;
+    }
+  }
+
+  &__region {
+    margin: 0;
+    padding: 15px 0;
+    font-family: $protoGrotesk;
+    font-size: 15px;
+    line-height: 1.25;
+    letter-spacing: .2px;
+    list-style: none;
+  }
+
+  &__capitals {
+    margin: 0;
+    padding: 0;
+    font-family: $protoGrotesk;
+    font-size: 15px;
+    line-height: 1.25;
+    letter-spacing: .2px;
+    list-style: none;
+
+    &:after {
+      content: '';
+      display: block;
+      border-bottom: 1px solid $lightGray;
+      width: 370px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $black;
+  }
+}
+
+@include atDesktop1024 {
+  .cities {
+    &__title {
+      padding-bottom: 50px;
+      font-size: 19px;
+    }
+
+    &__capitals:after {
+      width: 290px;
+    }
+  }
+}

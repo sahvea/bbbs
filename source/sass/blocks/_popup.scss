@@ -52,6 +52,14 @@
     &_type_calendar {
       height: 670px;
     }
+
+    &_type_cities {
+      padding: 50px 85px 0;
+      align-items: center;
+      justify-content: flex-start;
+      max-width: 400px;
+      max-height: 547px;
+    }
   }
 
   &__box {
@@ -191,6 +199,10 @@
   .popup__container {
     padding: 50px;
     max-width: 570px;
+
+    &_type_cities {
+      max-width: 320px;
+    }
   }
 }
 
@@ -224,6 +236,10 @@
     &_type_recommendation {
       justify-content: flex-start;
       min-height: 800px;
+    }
+
+    &_type_cities {
+      max-width: 320px;
     }
   }
 

@@ -25,6 +25,8 @@
     box-sizing: border-box;
 
     &_type_recommendation {
+      justify-content: flex-start;
+      height: 618px;
 
       &-finish {
         justify-content: center;
@@ -217,7 +219,7 @@
 @include atMobile {
   .popup__container {
     max-width: 290px;
-    margin-top: 20px;
+    margin-top: 10px;
 
     &_type_recommendation {
       justify-content: flex-start;

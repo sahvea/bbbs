@@ -14,21 +14,62 @@
   color: $black;
 }
 
+.calendar__container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(370px, 570px));
+  gap: 30px;
+}
+
 .calendar_unauthorized {
   padding: 0;
   border-radius: 30px;
   background-color: $green;
 }
 
-.calendar_selected {
-  background-color: $lightBlue;
+.calendar__logo {
+  display: block;
+  box-sizing: border-box;
+  padding-top: 35px;
+  padding-left: 30px;
+  background-image: url('../../../images/svg/calendar_logo.svg');
+  background-repeat: no-repeat;
+  background-size: 252px 46px;
+  background-origin: content-box;
+  background-color: $pink;
+  max-width: 395px;
+  height: 129px;
+  border-radius: 30px 3px 200px 3px;
 }
 
-.calendar__container {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(370px, 570px));
-  gap: 30px;
+.calendar__title {
+  max-width: 320px;
+}
+
+.calendar__title_type_popup {
+  max-width: 570px;
+  text-align: start;
+  margin-bottom: 40px;
+}
+
+.calendar__title_type_popup-done {
+  text-align: center;
+}
+
+.calendar__title_type_confirmation {
+  text-align: center;
+}
+
+.calendar__title_unauthorized {
+  padding: 70px 30px;
+  max-width: 510px;
+  border-radius: 400px;
+  background-color: $pink;
+  text-align: center;
+}
+
+.calendar_selected {
+  background-color: $lightBlue;
 }
 
 .calendar__weekday {
@@ -111,10 +152,6 @@
   color: $lightBlack;
 }
 
-.calendar__title {
-  max-width: 320px;
-}
-
 .calendar__back {
   max-width: 215px;
   align-self: center;
@@ -128,43 +165,6 @@
   width: 413px;
   height: 169px;
   background-size: 413px 169px;
-}
-
-.calendar__title_type_popup {
-  max-width: 570px;
-  text-align: start;
-  margin-bottom: 40px;
-}
-
-.calendar__title_type_popup-done {
-  text-align: center;
-}
-
-.calendar__title_type_confirmation {
-  text-align: center;
-}
-
-.calendar__logo {
-  display: block;
-  box-sizing: border-box;
-  padding-top: 35px;
-  padding-left: 30px;
-  background-image: url('../../../images/svg/calendar_logo.svg');
-  background-repeat: no-repeat;
-  background-size: 252px 46px;
-  background-origin: content-box;
-  background-color: $pink;
-  max-width: 395px;
-  height: 129px;
-  border-radius: 30px 3px 200px 3px;
-}
-
-.calendar__title_unauthorized {
-  padding: 70px 30px;
-  max-width: 510px;
-  border-radius: 400px;
-  background-color: $pink;
-  text-align: center;
 }
 
 .calendar__contact {

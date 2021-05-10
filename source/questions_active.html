@@ -101,9 +101,14 @@
           </form>
         </li>
         <li class="menu__button-item">
-          <button class="menu__button menu__button_type_user" type="button" aria-label="Личный кабинет" title="Личный кабинет" onclick="document.location='./questions_active.html'"></button>
+          <button class="menu__button menu__button_type_active-user" type="button" aria-label="Личный кабинет" title="Личный кабинет" onclick="document.location='./questions.html'"></button>
         </li>
       </ul>
+
+      <div class="menu__user-info">
+        <a href="#" class="paragraph menu__user-link menu__user-link_type_city">Москва. Изменить город</a>
+        <a href="#" class="paragraph menu__user-link menu__user-link_type_exit">Выйти</a>
+      </div>
     </nav>
   </header>
 
@@ -216,6 +221,16 @@
         </div>
       </article>
     </section>
+
+    <section class="add-question page__section">
+      <h2 class="section-title add-question__title">Если вы не нашли ответ на свой вопрос — напишите нам, и мы включим его в список</h2>
+      <form class="question-form" name="add-question">
+        <fieldset class="question-form__add-question">
+          <input class="question-form__input" type="text" name="question" value="" placeholder="Введите вопрос" required>
+          <button class="button button_theme_light question-form__button" type="submit" name="submit" disabled>Отправить</button>
+        </fieldset>
+      </form>
+    </section>
   </main>
 
   <footer class="footer">
@@ -255,6 +270,30 @@
     </nav>
   </footer>
 
+  <div class="popup pupup_type_cities cities">
+    <div class="popup__container popup__container_type_cities">
+      <h2 class="cities__title section-title">Выберите ваш город</h2>
+      <ul class="cities__capitals">
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Москва</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Санкт-Петербург</a></li>
+      </ul>
+      <ul class="cities__region">
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Алексин</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Барнаул</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Екатеринбург</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Зубцов</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Калининград</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Киреевск</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Коломна</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Новомосковск</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Орехово-Зуево</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Тверь</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Тула</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="./scripts/cities/cities.js"></script>
   <script src="./scripts/questions/questions.js"></script>
   <script src="./scripts/script.js"></script>
 </body>

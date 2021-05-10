@@ -16,6 +16,11 @@
   margin-top: 15px;
 }
 
+.main-questions__link {
+  width: 100%;
+  text-decoration: none;
+}
+
 @include atDesktop1400 {
   .main-questions__item {
     &:nth-last-of-type(-n+1) {

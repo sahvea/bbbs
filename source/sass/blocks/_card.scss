@@ -36,6 +36,10 @@
     padding: 30px;
   }
 
+  &_content_video {
+    padding: 0;
+  }
+
   &_content_media {
     padding: 0;
     justify-content: center;
@@ -148,6 +152,7 @@
   margin: 0 auto;
   max-width: 970px;
   text-align: center;
+  color: #1a1a1a;
 }
 
 .card__media-link {
@@ -270,6 +275,10 @@
       padding: 30px;
     }
 
+    &_content_video {
+      padding: 0;
+    }
+
     &_content_media {
       padding: 0;
     }
@@ -322,11 +331,30 @@
 
   .card__quote {
     max-width: 690px;
+    font-size: 19px;
+    line-height: 1.2;
   }
 
 }
 
 @include atMobile {
+  .card {
+    &_content_quote {
+      max-width: 450px;
+      margin: 0 auto;
+    }
+
+    &_content_video {
+      max-width: 450px;
+      margin: 0 auto;
+    }
+
+    &_content_media {
+      max-width: 450px;
+    }
+
+  }
+
   .card__link-wrap {
     &_content_article-img {
       margin-top: 40px;

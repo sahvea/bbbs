@@ -1,0 +1,126 @@
+.article-lead {
+  background-color: $yellow;
+  border-top-right-radius: 400px;
+  border-bottom-right-radius: 400px;
+  padding: 50px;
+  max-width: 100%;
+  height: 770px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 178px;
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: $yellow;
+    border-bottom-left-radius: 400px;
+    height: 250px;
+    width: 80%;
+    top: -250px;
+    right: 0;
+    z-index: -1;
+  }
+
+  &_form_oval {
+    border-radius: 400px;
+    &::before {
+      right: auto;
+      left: 0;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 400px;
+    }
+  }
+
+  &_form_trapezoid {
+    border-radius: 3px 3px 400px 400px;
+    &::before {
+      width: 100%;
+      border-radius: 3px 3px 400px 400px;
+    }
+  }
+}
+
+.article-lead__content {
+  margin: auto;
+  max-width: 868px;
+  text-align: center;
+}
+
+.article-lead__text {
+  margin-top: 30px;
+}
+
+@include atDesktop1440 {
+  .article-lead {
+    height: 560px;
+    margin-top: 250px;
+    &::before {
+      height: 320px;
+      top: -320px;
+    }
+
+    &_form_oval {
+      height: 680px;
+      margin-top: 150px;
+      &::before {
+        height: 220px;
+        top: -220px;
+      }
+    }
+
+    &_form_trapezoid {
+      height: 680px;
+      margin-top: 150px;
+      &::before {
+        height: 220px;
+        top: -220px;
+      }
+    }
+  }
+}
+
+@include atDesktop1024 {
+  .article-lead {
+    height: 412px;
+    margin-top: 187px;
+    &::before {
+      height: 270px;
+      top: -270px;
+    }
+
+    &_form_oval {
+      height: 514px;
+      margin-top: 85px;
+      &::before {
+        height: 165px;
+        top: -165px;
+      }
+    }
+
+    &_form_trapezoid {
+      height: 514px;
+      margin-top: 85px;
+      &::before {
+        height: 165px;
+        top: -165px;
+      }
+    }
+  }
+}
+
+
+@include atTablet {
+  .article-lead {
+    padding: 20px 15px 50px;
+    margin-top: 0;
+    height: fit-content;
+    border-radius: unset;
+    &::before {
+      height: 60px;
+      top: -60px;
+      width: 100%;
+      border-radius: unset;
+    }
+  }
+}

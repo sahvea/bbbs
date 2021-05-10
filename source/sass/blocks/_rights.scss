@@ -44,40 +44,9 @@
   text-decoration: none;
 }
 
-.rights__article-lead {
-  background: $yellow;
-  border-top-right-radius: 400px;
-  border-bottom-right-radius: 400px;
-  padding: 230px 50px;
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  margin-top: 178px;
-  &::before {
-    content: '';
-    position: absolute;
-    background: $yellow;
-    border-bottom-left-radius: 400px;
-    height: 250px;
-    width: 80%;
-    top: -250px;
-    right: 0;
-    z-index: -1;
-  }
-}
-
 @include atDesktop1440 {
   .rights {
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  }
-
-  .rights__article-lead {
-    padding: 134px 50px;
-    &::before {
-      height: 320px;
-      top: -320px;
-    }
   }
 }
 
@@ -107,16 +76,6 @@
   }
 }
 
-@include atDesktop1023 {
-  .rights__article-lead {
-    padding: 71px 50px;
-    &::before {
-      height: 270px;
-      top: -270px;
-    }
-  }
-}
-
 @include atTablet {
   .rights {
     grid-template-columns: 1fr;
@@ -127,18 +86,6 @@
   .rights__line {
     &:nth-of-type(-n+2) {
       display: block;
-    }
-  }
-
-  .rights__article-lead {
-    padding: 20px 15px 50px;
-    margin-top: 0;
-    border-radius: unset;
-    &::before {
-      height: 60px;
-      top: -60px;
-      width: 100%;
-      border-radius: unset;
     }
   }
 }

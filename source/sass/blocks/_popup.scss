@@ -15,10 +15,11 @@
     flex-direction: column;
     justify-content: space-between;
     z-index: 2;
-    margin: 125px auto;
+    margin: 75px auto 0;
     padding: 50px 100px;
     border-radius: 30px;
     max-width: 770px;
+    max-height: 80vh;
     background-color: $white;
     font-family: $ptRootUI;
     box-sizing: border-box;

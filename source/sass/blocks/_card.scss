@@ -36,8 +36,9 @@
     padding: 30px;
   }
 
-  &_content_video {
+  &_content_media {
     padding: 0;
+    justify-content: center;
   }
 
   &_content_video-preview {
@@ -83,6 +84,16 @@
 }
 
 // обертки
+.card__link-wrap {
+  width: 100%;
+  text-decoration: none;
+
+  &_content_article-img {
+    margin-top: 70px;
+    margin-bottom: 15px;
+  }
+}
+
 .card__title-wrap {
   text-align: center;
 }
@@ -134,19 +145,41 @@
 }
 
 .card__quote {
+  margin: 0 auto;
   max-width: 970px;
   text-align: center;
 }
 
+.card__media-link {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  background-color: rgba($black, .6);
+}
+
 // фото на главной карточке
 .card__img {
-  margin-top: 70px;
-  margin-bottom: 15px;
   width: 100%;
   height: 394px;
   border-radius: 15px;
   object-fit: cover;
   object-position: center;
+}
+
+// фото на карточке c главной страницы
+.card__media-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 // видео на карточке попапа
@@ -157,6 +190,12 @@
   height: 100%;
   max-width: 1710px;
   max-height: 962px;
+  border: none;
+}
+
+.card__iframe {
+  width: 100%;
+  height: 100%;
   border: none;
 }
 
@@ -231,7 +270,7 @@
       padding: 30px;
     }
 
-    &_content_video {
+    &_content_media {
       padding: 0;
     }
 
@@ -252,8 +291,13 @@
     height: 147px;
   }
 
+  .card__link-wrap {
+    &_content_article-img {
+      margin-top: 60px;
+    }
+  }
+
   .card__img {
-    margin-top: 60px;
     height: 345px;
 
     &_position_main-article {
@@ -283,8 +327,13 @@
 }
 
 @include atMobile {
+  .card__link-wrap {
+    &_content_article-img {
+      margin-top: 40px;
+    }
+  }
+
   .card__img {
-    margin-top: 40px;
     height: 142px;
 
     &_position_main-article {

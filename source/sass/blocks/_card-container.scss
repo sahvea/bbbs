@@ -20,6 +20,12 @@
   &_type_article {
     grid-template-rows: 224px 222px;
   }
+
+  &_type_personal-area {
+    grid-template-columns: minmax(290px, 470px) minmax(max-content, 1fr);
+    grid-template-rows: minmax(290px, 1fr);
+    font-family: $protoGrotesk;
+  }
 }
 
 @include atDesktop1440 {
@@ -48,6 +54,19 @@
       grid-template-rows: 176px 188px;
     }
 
+    &_type_personal-area {
+      grid-template-columns: 290px 1fr;
+    }
+
+  }
+}
+
+@include atTabletL {
+  .card-container {
+
+    &_type_personal-area {
+      grid-template-columns: 1fr;
+    }
   }
 }
 

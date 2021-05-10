@@ -1,0 +1,83 @@
+.personal-area__lead {
+  border-bottom: 1px solid $darkGray;
+  //padding: 50px 0;
+}
+
+.personal-area__card {
+  padding: 30px 30px 20px;
+
+  &_type_add-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_type_photo {
+    padding: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.personal-area__card-weekday {
+  font-size: 14px;
+  line-height: 1.36;
+  margin-bottom: 5px;
+}
+
+.personal-area__card-day {
+  font-size: 60px;
+}
+
+.personal-area__card-text {
+  width: 100%;
+}
+
+.personal-area__title {
+  color: $lightBlack;
+  text-align: center;
+}
+
+.personal-area__form {
+  width: 100%;
+  display: grid;
+  gap: 20px 30px;
+  grid-template-columns: 1fr minmax(240px, 290px);
+  grid-template-rows: auto;
+}
+
+.personal-area__form-input {
+  font-family: $protoGrotesk;
+  min-height: 48px;
+  border: none;
+  border-radius: 30px;
+  padding: 13px 20px 16px;
+  background: $background;
+  box-sizing: border-box;
+  outline: none;
+  &::placeholder {
+    color: $lightGray;
+  }
+  &_type_textarea {
+    grid-column: 1 / -1;
+    min-height: 286px;
+  }
+}
+
+.personal-area__add-photo-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/svg/personal-area-plus.svg) center no-repeat;
+  border: 1px solid $lightGray;
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+}
+
+@include atDesktop1024 {
+  .personal-area__form {
+    grid-template-columns: 1fr;
+  }
+}

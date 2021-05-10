@@ -53,7 +53,7 @@
 @import './blocks/rights.scss';
 
 //catalog
-@import './blocks/catalog.scss';
+@import 'blocks/catalog.scss';
 
 // read and watch
 @import './blocks/preview.scss';
@@ -62,9 +62,9 @@
 @import './blocks/next-page.scss';
 
 // personal-area
-@import './blocks/personal-area.scss';
+@import 'blocks/personal-area.scss';
 
 //pagination
-@import './blocks/pagination';
+@import './blocks/pagination.scss';
 // footer
 @import './blocks/footer.scss';

@@ -63,6 +63,17 @@
   }
 }
 
+@include atDesktop1380 {
+  .card-container_type_personal-area {
+    grid-template-columns: 1fr;
+  }
+
+  .card-container_type_content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @include atDesktop1024 {
   .card-container {
 
@@ -88,10 +99,6 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 552px;
     }
-
-    &_type_personal-area {
-      grid-template-columns: 290px 1fr;
-    }
   }
 }
 
@@ -105,10 +112,6 @@
     &_type_iframe {
       grid-template-columns: 1fr;
       grid-template-rows: 433px 1fr;
-    }
-
-    &_type_personal-area {
-      grid-template-columns: 1fr;
     }
   }
 }

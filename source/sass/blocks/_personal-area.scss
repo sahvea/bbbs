@@ -167,6 +167,13 @@
   width: 100px;
 }
 
+@include atDesktop1380 {
+  .personal-area__card_type_photo {
+    width: 700px;
+    height: 700px;
+  }
+}
+
 @include atDesktop1024 {
   .personal-area__form {
     grid-template-columns: 1fr;

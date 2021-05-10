@@ -2,6 +2,25 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
 
+.catalog__card-title {
+  text-align: center;
+  margin-top: 20px;
+}
 
+@include atDesktop1639 {
+  .catalog__grid-element {
+    &:nth-last-of-type(-n+4) {
+      display: none;
+    }
+  }
+}
+
+@include atDesktop1199 {
+  .catalog__grid-element {
+    &:nth-last-of-type(-n+12) {
+      display: none;
+    }
+  }
 }

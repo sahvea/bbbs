@@ -36,6 +36,13 @@
   }
 }
 
+//для экранов до 1217px (для прав)
+@mixin atDesktop1217 {
+  @media screen and (max-width: 1216px) {
+    @content;
+  }
+}
+
 //для экранов до 1024px (для футера)
 @mixin atDesktop1023 {
   @media screen and (max-width: 1023px) {

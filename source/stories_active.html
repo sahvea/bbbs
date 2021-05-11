@@ -101,9 +101,14 @@
           </form>
         </li>
         <li class="menu__button-item">
-          <button class="menu__button menu__button_type_user" type="button" aria-label="Личный кабинет" title="Личный кабинет" onclick="document.location='./stories_active.html'"></button>
+          <button class="menu__button menu__button_type_active-user" type="button" aria-label="Личный кабинет" title="Личный кабинет" onclick="document.location='./stories.html'"></button>
         </li>
       </ul>
+
+      <div class="menu__user-info">
+        <a href="#" class="paragraph menu__user-link menu__user-link_type_city">Москва. Изменить город</a>
+        <a href="#" class="paragraph menu__user-link menu__user-link_type_exit">Выйти</a>
+      </div>
     </nav>
   </header>
 
@@ -183,6 +188,8 @@
           я никуда не денусь, не помогли, и даже то, что после каникул я пришёл, не добавило Никите уверенности в долгосрочности нашей дружбы. Ситуация повторилась летом: уезжая в лагерь, он снова боялся, что наша дружба кончится, но я снова встретил его осенью. И тогда Никита понял,
           что я в его жизни надолго и всерьёз, и стал доверять мне. Например, я могу позвонить и сказать, что на этих выходных у меня не получится приехать, и он совершенно спокойно спрашивает, приду ли я на следующих.
         </p>
+        <a href="#" class="link stories__link">написать Алине</a>
+      </div>
     </section>
     <section class="page__section stories">
       <img class="article__image stories__image" src="./images/stories/DG7B0561(1).jpg" alt="Алина и Марина">
@@ -195,6 +202,31 @@
     </section>
   </main>
 
+
+  <div class="popup pupup_type_cities cities">
+    <div class="popup__container popup__container_type_cities">
+      <h2 class="cities__title section-title">Выберите ваш город</h2>
+      <ul class="cities__capitals">
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Москва</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Санкт-Петербург</a></li>
+      </ul>
+      <ul class="cities__region">
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Алексин</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Барнаул</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Екатеринбург</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Зубцов</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Калининград</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Киреевск</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Коломна</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Новомосковск</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Орехово-Зуево</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Тверь</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Тула</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="./scripts/cities/cities.js"></script>
   <script src="./scripts/script.js"></script>
 </body>
 </html>

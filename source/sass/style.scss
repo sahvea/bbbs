@@ -23,6 +23,8 @@
 // menu
 @import './blocks/menu.scss';
 @import './blocks/search.scss';
+// lead
+@import './blocks/lead.scss';
 // tags
 @import './blocks/tags.scss';
 // cards
@@ -34,7 +36,9 @@
 @import './blocks/video.scss';
 @import './blocks/card-pagination.scss';
 @import './blocks/stub.scss';
+@import './blocks/place-card.scss';
 // calendar
+@import './blocks/calendar-container.scss';
 @import './blocks/calendar.scss';
 @import './blocks/popup.scss';
 // stories
@@ -52,8 +56,9 @@
 @import './blocks/about.scss';
 // rights
 @import './blocks/rights.scss';
+@import './blocks/article-lead.scss';
 //catalog
-@import './blocks/catalog.scss';
+@import './blocks/catalog-card.scss';
 // read and watch
 @import './blocks/preview.scss';
 // article
@@ -63,3 +68,8 @@
 @import './blocks/pagination.scss';
 // footer
 @import './blocks/footer.scss';
+//cities
+@import './blocks/cities.scss';
+//
+@import './blocks/personal.scss';
+@import './blocks/personal-area';

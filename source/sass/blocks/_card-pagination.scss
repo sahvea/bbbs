@@ -1,6 +1,16 @@
 // удаление лишних карточек при переполнении
 // заданного кол-ва строк
 
+@include atDesktop1639 {
+  .card-pagination {
+    &_type_shapes {
+      &:nth-last-of-type(-n+4) {
+        display: none;
+      }
+    }
+  }
+}
+
 @include atDesktop1440 {
   .card-pagination {
     &:nth-last-of-type(-n+4) {
@@ -20,6 +30,26 @@
 
     &_page_main {
       &:nth-last-of-type(-n+2) {
+        display: none;
+      }
+    }
+  }
+}
+
+@include atDesktop1199 {
+  .card-pagination {
+    &_type_shapes {
+      &:nth-last-of-type(-n+12) {
+        display: none;
+      }
+    }
+  }
+}
+
+@include atDesktop1217 {
+  .card-pagination {
+    &_type_shapes {
+      &:nth-last-of-type(-n+8) {
         display: none;
       }
     }

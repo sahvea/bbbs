@@ -1,0 +1,27 @@
+.catalog-card__image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.catalog-card__title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+/* @include atDesktop1639 {
+  .catalog-card {
+    &:nth-last-of-type(-n+4) {
+      display: none;
+    }
+  }
+}
+
+@include atDesktop1199 {
+  .catalog-card {
+    &:nth-last-of-type(-n+12) {
+      display: none;
+    }
+  }
+} */

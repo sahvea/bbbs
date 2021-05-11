@@ -101,23 +101,47 @@
           </form>
         </li>
         <li class="menu__button-item">
-          <button class="menu__button menu__button_type_user" type="button" aria-label="Личный кабинет" title="Личный кабинет" onclick="document.location='./index_active.html'"></button>
+          <button class="menu__button menu__button_type_active-user" type="button" aria-label="Личный кабинет" title="Личный кабинет" onclick="document.location='./index.html'"></button>
         </li>
       </ul>
+      <div class="menu__user-info">
+        <a href="#" class="paragraph menu__user-link menu__user-link_type_city">Москва. Изменить город</a>
+        <a href="#" class="paragraph menu__user-link menu__user-link_type_exit">Выйти</a>
+      </div>
     </nav>
   </header>
 
   <main class="main">
     <section class="lead page__section">
       <article class="card-container card-container_type_identical">
-        <article class="card card_color_green stub">
-          <div class="stub__upper-element">
-            <a href="./index.html">
-              <img src="./images/svg/calendar_logo.svg" alt="Логотип Старшие Братья Старшие Сестры России" class="stub__logo">
-            </a>
+        <article class="calendar main-calendar">
+          <div class="calendar__caption">
+            <div class="calendar__info">
+              <p class="calendar__type">Волонтёры + дети</p>
+              <p class="calendar__weekday">Декабрь / понедельник</p>
+            </div>
+            <div class="calendar__about">
+              <h2 class="section-title calendar__title">Субботний meet up: учимся проходить интевью</h2>
+              <p class="calendar__date">05</p>
+            </div>
           </div>
-          <div class="stub__content">
-            <h2 class="section-title stub__text">Наставники.про – цифоровая информационная платформа огрганизации «Старшие Братья Старшие Сестры». Созданная для поддержки наставников программы.</h2>
+          <div class="calendar__meetup">
+            <ul class="calendar__info-list">
+              <li class="calendar__info-item">
+                <p class="calendar__time">12:00–14:00</p>
+              </li>
+              <li class="calendar__info-item">
+                <p class="calendar__place">Садовническая наб., д. 77 стр. 1 (офис компании Ernst&Young)</p>
+              </li>
+              <li class="calendar__info-item">
+                <p class="calendar__contact">Александра, +7 926 356-78-90</p>
+              </li>
+            </ul>
+            <div class="calendar__submit">
+              <button class="button button_theme_light calendar__button_action_sign-up" type="button">Записаться</button>
+              <p class="calendar__place-left">Осталось 5 мест</p>
+              <button class="button calendar__button-dots button_theme_light" type="button">&#8226;&#8226;&#8226;</button>
+            </div>
           </div>
         </article>
         <article class="card card_content_media">
@@ -375,6 +399,89 @@
     </nav>
   </footer>
 
+  <div class="popup popup_type_description">
+    <form class="popup__container popup__container_type_calendar">
+      <button class="popup__close popup__cancel" type="button"></button>
+      <div class="calendar__caption">
+        <div class="calendar__info">
+          <p class="calendar__type">Волонтёры + дети</p>
+          <p class="calendar__weekday">Декабрь / понедельник</p>
+        </div>
+        <div class="calendar__about">
+          <h2 class="section-title calendar__title calendar__title_type_popup">Занятие с выпускниками: как составить резюме</h2>
+          <p class="calendar__date">20</p>
+        </div>
+      </div>
+      <div class="calendar__meetup">
+        <p class="calendar__time">12:00–14:00</p>
+        <p class="calendar__place">Садовническая наб., д. 77 стр. 1 (офис компании Ernst&Young)</p>
+        <p class="calendar__contact">Александра, +7 926 356-78-90</p>
+        <div class="calendar__description">
+          <p class="paragraph calendar__desc-paragraph">Наконец-то наступила весна и мы пережили эту долгую зиму! И возможно, что внутренних сил и ресурса сейчас не
+            так много, а до окончания учебного года ещё целых несколько месяцев. Поэтому приглашаем вас на встречу нашего ресурсного клуба "Наставник PRO", которую мы
+            хотим посвятить теме поиска моральных сил, смыслов и внутреннего ресурса для общения и взаимодействия с нашими подопечными.
+          </p>
+        </div>
+        <div class="calendar__submit">
+          <button class="button button_theme_light button_action_confirm" type="button">Записаться</button>
+          <p class="calendar__place-left">Осталось 5 мест</p>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="popup popup_type_confirmation">
+    <form class="popup__container popup__container_type_confirmation">
+      <button class="popup__close popup__cancel" type="button"></button>
+      <h2 class="section-title calendar__title_type_popup calendar__title_type_confirmation">
+        Подтвердить запись на мероприятие «Субботний meet up: учимся проходить интервью» 5 декабря с 12:00–14:00
+      </h2>
+      <div class="calendar__buttons">
+        <button class="button button_theme_light calendar__confirm" type="button">Подтвердить запись</button>
+        <button class="button popup__cancel" type="button">Отменить</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="popup popup_type_done">
+    <form class="popup__container popup__container_type_done">
+      <div class="calendar__image-done"></div>
+      <button class="popup__close popup__cancel" type="button"></button>
+      <h2 class="section-title calendar__title_type_popup calendar__title_type_popup-done ">
+        Вы записаны на мероприятие «Субботний meet up: учимся проходить интервью» 5 декабря с 12:00–14:00.
+      </h2>
+      <h2 class="section-title calendar__title_type_popup calendar__title_type_popup-done">
+        Если у вас не получится прийти — отмените, пожалуйста, запись.
+      </h2>
+      <button class="button calendar__back popup__cancel" type="button">Вернуться к календарю</button>
+    </form>
+  </div>
+
+  <div class="popup pupup_type_cities cities">
+    <div class="popup__container popup__container_type_cities">
+      <h2 class="cities__title section-title">Выберите ваш город</h2>
+      <ul class="cities__capitals">
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Москва</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Санкт-Петербург</a></li>
+      </ul>
+      <ul class="cities__region">
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Алексин</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Барнаул</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Екатеринбург</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Зубцов</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Калининград</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Киреевск</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Коломна</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Новомосковск</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Орехово-Зуево</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Тверь</a></li>
+        <li class="cities__name"><a href="#" target="_self" class="cities__link">Тула</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="./scripts/cities/cities.js"></script>
+  <script src="./scripts/calendar/calendar.js"></script>
   <script src="./scripts/script.js"></script>
 </body>
 </html>

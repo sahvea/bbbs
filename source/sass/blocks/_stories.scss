@@ -115,6 +115,7 @@
 
 .stories__quote-text {
   text-align: center;
+  color: #1a1a1a;
 
   &:after {
     content: '';
@@ -146,11 +147,11 @@
 }
 
 .stories__arrow-left {
-  background-image: url('../../images/svg/arrow-left-black.svg');
+  background-image: url('../images/svg/arrow-left-black.svg');
 }
 
 .stories__arrow-right {
-  background-image: url('../../images/svg/arrow-right-black.svg');
+  background-image: url('../images/svg/arrow-right-black.svg');
 }
 
 @include atDesktop1380 {

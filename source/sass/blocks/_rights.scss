@@ -1,15 +1,15 @@
+.rights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: 1fr [first-line] 1px 1fr [second-line] 1px 1fr [third-line] 1px 1fr;
+  gap: 80px 30px;
+}
+
 .rights__card {
   flex-direction: row;
   align-items: unset;
   padding: 0;
   overflow: hidden;
-}
-
-.rights__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-template-rows: 1fr [first-line] 1px 1fr [second-line] 1px 1fr [third-line] 1px 1fr;
-  gap: 80px 30px;
 }
 
 .rights__rubric {
@@ -41,66 +41,19 @@
   align-self: auto;
   text-align: center;
   flex: 1;
-  //padding: 20px;
   text-decoration: none;
 }
 
-.rights__article-lead {
-  background: $yellow;
-  border-top-right-radius: 400px;
-  border-bottom-right-radius: 400px;
-  padding: 230px 50px;
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  margin-top: 178px;
-  &::before {
-    content: '';
-    position: absolute;
-    background: $yellow;
-    border-bottom-left-radius: 400px;
-    height: 250px;
-    width: 80%;
-    top: -250px;
-    right: 0;
-    z-index: -1;
-  }
-}
-
-@include atDesktop1639 {
-  .rights__card {
-    &:nth-last-of-type(-n+4) {
-      display: none;
-    }
-  }
-}
-
 @include atDesktop1440 {
-  .rights__container {
+  .rights {
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  }
-
-  .rights__article-lead {
-    padding: 134px 50px;
-    &::before {
-      height: 320px;
-      top: -320px;
-    }
   }
 }
 
 @include atDesktop1199 {
-  .rights__container {
+  .rights {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr [third-line] 1px 1fr;
-    gap: 80px 30px;
-  }
-
-  .rights__card {
-    &:nth-last-of-type(-n+12) {
-      display: none;
-    }
   }
 
   .rights__line {
@@ -110,19 +63,21 @@
   }
 }
 
-@include atDesktop1023 {
-  .rights__article-lead {
-    padding: 71px 50px;
-    &::before {
-      height: 270px;
-      top: -270px;
-    }
+@include atDesktop1024 {
+  .rights {
+    padding-top: 50px;
+    grid-template-rows: 1fr [third-line] 1px 1fr;
+    gap: 30px;
+  }
+
+  .rights__card {
+    margin: 0 auto;
+    max-width: 290px;
   }
 }
 
 @include atTablet {
-
-  .rights__container {
+  .rights {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr [first-line] 1px 1fr [second-line] 1px 1fr [third-line] 1px 1fr;
     gap: 30px;
@@ -133,16 +88,10 @@
       display: block;
     }
   }
+}
 
-  .rights__article-lead {
-    padding: 20px 15px 50px;
-    margin-top: 0;
-    border-radius: unset;
-    &::before {
-      height: 60px;
-      top: -60px;
-      width: 100%;
-      border-radius: unset;
-    }
+@include atMobile {
+  .rights {
+    padding-top: 30px;
   }
 }

@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/favicon/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
-  <title>Книги</title>
+  <title>Личный кабинет</title>
 </head>
 <body class="page">
   <header class="header page__section">
@@ -103,67 +104,78 @@
           <button class="menu__button menu__button_type_active-user" type="button" aria-label="Личный кабинет" title="Личный кабинет"></button>
         </li>
       </ul>
-      <div class="menu__user-info">
-        <a href="#" class="paragraph menu__user-link menu__user-link_type_city">Москва. Изменить город</a>
-        <a href="#" class="paragraph menu__user-link menu__user-link_type_exit">Выйти</a>
-      </div>
     </nav>
   </header>
 
   <main class="main">
-    <section class="lead page__section personal-area__lead">
-      <h2 class="section-title personal-area__title">У вас нет записи на мероприятия</h2>
-    </section>
+    <section class="personal-area page__section">
+      <div class="personal-area__user-info">
+        <a href="#" class="paragraph personal-area__user-link personal-area__user-link_type_city">Изменить город</a>
+        <a href="#" class="paragraph personal-area__user-link personal-area__user-link_type_exit">Выйти</a>
+      </div>
 
-    <section class="page__section personal-area__lead">
-      <h2 class="section-title personal-area__subtitle">Составьте историю вашей дружбы с младшим. Эта страница доступна только вам.</h2>
-      <div class="card-container card-container_type_personal-area">
-        <div class="card personal-area__card personal-area__card_type_add-photo">
-          <button class="personal-area__add-photo-button"></button>
-          <p class="personal-area__tag-bottom">Загрузить фото</p>
+      <div class="personal-area__sign-up">
+        <h2 class="section-title personal-area__title personal-area__title_type_sign-up">У вас нет записи на мероприятия</h2>
+      </div>
+
+      <div class="personal-area__story">
+        <h2 class="section-title personal-area__title">Составьте историю вашей дружбы с младшим. Эта страница доступна только вам.</h2>
+
+
+        <div class="card-container card-container_type_personal-area">
+          <div class="card personal-area__card personal-area__card_type_add-photo">
+            <button class="personal-area__add-photo-button" type="button"></button>
+            <p class="caption personal-area__bottom-caption">Загрузить фото</p>
+          </div>
+
+          <div class="card personal-area__card personal-area__card_type_content">
+            <form action="" name="add-story-form" class="personal-area__form">
+              <input type="text" name="place" placeholder="Место встречи" required class="personal-area__form-input">
+              <input type="date" name="date" placeholder="Дата __.__.____" required class="personal-area__form-input" onchange="this.className=(this.value!=''?'has-value':'')">
+              <textarea type="text" name="story" class="personal-area__form-input personal-area__form-input_type_textarea" placeholder="Опишите вашу встречу, какие чувства вы испытывали, что понравилось / не понравилось" required></textarea>
+
+              <div class="personal-area__rating">
+                <button class="personal-area__rate personal-area__rate_type_good" type="button"></button>
+                <button class="personal-area__rate personal-area__rate_type_neutral" type="button"></button>
+                <button class="personal-area__rate personal-area__rate_type_bad" type="button"></button>
+                <p class="caption personal-area__rating-label">Оцените проведенное время</p>
+              </div>
+
+              <div class="personal-area__buttons">
+                <button class="button" type="reset">Удалить</button>
+                <button class="button" type="submit" disabled>Добавить</button>
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="card personal-area__card personal-area__card_type_content">
-          <form action="" class="personal-area__form">
-            <input type="text" class="personal-area__form-input" placeholder="Место встречи">
-            <input type="date" class="personal-area__form-input" placeholder="Дата __________">
-            <input type="text" class="personal-area__form-input personal-area__form-input_type_textarea" placeholder="Опишите вашу встречу, какие чувства вы испытывали, что понравилось / не понравилось">
-            <div class="personal-area__rate">
+
+        <div class="card-container card-container_type_personal-area">
+          <img src="./images/personal-area/personal-area-katya.jpg" alt="Катя" class="card personal-area__card personal-area__card_type_photo">
+          <div class="personal-area__container">
+            <div class="card personal-area__box">
+              <div class="card personal-area__text-box">
+                <h2 class="section-title personal-area__card-title">Парк Горького</h2>
+                <p class="card__content personal-area__card-text paragraph">
+                  Описание в несколько срок. Подробное описание. Опишите вашу встречу, какие чувства вы испытывали, что понравилось не понравилось. Описание в несколько срок. Подробное описание. Подробное описание.
+                  Опишите вашу встречу, какие чувства вы испытывали, что понравилось не понравилось.  Описание в несколько срок. Подробное описание. Опишите вашу встречу, какие чувства вы испытывали, что понравилось
+                  не понравилось. Описание в несколько срок. Подробное описание. Подробное описание. Опишите вашу встречу, какие чувства вы испытывали, что понравилось не понравилось. чувства вы испытывали, что понравилось не понравилось.
+                </p>
+              </div>
+              <div class="personal-area__card-date">
+                <p class="personal-area__card-month calendar__weekday personal-area__card-weekday">декабрь, 2020</p>
+                <p class="calendar__date personal-area__card-day">05</p>
+              </div>
+            </div>
+            <div class="personal-area__actions">
               <div class="personal-area__rate-good"></div>
-              <div class="personal-area__rate-neutral"></div>
-              <div class="personal-area__rate-bad"></div>
-              <p class="personal-area__rate-label">Оцените проведенное время</p>
+              <button class="button personal-area__delete" type="button">Удалить</button>
             </div>
-            <div class="personal-area__buttons">
-              <button class="button" type="reset">Удалить</button>
-              <button class="button" disabled>Добавить</button>
-            </div>
-          </form>
+          </div>
         </div>
+
       </div>
 
-      <div class="card-container card-container_type_content">
-        <img src="./images/personal-area/personal-area-katya.jpg" alt="Катя" class="card personal-area__card personal-area__card_type_photo">
-        <div class="personal-area__container">
-          <div class="card personal-area__box">
-            <div class="card personal-area__text-box">
-              <h2 class="section-title personal-area__card-title">Парк Горького</h2>
-              <p class="card__content personal-area__card-text paragraph">
-                Описание в несколько срок. Подробное описание. Опишите вашу встречу, какие чувства вы испытывали, что понравилось не понравилось. Описание в несколько срок. Подробное описание. Подробное описание.
-                Опишите вашу встречу, какие чувства вы испытывали, что понравилось не понравилось.  Описание в несколько срок. Подробное описание. Опишите вашу встречу, какие чувства вы испытывали, что понравилось
-                не понравилось. Описание в несколько срок. Подробное описание. Подробное описание. Опишите вашу встречу, какие чувства вы испытывали, что понравилось не понравилось. чувства вы испытывали, что понравилось не понравилось.
-              </p>
-            </div>
-            <div class="personal-area__card-date">
-              <p class="personal-area__card-month calendar__weekday personal-area__card-weekday">декабрь, 2020</p>
-              <p class="calendar__date personal-area__card-day">05</p>
-            </div>
-          </div>
-          <div class="personal-area__actions">
-            <div class="personal-area__rate-good"></div>
-            <button class="button personal-area__delete" type="button">Удалить</button>
-          </div>
-        </div>
-      </div>
+
     </section>
   </main>
 

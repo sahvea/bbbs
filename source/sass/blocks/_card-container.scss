@@ -32,11 +32,16 @@
   }
 
   &_type_personal-area {
-    padding-bottom: 80px;
     max-width: 1170px;
-    grid-template-columns: minmax(290px, 470px) minmax(max-content, 1fr);
-    grid-template-rows: minmax(290px, 1fr);
-    font-family: $protoGrotesk;
+    //grid-template-columns: minmax(290px, 470px) minmax(max-content, 1fr);
+    padding-top: 80px;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 470px;
+    //grid-template-rows: minmax(290px, 1fr);
+
+    &:first-of-type {
+      padding-top: 50px;
+    }
   }
 
   &_type_content {

@@ -1,3 +1,40 @@
+.personal-area {
+  padding-top: 30px;
+}
+
+.personal-area__user-info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.personal-area__user-link {
+  text-decoration: none;
+  color: $lightGray;
+  margin-left: 30px;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+}
+
+.personal-area__sign-up {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid $darkGray;
+}
+
+.personal-area__title {
+  margin: 0 auto;
+  max-width: 770px;
+  text-align: center;
+  color: $lightBlack;
+}
+
+.personal-area__story {
+  padding-top: 50px;
+}
+
 .personal-area__card {
   padding: 30px 30px 20px;
 
@@ -7,23 +44,118 @@
     align-items: center;
   }
 
-  &_type_photo {
+  /* &_type_photo {
     padding: 0;
     object-fit: cover;
-    width: 470px;
-    height: 470px;
+  } */
+}
+
+.personal-area__add-photo-button {
+  padding: 0;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/svg/personal-area-plus.svg) center no-repeat;
+  border: 1px solid $lightGray;
+  border-radius: 100%;
+  outline: none;
+  cursor: pointer;
+}
+
+.personal-area__bottom-caption {
+  padding-top: 5px;
+  color: $lightGray;
+}
+
+.personal-area__form {
+  width: 100%;
+  display: grid;
+  gap: 20px 30px;
+  grid-template-columns: 1fr minmax(240px, 290px);
+  grid-template-rows: auto;
+}
+
+.personal-area__form-input {
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  padding: 13px 20px 16px;
+  background-color: $background;
+  font-family: $protoGrotesk;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.3;
+  letter-spacing: 0.2px;
+  color: $black;
+
+  &::placeholder {
+    color: $lightGray;
+  }
+
+  &_type_textarea {
+    grid-column: 1 / -1;
+    min-height: 286px;
+    resize: none;
+  }
+
+  &[type="date"]:not(:focus):not(.has-value):before {
+    color:$lightGray;
+    content: attr(placeholder);
   }
 }
 
-.personal-area__container {
+.personal-area__rating {
+  display: flex;
+  align-items: center;
+}
+
+.personal-area__rate {
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  margin-right: 15px;
+  border: none;
+  outline: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+
+  &_type_good {
+    background-image: url('../../images/personal-area/good.svg');
+  }
+
+  &_type_neutral {
+    background-image: url('../../images/personal-area/neutral.svg');
+  }
+
+  &_type_bad {
+    background-image: url('../../images/personal-area/bad.svg');
+  }
+}
+
+.personal-area__rating-label {
+  color: $lightGray;
+}
+
+.personal-area__buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* .personal-area__container {
   display: flex;
   flex-direction: column;
   width: 700px;
   background-color: $white;
   border-radius: 30px;
-}
+} */
 
-.personal-area__text-box {
+/* .personal-area__text-box {
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -34,11 +166,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
+} */
 
-.personal-area__buttons {
-  display: flex;
-}
+
 
 .personal-area__card-date {
   display: flex;
@@ -71,12 +201,7 @@
   max-height: 286px;
 }
 
-.personal-area__title {
-  color: $lightBlack;
-  text-align: center;
-  padding-bottom: 50px;
-  border-bottom: 1px solid $darkGray;
-}
+
 
 .personal-area__card-title {
   align-self: flex-start;
@@ -89,83 +214,9 @@
   padding-bottom: 50px;
 }
 
-.personal-area__form {
-  width: 100%;
-  display: grid;
-  gap: 20px 30px;
-  grid-template-columns: 1fr minmax(240px, 290px);
-  grid-template-rows: auto;
-}
-
-.personal-area__form-input {
-  font-family: $protoGrotesk;
-  min-height: 48px;
-  border: none;
-  border-radius: 30px;
-  padding: 13px 20px 16px;
-  background: $background;
-  box-sizing: border-box;
-  outline: none;
-  &::placeholder {
-    color: $lightGray;
-  }
-  &_type_textarea {
-    grid-column: 1 / -1;
-    min-height: 286px;
-  }
-}
-
-.personal-area__rate {
-  display: flex;
-  align-items: center;
-
-  &-good {
-    background-image: url('../../images/personal-area/good.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    width: 26px;
-    height: 26px;
-    padding-right: 15px;
-  }
-
-  &-neutral {
-    background-image: url('../../images/personal-area/neutral.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    width: 26px;
-    height: 26px;
-    padding-right: 15px;
-  }
-
-  &-bad {
-    background-image: url('../../images/personal-area/bad.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    width: 26px;
-    height: 26px;
-    padding-right: 15px;
-  }
-
-  &-label {
-    font-size: 14px;
-    color: $lightGray;
-  }
-}
 
 
-.personal-area__add-photo-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url(../images/svg/personal-area-plus.svg) center no-repeat;
-  border: 1px solid $lightGray;
-  border-radius: 100%;
-  height: 100px;
-  width: 100px;
-}
+
 
 @include atDesktop1380 {
   .personal-area__card_type_photo {

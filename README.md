@@ -5,7 +5,6 @@
 
 [Ссылка на GitHub Pages](https://sophiemilash.github.io/bbbs-2/)
 
-###Технологии###
 * HTML5 & SCSS;
 * Gulp
 * JS;

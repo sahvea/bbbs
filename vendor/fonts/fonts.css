@@ -1,0 +1,19 @@
+@font-face {
+	font-family: 'PTRootUIWebRegular';
+  font-weight: 400;
+	font-style: normal;
+  font-display: swap;
+	src: url('PT-Root-UI_Regular.woff2') format('woff2'),
+	     url('PT-Root-UI_Regular.woff') format('woff'),
+	     url('PT-Root-UI_Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'ProtoGroteskWebLight';
+  font-weight: 300;
+	font-style: normal;
+  font-display: swap;
+	src: url('Proto-Grotesk-Light-Web.woff2') format('woff2'),
+	     url('Proto-Grotesk-Light-Web.woff') format('woff'),
+	     url('Proto-Grotesk-Light-Web.ttf') format('truetype');
+}

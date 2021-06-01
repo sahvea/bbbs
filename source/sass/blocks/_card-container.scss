@@ -38,7 +38,7 @@
     grid-template-rows: 470px;
 
     &:first-of-type {
-      padding-top: 50px;
+      padding-top: 0px;
     }
   }
 }
@@ -65,10 +65,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: 450px 1fr;
     padding-top: 30px;
-
-    &:first-of-type {
-      padding-top: 30px;
-    }
   }
 
 }

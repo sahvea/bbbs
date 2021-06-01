@@ -57,8 +57,18 @@
 }
 
 @include atDesktop1024 {
-  .personal-area__rating {
-    padding: 10px 0 20px;
+  .rating {
+    margin-top: 15px;
     width: 100%;
+  }
+
+  .rating__button {
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+
+    &:last-of-type {
+      margin-right: 15px;
+    }
   }
 }

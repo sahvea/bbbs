@@ -9,10 +9,6 @@
   color: $blue;
 }
 
-.link_type_test {
-  margin-top: 40px;
-}
-
 @include atDesktop1024 {
   .link {
     font-size: 12px;

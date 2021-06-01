@@ -114,8 +114,24 @@
         <a href="#" class="paragraph personal-area__user-link personal-area__user-link_type_exit">Выйти</a>
       </div>
 
-      <div class="personal-area__sign-up">
-        <h2 class="section-title personal-area__title personal-area__title_type_sign-up">У вас нет записи на мероприятия</h2>
+      <div class="personal-area__events">
+        <h1 class="section-title personal-area__title personal-area__title_type_sign-up">Вы записаны на мероприятия:</h1>
+        <ul class="personal-area__event-list">
+          <li class="personal-area__event card">
+            <div class="personal-area__event-date">
+              <p class="personal-area__event-number chapter-title">05</p>
+              <p class="personal-area__event-month caption">декабрь</p>
+            </div>
+            <p class="personal-area__event-text caption">Субботний meet up: учимся проходить интевью</p>
+          </li>
+          <li class="personal-area__event card">
+            <div class="personal-area__event-date">
+              <p class="personal-area__event-number chapter-title">16</p>
+              <p class="personal-area__event-month caption">декабрь</p>
+            </div>
+            <p class="personal-area__event-text caption">Ресурсная группа «Вовлечение в волонтёрство» </p>
+          </li>
+        </ul>
       </div>
 
       <div class="personal-area__story">
@@ -130,7 +146,7 @@
           <div class="card personal-area__card personal-area__card_type_content">
             <form action="" name="add-story-form" class="personal-area__form">
               <input type="text" name="place" placeholder="Место встречи" required class="personal-area__form-input">
-              <input type="date" name="date" placeholder="Дата&emsp;" required class="personal-area__form-input" onchange="this.className=(this.value!=''?'has-value':'')">
+              <input type="date" name="date" placeholder="Дата&emsp;" required class="personal-area__form-input" onchange="this.className=(this.value!=''?'has-value personal-area__form-input':'')">
               <textarea type="text" name="story" class="personal-area__form-input personal-area__form-input_type_textarea" placeholder="Опишите вашу встречу, какие чувства вы испытывали, что понравилось / не понравилось" required></textarea>
 
               <div class="personal-area__rating">

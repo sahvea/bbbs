@@ -18,7 +18,7 @@
   }
 }
 
-.personal-area__sign-up {
+.personal-area__events {
   padding-top: 30px;
   padding-bottom: 50px;
   border-bottom: 1px solid $darkGray;
@@ -29,6 +29,39 @@
   max-width: 770px;
   text-align: center;
   color: $lightBlack;
+}
+
+// карточки с мероприятиями
+.personal-area__event-list {
+  margin: 30px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 270px);
+  gap: 30px;
+}
+
+.personal-area__event {
+  min-width: 270px;
+  padding: 30px;
+  padding-right: 24px;
+}
+
+.personal-area__event-date {
+  width: 100%;
+  display: flex;
+}
+
+.personal-area__event-number {
+  margin-right: 10px;
+}
+
+.personal-area__event-month {
+  color: $black;
+}
+
+.personal-area__event-text {
+  margin-top: 10px;
+  color: $black;
 }
 
 .personal-area__story {
@@ -243,9 +276,29 @@
     display: none;
   }
 
-  .personal-area__sign-up {
+  .personal-area__events {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  .personal-area__event-list {
+    margin-top: 20px;
+    grid-template-columns: repeat(auto-fit, 205px);
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .personal-area__event {
+    min-width: 205px;
+    padding: 15px;
+  }
+
+  .personal-area__event-text {
+    margin-top: 5px;
   }
 
   .personal-area__story {

@@ -1,4 +1,4 @@
-const popupCalendar = document.querySelector('.popup_type_description');
+const popupCalendar = document.querySelector('.popup_type_calendar');
 const popupConfirm = document.querySelector('.popup_type_confirmation');
 const popupDone = document.querySelector('.popup_type_done');
 const popups = document.querySelectorAll('.popup');

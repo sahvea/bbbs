@@ -18,6 +18,8 @@
 }
 
 .popup__container {
+  margin: 0;
+  padding: 0;
   z-index: 2;
   border-radius: 30px;
   padding-right: 5px;
@@ -35,10 +37,6 @@
   &_type_confirmation {
     height: 670px;
     justify-content: center;
-  }
-
-  &_type_calendar {
-    height: 670px;
   }
 
   &_type_lk {
@@ -93,6 +91,10 @@
   &_type_sign-in {
     width: 765px;
   }
+
+  &_type_calendar {
+    width: 765px;
+  }
 }
 
 .popup__img {
@@ -121,6 +123,14 @@
   margin-top: 5px;
 }
 
+.popup__calendar-wrap {
+  max-width: 570px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; */
+}
+
 
 /* TODO */
 
@@ -139,7 +149,7 @@
   padding: 0;
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 15px;
   background-image: url('../images/svg/popup_close.svg');
   width: 40px;
   height: 40px;
@@ -196,6 +206,11 @@
       width: fit-content;
     }
 
+    &_type_calendar {
+      padding-top: 60px;
+      width: fit-content;
+    }
+
   }
 
   .popup__img {
@@ -216,7 +231,7 @@
 @include atMobileL {
   .popup__close {
     top: 15px;
-    right: 15px;
+    right: 10px;
   }
 
   .popup_type_video {

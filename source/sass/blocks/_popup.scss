@@ -37,11 +37,6 @@
     justify-content: center;
   }
 
-  &_type_sign-in {
-    justify-content: space-between;
-    height: 559px;
-  }
-
   &_type_calendar {
     height: 670px;
   }
@@ -93,6 +88,10 @@
     padding-top: 30px;
     width: 1705px;
     height: 955px;
+  }
+
+  &_type_sign-in {
+    width: 765px;
   }
 }
 
@@ -153,20 +152,6 @@
   cursor: pointer;
 }
 
-.popup__title_type_sign-in {
-  padding-bottom: 15px;
-  text-align: center;
-}
-
-.popup__sign-in {
-  text-align: center;
-  padding-bottom: 30px;
-
-  &:nth-of-type(2) {
-    padding-bottom: 50px;
-  }
-}
-
 .popup__input {
   box-sizing: border-box;
   padding: 10px 20px;
@@ -176,14 +161,6 @@
   border-radius: 30px;
   outline: none;
   border: none;
-}
-
-.popup__forgot-password {
-  margin: 0;
-  padding-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.5;
-  color: $darkGray;
 }
 
 .popup__enter {
@@ -211,6 +188,12 @@
 
     &_type_cities {
       width: 325px;
+    }
+
+    &_type_sign-in {
+      padding-top: 60px;
+      padding-bottom: 50px;
+      width: fit-content;
     }
 
   }

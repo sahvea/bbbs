@@ -59,7 +59,8 @@
 }
 
 .recommendation__input_type_radio {
-  padding-bottom: 8px;
+  display: flex;
+  align-items: center;
   color: $lightGray;
 }
 

@@ -42,14 +42,6 @@
     height: 670px;
   }
 
-  &_type_cities {
-    padding: 50px 85px 0;
-    align-items: center;
-    justify-content: flex-start;
-    max-width: 400px;
-    max-height: 547px;
-  }
-
   &_type_lk {
     justify-content: space-between;
     align-items: center;
@@ -65,7 +57,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   max-width: 80vw;
   max-height: 90vh;
   min-width: 285px;
@@ -82,14 +74,16 @@
     border-radius: 5px;
   }
 
-  &_type_recommendation {
-    justify-content: flex-start;
-  }
-
   &_type_recommendation-finish {
-    justify-content: flex-start;
     align-items: center;
     width: 765px;
+  }
+
+  &_type_cities {
+    padding-left: 15px;
+    padding-right: 10px;
+    align-items: center;
+    width: 395px;
   }
 }
 
@@ -207,10 +201,6 @@
 @include atDesktop1024 {
   .popup__container {
 
-    &_type_cities {
-      max-width: 320px;
-    }
-
     &_type_lk {
       padding: 50px 15px;
       width: 320px;
@@ -223,6 +213,10 @@
 
     &_type_recommendation-finish {
       width: fit-content;
+    }
+
+    &_type_cities {
+      width: 325px;
     }
 
   }
@@ -266,13 +260,6 @@
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 30px;
-  }
-
-  .popup__container {
-
-    &_type_cities {
-      max-width: 320px;
-    }
   }
 
   .popup__box-inputs {

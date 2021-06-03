@@ -1,5 +1,4 @@
-// открытие попапа с видео
-const pupupCity = document.querySelector('.pupup_type_cities');
+const pupupCity = document.querySelector('.popup_type_cities');
 const menuChangeCityLink = document.querySelector('.menu__user-link_type_city');
 
 

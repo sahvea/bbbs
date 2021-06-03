@@ -7,11 +7,6 @@
   color: $black;
 }
 
-.paragraph_type_test {
-  padding-top: 50px;
-  max-width: 472px;
-}
-
 @include atDesktop1024 {
   .paragraph {
     font-size: 15px;

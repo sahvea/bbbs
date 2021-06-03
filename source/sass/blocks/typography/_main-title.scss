@@ -8,10 +8,6 @@
   text-align: center;
 }
 
-.main-title_type_test {
-  margin-top: 40px;
-}
-
 @include atDesktop1024 {
   .main-title {
     font-size: 37px;

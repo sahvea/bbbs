@@ -1,0 +1,74 @@
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating__button {
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  margin-right: 15px;
+  border: none;
+  outline: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+
+  &_type_good {
+    background-image: url('../images/personal-area/good.svg');
+  }
+
+  &_type_neutral {
+    background-image: url('../images/personal-area/neutral.svg');
+  }
+
+  &_type_bad {
+    background-image: url('../images/personal-area/bad.svg');
+  }
+
+  &_type_active-good {
+    background-image: url('../images/personal-area/good-active.svg');
+  }
+
+  &_type_active-neutral {
+    background-image: url('../images/personal-area/neutral-active.svg');
+  }
+
+  &_type_active-bad {
+    background-image: url('../images/personal-area/bad-active.svg');
+  }
+}
+
+.rating__label {
+  color: $lightGray;
+
+  &_type_good {
+    color: $green;
+  }
+
+  &_type_neutral {
+    color: $darkGray;
+  }
+
+  &_type_bad {
+    color: $error;
+  }
+}
+
+@include atDesktop1024 {
+  .rating {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .rating__button {
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+
+    &:last-of-type {
+      margin-right: 15px;
+    }
+  }
+}

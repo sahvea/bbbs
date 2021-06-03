@@ -9,13 +9,13 @@
 @import './blocks/main.scss';
 @import './blocks/main-section.scss';
 // типография
-@import './blocks/main-title.scss';
-@import './blocks/section-title.scss';
-@import './blocks/chapter-title.scss';
-@import './blocks/paragraph.scss';
-@import './blocks/link.scss';
-@import './blocks/caption.scss';
-@import './blocks/rubric.scss';
+@import './blocks/typography/main-title.scss';
+@import './blocks/typography/section-title.scss';
+@import './blocks/typography/chapter-title.scss';
+@import './blocks/typography/paragraph.scss';
+@import './blocks/typography/link.scss';
+@import './blocks/typography/caption.scss';
+@import './blocks/typography/rubric.scss';
 // buttons
 @import './blocks/button.scss';
 // header
@@ -70,6 +70,7 @@
 @import './blocks/footer.scss';
 //cities
 @import './blocks/cities.scss';
-//
+//personal-area
 @import './blocks/personal.scss';
-@import './blocks/personal-area';
+@import './blocks/personal-area.scss';
+@import './blocks/rating.scss';

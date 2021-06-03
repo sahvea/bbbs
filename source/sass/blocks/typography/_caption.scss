@@ -8,10 +8,6 @@
   color: $darkGray;
 }
 
-.caption_type_test {
-  margin-top: 20px;
-}
-
 @include atDesktop1024 {
   .caption {
     font-size: 12px;

@@ -6,116 +6,129 @@
   right: 0;
   left: 0;
   bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, .5);
-  transition: visibility .3s, opacity .3s linear;
+  transition: .3s linear;
+}
 
-  &__container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    z-index: 2;
-    margin: 75px auto 0;
-    padding: 50px 100px;
-    border-radius: 30px;
-    max-width: 770px;
-    max-height: 80vh;
-    background-color: $white;
-    font-family: $ptRootUI;
-    box-sizing: border-box;
+.popup__container {
+  z-index: 2;
+  border-radius: 30px;
+  padding-right: 5px;
+  background-color: $white;
+  font-family: $ptRootUI;
+  box-sizing: border-box;
+  overflow: hidden;
 
-    &_type_recommendation {
-      justify-content: flex-start;
-      height: 618px;
-
-      &-finish {
-        justify-content: center;
-        align-items: center;
-      }
-    }
-
-    &_type_done {
-      justify-content: center;
-      height: 670px;
-    }
-
-    &_type_confirmation {
-      height: 670px;
-      justify-content: center;
-    }
-
-    &_type_sign-in {
-      justify-content: space-between;
-      height: 559px;
-    }
-
-    &_type_calendar {
-      height: 670px;
-    }
-
-    &_type_cities {
-      padding: 50px 85px 0;
-      align-items: center;
-      justify-content: flex-start;
-      max-width: 400px;
-      max-height: 547px;
-    }
-
-    &_type_lk {
-      justify-content: space-between;
-      align-items: center;
-      padding: 50px 30px;
-      width: 470px;
-      height: 238px;
-    }
+  /* TODO */
+  &_type_done {
+    justify-content: center;
+    height: 670px;
   }
 
-  &__box {
-    margin: 150px auto 0;
-    box-sizing: border-box;
-    position: relative;
-    max-width: 75vw;
-    max-height: 75vh;
-
-    &_type_video {
-      padding: 30px 30px 50px;
-      margin-top: 50px;
-      width: 1770px;
-      height: 1770px;
-    }
+  &_type_confirmation {
+    height: 670px;
+    justify-content: center;
   }
 
   &_type_sign-in {
-    backdrop-filter: blur(7px);
-  }
-
-  &__box-inputs {
-    display: flex;
     justify-content: space-between;
+    height: 559px;
   }
 
-  &__textarea {
-    box-sizing: border-box;
-    resize: none;
-    padding: 15px 20px;
-    margin-bottom: 10px;
-    min-height: 50px;
-    max-height: 100px;
-    background-color: $background;
-    border-radius: 30px;
-    border: none;
-    outline: none;
+  &_type_calendar {
+    height: 670px;
   }
 
-  &__buttons {
-    display: flex;
+  &_type_lk {
     justify-content: space-between;
-    width: 228px;
+    align-items: center;
+    padding: 50px 30px;
+    width: 470px;
+    height: 238px;
+  }
+
+  /* TODO */
+}
+
+.popup__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 80vw;
+  max-height: 90vh;
+  min-width: 285px;
+  padding: 50px 25px 50px 30px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: $lightGray transparent;
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $lightGray;
+    border-radius: 5px;
+  }
+
+  &_type_recommendation-finish {
+    align-items: center;
+    width: 765px;
+  }
+
+  &_type_cities {
+    padding-left: 15px;
+    padding-right: 10px;
+    align-items: center;
+    width: 395px;
   }
 }
 
-.popup_opened {
+.popup__img {
+  width: 280px;
+  margin-top: 30px;
+}
+
+.popup__finish-text {
+  margin: 30px 130px 150px;
+  max-width: 504px;
+  text-align: center;
+}
+
+
+
+
+/* TODO */
+
+.popup__box {
+  margin: 150px auto 0;
+  box-sizing: border-box;
+  position: relative;
+  max-width: 75vw;
+  max-height: 75vh;
+
+  &_type_video {
+    padding: 30px 30px 50px;
+    margin-top: 50px;
+    width: 1770px;
+    height: 1770px;
+  }
+}
+
+.popup_type_sign-in {
+  backdrop-filter: blur(7px);
+}
+
+.popup__buttons {
   display: flex;
+  justify-content: space-between;
+  width: 228px;
+}
+
+.popup_opened {
   opacity: 1;
   visibility: visible;
 }
@@ -160,22 +173,6 @@
   border-radius: 30px;
   outline: none;
   border: none;
-
-  &_required::placeholder {
-    color: red;
-  }
-
-  &_type_low {
-    width: 170px;
-  }
-
-  &_type_middle {
-    width: 270px;
-  }
-
-  &_type_radio {
-    padding-left: 50px;
-  }
 }
 
 .popup__forgot-password {
@@ -199,28 +196,10 @@
   }
 }
 
+/*  */
+
 @include atDesktop1024 {
-  .popup__input {
-    &_type_low {
-      width: 155px;
-    }
-
-    &_type_middle {
-      width: 200px
-    }
-  }
-
-  .popup__buttons {
-    width: 170px;
-  }
-
   .popup__container {
-    padding: 50px;
-    max-width: 570px;
-
-    &_type_cities {
-      max-width: 320px;
-    }
 
     &_type_lk {
       padding: 50px 15px;
@@ -228,6 +207,33 @@
       height: 216px;
     }
   }
+
+  .popup__content {
+    padding: 30px 10px 30px 15px;
+
+    &_type_recommendation-finish {
+      width: fit-content;
+    }
+
+    &_type_cities {
+      width: 325px;
+    }
+
+  }
+
+  .popup__img {
+    width: 200px;
+    margin-top: 20px;
+  }
+
+  .popup__finish-text {
+    margin: 20px 30px 80px;
+  }
+
+  .popup__buttons {
+    width: 170px;
+  }
+
 }
 
 @include atMobileL {
@@ -240,31 +246,20 @@
     display: none;
   }
 
-  .popup__container {
-    max-width: 450px;
-    padding: 60px 15px 30px;
-  }
+  // .popup__container {
+  //   padding: 60px 15px 30px;
+  // }
 
   .popup__input {
     &_type_low {
       width: 135px;
     }
   }
-}
 
-@include atMobile {
-  .popup__container {
-    max-width: 290px;
-    margin-top: 10px;
-
-    &_type_recommendation {
-      justify-content: flex-start;
-      min-height: 800px;
-    }
-
-    &_type_cities {
-      max-width: 320px;
-    }
+  .popup__finish-text {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
   }
 
   .popup__box-inputs {

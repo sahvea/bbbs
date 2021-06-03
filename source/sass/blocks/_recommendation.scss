@@ -200,6 +200,7 @@
   }
 
   .recommendation__add-photo {
+    margin-top: 10px;
     gap: 15px;
   }
 
@@ -216,5 +217,9 @@
       left: 14px;
       width: 10px;
     }
+  }
+
+  .recommendation__submit {
+    margin-top: 10px;
   }
 }

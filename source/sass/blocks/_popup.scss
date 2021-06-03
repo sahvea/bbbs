@@ -20,6 +20,7 @@
   background-color: $white;
   font-family: $ptRootUI;
   box-sizing: border-box;
+  overflow: hidden;
 
   /* TODO */
   &_type_done {
@@ -65,8 +66,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 90vw;
+  max-width: 80vw;
   max-height: 90vh;
+  min-width: 285px;
   padding: 50px 25px 50px 30px;
   box-sizing: border-box;
   overflow-y: scroll;
@@ -87,6 +89,7 @@
   &_type_recommendation-finish {
     justify-content: flex-start;
     align-items: center;
+    width: 765px;
   }
 }
 
@@ -218,10 +221,9 @@
   .popup__content {
     padding: 30px 10px 30px 15px;
 
-/*     &_type_recommendation-finish {
+    &_type_recommendation-finish {
       width: fit-content;
-      min-height: 400px;
-    } */
+    }
 
   }
 
@@ -259,9 +261,13 @@
       width: 135px;
     }
   }
-}
 
-@include atMobile {
+  .popup__finish-text {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+
   .popup__container {
 
     &_type_cities {

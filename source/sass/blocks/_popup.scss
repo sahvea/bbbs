@@ -11,6 +11,10 @@
   align-items: center;
   background-color: rgba(0, 0, 0, .5);
   transition: .3s linear;
+
+  &_type_sign-in {
+    backdrop-filter: blur(7px);
+  }
 }
 
 .popup__container {
@@ -58,6 +62,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   max-width: 80vw;
   max-height: 90vh;
   min-width: 285px;
@@ -75,15 +80,19 @@
   }
 
   &_type_recommendation-finish {
-    align-items: center;
     width: 765px;
   }
 
   &_type_cities {
     padding-left: 15px;
     padding-right: 10px;
-    align-items: center;
     width: 395px;
+  }
+
+  &_type_video {
+    padding-top: 30px;
+    width: 1705px;
+    height: 955px;
   }
 }
 
@@ -98,29 +107,22 @@
   text-align: center;
 }
 
+.popup__video-iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 
+.popup__video-title {
+  margin-top: 30px;
+}
+
+.popup__video-caption {
+  margin-top: 5px;
+}
 
 
 /* TODO */
-
-.popup__box {
-  margin: 150px auto 0;
-  box-sizing: border-box;
-  position: relative;
-  max-width: 75vw;
-  max-height: 75vh;
-
-  &_type_video {
-    padding: 30px 30px 50px;
-    margin-top: 50px;
-    width: 1770px;
-    height: 1770px;
-  }
-}
-
-.popup_type_sign-in {
-  backdrop-filter: blur(7px);
-}
 
 .popup__buttons {
   display: flex;
@@ -187,15 +189,6 @@
   width: 85px;
 }
 
-@include atDesktop1440 {
-  .popup__container {
-    &_type_video {
-      width: 1170px;
-      height: 1125px;
-    }
-  }
-}
-
 /*  */
 
 @include atDesktop1024 {
@@ -245,10 +238,6 @@
   .popup_type_video {
     display: none;
   }
-
-  // .popup__container {
-  //   padding: 60px 15px 30px;
-  // }
 
   .popup__input {
     &_type_low {

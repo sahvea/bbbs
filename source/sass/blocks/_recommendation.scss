@@ -1,69 +1,220 @@
-.recommendation {
-  &__popup-title {
-    padding-bottom: 40px;
-    text-align: center;
+.recommendation__place-info {
+  margin: 0;
+  padding: 0;
+  border: none;
+  max-width: 710px;
+}
+
+.recommendation__title {
+  text-align: center;
+}
+
+.recommendation__input-wrap {
+  margin: 40px 70px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  gap: 20px 30px;
+}
+
+.recommendation__input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 48px;
+  padding: 13px 20px 16px;
+  background-color: $background;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  font-family: $protoGrotesk;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.3;
+  letter-spacing: .2px;
+
+  &_required::placeholder {
+    color: $error;
   }
 
-  &__submit {
-    margin-left: auto;
-    align-self: center;
+  &_type_address {
+    grid-column: 1 / 3;
   }
 
-  &__logo {
-    background-image: url('../images/where-to-go/rec_done.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 250px;
-    height: 250px;
-  }
-
-  &__add-place {
-    align-self: center;
-    margin: 0;
-    padding-left: 20px;
+  &::placeholder {
     color: $lightGray;
-    font-size: 15px;
-    line-height: 1.26;
-    font-family: $protoGrotesk;
-    letter-spacing: .2px;
   }
 
-  &__add-button {
-    box-sizing: border-box;
-    padding: 25px;
-    position: relative;
-    height: 50px;
+  &:focus {
+    border: 1px solid $lightGray;
+  }
+}
+
+.recommendation__box-inputs {
+  grid-column: 1 / 3;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.recommendation__input_type_radio {
+  padding-bottom: 8px;
+  color: $lightGray;
+}
+
+.recommendation__radio {
+  margin-right: 20px;
+}
+
+.recommendation__input_type_select {
+  grid-column: 1 / 3;
+  appearance: none;
+  background-image: url('../images/svg/input-select-arrow.svg');
+  background-size: 14px 7px;
+  background-position: right 25px top 50%;
+  background-repeat: no-repeat;
+
+  &:invalid {
+    color: $lightGray;
+  }
+}
+
+.recommendation__input_type_textarea {
+  grid-column: 1 / 3;
+  resize: none;
+}
+
+.recommendation__add-photo {
+  justify-self: start;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.recommendation__add-photo-button {
+  position: relative;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  border: 1px solid $blue;
+  border-radius: 100%;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    position:absolute;
+    left: 50%;
+    top: 16.5px;
+    width: 1px;
+    height: 12px;
+    background-color: $blue;
+    transform:translateX(-50%);
+  }
+  &::after {
+    content: '';
+    position:absolute;
+    left: 16.5px;
+    top: 50%;
+    width: 12px;
+    height: 1px;
+    background-color: $blue;
+    transform:translateY(-50%);
+  }
+
+  &:disabled {
+    border-color: $lightGray;
+    pointer-events: none;
+    user-select: none;
 
     &::before {
-      content: '';
-      position:absolute;
-      top: 14px;
-      left: 50%;
-      width: 1px;
-      height: 23px;
-      background-color: $blue;
-      transform:translateX(-50%);
+      background-color: $lightGray;
     }
+
     &::after {
-      content: '';
-      position:absolute;
-      top: 50%;
-      left: 14px;
-      width: 23px;
-      height: 1px;
-      background-color: $blue;
-      transform:translateY(-50%);
+      background-color: $lightGray;
     }
   }
 }
 
-@include atMobile {
-  .recommendation__submit {
-    margin-top: 10px;
-    margin-left: 0;
+.recommendation__add-photo-caption {
+  color: $blue;
+  white-space: nowrap;
+
+  &_disabled {
+    color: $lightGray;
+  }
+}
+
+.recommendation__submit {
+  justify-self: end;
+}
+
+@include atDesktop1024 {
+  .recommendation__place-info {
+    max-width: 260px;
   }
 
-  .recommendation__popup-title {
-    padding-bottom: 20px;
+  .recommendation__input-wrap {
+    margin: 30px 0 0;
+    gap: 10px;
+  }
+
+  .recommendation__input {
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+
+    &_type_place {
+      grid-column: 1 / 3;
+    }
+
+    &_type_website {
+      grid-column: 1 / 3;
+    }
+
+    &_type_address {
+      display: none;
+    }
+
+    &_type_age {
+      grid-column: 1 / 3;
+    }
+  }
+
+  .recommendation__box-inputs {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .recommendation__radio {
+    margin-right: 10px;
+  }
+
+  .recommendation__input_type_select {
+    background-size: 10px 5px;
+  }
+
+  .recommendation__add-photo {
+    gap: 15px;
+  }
+
+  .recommendation__add-photo-button {
+    width: 40px;
+    height: 40px;
+
+    &::before {
+      top: 14px;
+      height: 10px;
+    }
+
+    &::after {
+      left: 14px;
+      width: 10px;
+    }
   }
 }

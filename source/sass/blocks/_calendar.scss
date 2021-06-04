@@ -20,20 +20,6 @@
   max-width: 320px;
 }
 
-.calendar__title_type_popup {
-  max-width: 570px;
-  text-align: start;
-  margin-bottom: 40px;
-}
-
-.calendar__title_type_popup-done {
-  text-align: center;
-}
-
-.calendar__title_type_confirmation {
-  text-align: center;
-}
-
 .calendar_selected {
   background-color: $lightBlue;
 }
@@ -121,21 +107,6 @@
 .calendar__place {
   margin: 0;
   color: $lightBlack;
-}
-
-.calendar__back {
-  max-width: 215px;
-  align-self: center;
-}
-
-.calendar__image-done {
-  background-image: url('../images/svg/popup_done.svg');
-  background-repeat: no-repeat;
-  align-self: center;
-  margin-bottom: 30px;
-  width: 413px;
-  height: 169px;
-  background-size: 413px 169px;
 }
 
 .calendar__contact {
@@ -234,11 +205,5 @@
 @include atMobile {
   .calendar__title {
     max-width: 166px;
-  }
-
-  .calendar__image-done {
-    background-size: 260px 106px;
-    width: 260px;
-    height: 106px;
   }
 }

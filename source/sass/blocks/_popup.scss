@@ -34,10 +34,6 @@
   overflow: hidden;
 
   /* TODO */
-  &_type_done {
-    justify-content: center;
-    height: 670px;
-  }
 
   &_type_lk {
     justify-content: space-between;
@@ -102,6 +98,10 @@
     justify-content: center;
     text-align: center;
   }
+
+  &_type_done {
+    width: 765px;
+  }
 }
 
 .popup__close {
@@ -124,6 +124,10 @@
 .popup__img {
   width: 280px;
   margin-top: 30px;
+
+  &_position_done {
+    width: 413px;
+  }
 }
 
 .popup__finish-text {
@@ -161,33 +165,28 @@
   margin-right: 15px;
 }
 
-
-
-
-
-.popup__input {
-  box-sizing: border-box;
-  padding: 10px 20px;
-  margin-bottom: 20px;
-  height: 48px;
-  background-color: $background;
-  border-radius: 30px;
-  outline: none;
-  border: none;
+.popup__done-content {
+  margin-top: 30px;
+  margin-bottom: 80px;
+  max-width: 570px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
+
+.popup__done-caption {
+  margin-top: 30px;
+}
+
+.popup__return-button {
+  margin-top: 30px;
+}
+
 
 /*  */
 
 @include atDesktop1024 {
-  .popup__container {
-
-    &_type_lk {
-      padding: 50px 15px;
-      width: 320px;
-      height: 216px;
-    }
-  }
-
   .popup__content {
     padding: 30px 10px 30px 15px;
 
@@ -214,6 +213,10 @@
       height: 400px;
     }
 
+    &_type_done {
+      width: fit-content;
+    }
+
   }
 
   .popup__close {
@@ -238,30 +241,26 @@
     margin-right: 10px;
   }
 
+  .popup__done-content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .popup__return-button {
+    margin-top: 20px;
+  }
+
 }
 
 @include atMobileL {
-
-
   .popup_type_video {
     display: none;
   }
-
-  .popup__input {
-    &_type_low {
-      width: 135px;
-    }
-  }
-
   .popup__finish-text {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 30px;
   }
 
-  .popup__input {
-    width: 100%;
-    height: 40px;
-    margin-bottom: 10px;
-  }
+
 }

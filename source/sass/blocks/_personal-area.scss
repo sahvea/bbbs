@@ -115,66 +115,13 @@
 
 .personal-area__card {
   padding: 30px 30px 20px;
-
-  &_type_add-photo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 }
 
-// пустая форма
-.personal-area__add-photo-button {
-  padding: 0;
-  height: 100px;
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url(../images/svg/personal-area-plus.svg) center no-repeat;
-  border: 1px solid $lightGray;
-  border-radius: 100%;
-  outline: none;
-  cursor: pointer;
-}
+.personal-area__story-form {
+  margin-top: 80px;
 
-.personal-area__bottom-caption {
-  padding-top: 5px;
-  color: $lightGray;
-}
-
-.personal-area__form {
-  width: 100%;
-  display: grid;
-  gap: 20px 30px;
-  grid-template-columns: 1fr minmax(240px, 290px);
-  grid-template-rows: auto;
-}
-
-.personal-area__form-input {
-  &_type_textarea {
-    grid-column: 1 / -1;
-    min-height: 286px;
-    resize: none;
-  }
-
-  &[type='date']:not(:focus):not(.has-value):before {
-    color: $lightGray;
-    content: attr(placeholder);
-  }
-}
-
-.personal-area__buttons {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.personal-area__delete {
-  &:disabled {
-    color: $lightGray;
-    border: none;
-    pointer-events: none;
-    user-select: none;
+  &:first-of-type {
+    margin-top: 0;
   }
 }
 
@@ -248,6 +195,14 @@
   color: $lightGray;
 }
 
+
+@include atDesktop1380 {
+  .personal-area__story-form {
+    margin-top: 30px;
+  }
+}
+
+
 @include atDesktop1024 {
   .personal-area__user-info {
     display: none;
@@ -300,34 +255,6 @@
       left: 14px;
       width: 10px;
     }
-  }
-
-  .personal-area__add-photo-button {
-    height: 80px;
-    width: 80px;
-    background-size: 19px 19px;
-  }
-
-  .personal-area__bottom-caption {
-    padding-top: 15px;
-  }
-
-  .personal-area__form {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .personal-area__form-input {
-    &_type_textarea {
-      grid-column: 1;
-      min-height: 120px;
-    }
-  }
-
-  .personal-area__buttons {
-    margin-top: 20px;
-    flex-direction: row-reverse;
-    justify-content: space-between;
   }
 
   .personal-area__card {

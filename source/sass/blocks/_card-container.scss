@@ -33,13 +33,8 @@
 
   &_type_personal-area {
     max-width: 1170px;
-    padding-top: 80px;
     grid-template-columns: 40% 60%;
     grid-template-rows: 470px;
-
-    &:first-of-type {
-      padding-top: 0px;
-    }
   }
 }
 
@@ -63,7 +58,6 @@
   .card-container_type_personal-area {
     grid-template-columns: 1fr;
     grid-template-rows: 450px 1fr;
-    padding-top: 30px;
   }
 }
 

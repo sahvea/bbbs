@@ -9,8 +9,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, .5);
-  transition: .3s linear;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.3s linear;
 
   &_opened {
     opacity: 1;
@@ -242,7 +242,6 @@
   .popup__return-button {
     margin-top: 20px;
   }
-
 }
 
 @include atMobileL {

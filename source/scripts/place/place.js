@@ -1,7 +1,7 @@
 const modals = document.querySelectorAll('.popup');
 const spanRecommend = document.querySelector('.place-card__span-accent');
 const popupRecommend = document.querySelector('.popup_type_recommendation');
-const formRecommend = document.querySelector('.recommendation')
+const formRecommend = document.querySelector('.recommendation');
 const buttonFormSubmit = document.querySelector('.recommendation__submit');
 const popupRecommendFinish = document.querySelector('.popup_type_recommendation-finish');
 // const textArea = document.querySelector('.popup__textarea');
@@ -20,18 +20,18 @@ function closePopup(popup) {
 (function closePopupByClick() {
   modals.forEach((popup) => {
     popup.addEventListener('click', (evt) => {
-      if(evt.target.classList.contains('popup_opened')) {
+      if (evt.target.classList.contains('popup_opened')) {
         closePopup(popup);
       }
-      if(evt.target.classList.contains('popup__cancel')) {
+      if (evt.target.classList.contains('popup__cancel')) {
         closePopup(popup);
       }
-    })
-  })
+    });
+  });
 })();
 
 function closePopupByEsc(evt) {
-  if(evt.key === 'Escape') {
+  if (evt.key === 'Escape') {
     const popup = document.querySelector('.popup_opened');
     closePopup(popup);
   }

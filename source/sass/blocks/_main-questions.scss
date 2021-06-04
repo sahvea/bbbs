@@ -23,7 +23,7 @@
 
 @include atDesktop1400 {
   .main-questions__item {
-    &:nth-last-of-type(-n+1) {
+    &:nth-last-of-type(-n + 1) {
       display: none;
     }
   }
@@ -37,7 +37,7 @@
 
 @include atTabletL {
   .main-questions__item {
-    &:nth-last-of-type(-n+1) {
+    &:nth-last-of-type(-n + 1) {
       display: flex;
     }
   }

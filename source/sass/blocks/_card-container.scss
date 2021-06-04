@@ -45,7 +45,6 @@
 
 @include atDesktop1440 {
   .card-container {
-
     &_type_main-article {
       grid-template-columns: 1fr 1fr;
     }
@@ -66,12 +65,10 @@
     grid-template-rows: 450px 1fr;
     padding-top: 30px;
   }
-
 }
 
 @include atDesktop1024 {
   .card-container {
-
     &_type_main-article {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 188px;

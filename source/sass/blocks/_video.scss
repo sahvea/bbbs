@@ -20,7 +20,7 @@
   padding: 0 4px;
   box-sizing: border-box;
   border-radius: 5px;
-  background-color: rgba($black, .8);
+  background-color: rgba($black, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +52,7 @@
 }
 
 .video__rubric {
-  background-color: rgba(255, 255, 255, .6);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 @include atDesktop1440 {

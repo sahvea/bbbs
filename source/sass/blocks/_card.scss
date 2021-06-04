@@ -168,7 +168,7 @@
   color: #fff;
   text-decoration: none;
   text-align: center;
-  background-color: rgba($black, .6);
+  background-color: rgba($black, 0.6);
 }
 
 // фото на главной карточке
@@ -319,7 +319,6 @@
   }
 
   .card__annotation {
-
     &_position_main-card {
       margin-top: 0;
     }
@@ -334,7 +333,6 @@
     font-size: 19px;
     line-height: 1.2;
   }
-
 }
 
 @include atMobile {
@@ -352,7 +350,6 @@
     &_content_media {
       max-width: 450px;
     }
-
   }
 
   .card__link-wrap {

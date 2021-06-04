@@ -82,23 +82,23 @@
 
   &::before {
     content: '';
-    position:absolute;
+    position: absolute;
     left: 50%;
     top: 16.5px;
     width: 1px;
     height: 12px;
     background-color: $blue;
-    transform:translateX(-50%);
+    transform: translateX(-50%);
   }
   &::after {
     content: '';
-    position:absolute;
+    position: absolute;
     left: 16.5px;
     top: 50%;
     width: 12px;
     height: 1px;
     background-color: $blue;
-    transform:translateY(-50%);
+    transform: translateY(-50%);
   }
 
   &:disabled {

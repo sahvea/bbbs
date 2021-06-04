@@ -57,7 +57,7 @@
   }
 
   .rights__line {
-    &:nth-of-type(-n+2) {
+    &:nth-of-type(-n + 2) {
       display: none;
     }
   }
@@ -84,7 +84,7 @@
   }
 
   .rights__line {
-    &:nth-of-type(-n+2) {
+    &:nth-of-type(-n + 2) {
       display: block;
     }
   }

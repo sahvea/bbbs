@@ -55,7 +55,7 @@
   border-radius: 100%;
   background-color: $lightBlue;
   cursor: pointer;
-  transition: .2s linear;
+  transition: 0.2s linear;
 
   &_active {
     transform: rotate(45deg);
@@ -63,23 +63,23 @@
 
   &::before {
     content: '';
-    position:absolute;
+    position: absolute;
     top: 38px;
     left: 50%;
     width: 1px;
     height: 23px;
     background-color: $black;
-    transform:translateX(-50%);
+    transform: translateX(-50%);
   }
   &::after {
     content: '';
-    position:absolute;
+    position: absolute;
     top: 50%;
     left: 38px;
     width: 23px;
     height: 1px;
     background-color: $black;
-    transform:translateY(-50%);
+    transform: translateY(-50%);
   }
 }
 

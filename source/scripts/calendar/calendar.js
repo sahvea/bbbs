@@ -31,18 +31,18 @@ function closePopup(popup) {
 (function closePopupByClick() {
   popups.forEach((popup) => {
     popup.addEventListener('click', (evt) => {
-      if(evt.target.classList.contains('popup_opened')) {
+      if (evt.target.classList.contains('popup_opened')) {
         closePopup(popup);
       }
-      if(evt.target.classList.contains('popup__cancel')) {
+      if (evt.target.classList.contains('popup__cancel')) {
         closePopup(popup);
       }
-    })
-  })
+    });
+  });
 })();
 
 function closePopupByEsc(evt) {
-  if(evt.key === 'Escape') {
+  if (evt.key === 'Escape') {
     const popup = document.querySelector('.popup_opened');
     closePopup(popup);
   }

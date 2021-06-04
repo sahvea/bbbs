@@ -17,7 +17,7 @@
 @include atDesktop1024 {
   .radio {
     &__button-girl {
-      left: 180px
+      left: 180px;
     }
   }
 }
@@ -39,7 +39,6 @@
 
     &__button-boy {
       top: 13px;
-
     }
   }
 }

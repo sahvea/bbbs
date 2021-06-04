@@ -300,31 +300,31 @@
   <div class="popup popup_type_recommendation">
     <div class="popup__container">
       <div class="popup__content popup__content_type_recommendation">
-        <form class="recommendation" name="place-recommendation" novalidate>
+        <form class="form recommendation" name="place-recommendation" novalidate>
           <fieldset class="recommendation__place-info">
             <legend class="section-title recommendation__title">Если вы были в интересном месте и хотите порекомендовать его другим наставникам – заполните форму, и мы добавим вашу рекомендацию.</legend>
             <div class="recommendation__input-wrap">
-              <input type="text" name="place" class="recommendation__input recommendation__input_type_place" required placeholder="Название*">
-              <input type="text" name="website" class="recommendation__input recommendation__input_type_website" placeholder="Сайт">
-              <input type="text" name="address" class="recommendation__input recommendation__input_type_address" required placeholder="Адрес*">
+              <input type="text" name="place" class="form__input recommendation__input recommendation__input_type_place" required placeholder="Название*">
+              <input type="text" name="website" class="form__input recommendation__input recommendation__input_type_website" placeholder="Сайт">
+              <input type="text" name="address" class="form__input recommendation__input recommendation__input_type_address" required placeholder="Адрес*">
               <div class="recommendation__box-inputs">
-                <label class="recommendation__input recommendation__input_type_radio">
+                <label class="form__input recommendation__input recommendation__input_type_radio">
                   <input type="radio" name="sex" value="boy" class="recommendation__radio" required>
                   Мальчик
                 </label>
-                <label class="recommendation__input recommendation__input_type_radio">
+                <label class="form__input recommendation__input recommendation__input_type_radio">
                   <input type="radio" name="sex" value="girl" class="recommendation__radio" required>
                   Девочка
                 </label>
-                <input type="number" name="age" class="recommendation__input recommendation__input_type_age" required placeholder="Возраст*">
+                <input type="number" name="age" class="form__input recommendation__input recommendation__input_type_age" required placeholder="Возраст*">
               </div>
-              <select name="type" class="recommendation__input recommendation__input_type_select" required>
+              <select name="type" class="form__input recommendation__input recommendation__input_type_select" required>
                 <option value="" disabled selected hidden>Тип отдыха*</option>
                 <option value="active">Активный</option>
                 <option value="fun">Развлекательный</option>
                 <option value="inform">Познавательный</option>
               </select>
-              <textarea class="recommendation__input recommendation__input_type_textarea" required placeholder="Комментарий* Поделитесь впечатлениями о проведенном времени"></textarea>
+              <textarea class="form__input recommendation__input recommendation__input_type_textarea" required placeholder="Комментарий* Поделитесь впечатлениями о проведенном времени"></textarea>
               <div class="recommendation__add-photo">
                 <button class="recommendation__add-photo-button" type="button" disabled></button>
                 <p class="caption recommendation__add-photo-caption recommendation__add-photo-caption_disabled">Добавить фото</p>

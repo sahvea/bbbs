@@ -19,35 +19,10 @@
 }
 
 .sign-in__input {
-  box-sizing: border-box;
-  width: 100%;
-  height: 48px;
-  padding: 13px 20px 16px;
-  background-color: $background;
-  border-radius: 30px;
-  outline: none;
-  border: none;
-  font-family: $protoGrotesk;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 1.3;
-  letter-spacing: .2px;
   margin-top: 20px;
 
   &:first-of-type {
     margin-top: 0;
-  }
-
-  &_required::placeholder {
-    color: $error;
-  }
-
-  &::placeholder {
-    color: $lightGray;
-  }
-
-  &:focus {
-    border: 1px solid $lightGray;
   }
 }
 
@@ -72,10 +47,6 @@
   }
 
   .sign-in__input {
-    height: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 12px;
     margin-top: 10px;
   }
 }

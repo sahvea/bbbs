@@ -22,6 +22,10 @@
   &::placeholder {
     color: $lightGray;
   }
+
+  &_required::placeholder {
+    color: $error;
+  }
 }
 
 @include atDesktop1024 {

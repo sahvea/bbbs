@@ -153,19 +153,6 @@
 }
 
 .personal-area__form-input {
-  box-sizing: border-box;
-  outline: none;
-  border: none;
-  border-radius: 30px;
-  padding: 13px 20px 16px;
-  height: 48px;
-  background-color: $background;
-  color: $black;
-
-  &::placeholder {
-    color: $lightGray;
-  }
-
   &_type_textarea {
     grid-column: 1 / -1;
     min-height: 286px;
@@ -333,9 +320,6 @@
   }
 
   .personal-area__form-input {
-    height: 40px;
-    padding: 10px 20px;
-
     &_type_textarea {
       grid-column: 1;
       min-height: 120px;

@@ -5,7 +5,7 @@ const popups = document.querySelectorAll('.popup');
 const popupCalendarButtonClose = document.querySelector('.popup__close');
 const buttonDots = document.querySelectorAll('.calendar__button-dots');
 const buttonConfirm = document.querySelector('.button_action_confirm');
-const buttonDone = document.querySelector('.calendar__confirm');
+const buttonDone = document.querySelector('.popup__confirm-button');
 const buttonsCalendar = document.querySelectorAll('.calendar__button_action_sign-up');
 
 function openPopup(popup) {

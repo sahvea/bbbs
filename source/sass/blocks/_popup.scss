@@ -12,6 +12,11 @@
   background-color: rgba(0, 0, 0, .5);
   transition: .3s linear;
 
+  &_opened {
+    opacity: 1;
+    visibility: visible;
+  }
+
   &_type_sign-in {
     backdrop-filter: blur(7px);
   }
@@ -32,11 +37,6 @@
   &_type_done {
     justify-content: center;
     height: 670px;
-  }
-
-  &_type_confirmation {
-    height: 670px;
-    justify-content: center;
   }
 
   &_type_lk {
@@ -95,6 +95,30 @@
   &_type_calendar {
     width: 765px;
   }
+
+  &_type_confirmation {
+    width: 765px;
+    height: 670px;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.popup__close {
+  padding: 0;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  background-image: url('../images/svg/popup_close.svg');
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: $blue;
+  cursor: pointer;
 }
 
 .popup__img {
@@ -125,42 +149,21 @@
 
 .popup__calendar-wrap {
   max-width: 570px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center; */
 }
 
-
-/* TODO */
-
-.popup__buttons {
+.popup__confirmation-buttons {
   display: flex;
-  justify-content: space-between;
-  width: 228px;
+  justify-content: center;
+  margin-top: 30px;
 }
 
-.popup_opened {
-  opacity: 1;
-  visibility: visible;
+.popup__confirm-button {
+  margin-right: 15px;
 }
 
-.popup__close {
-  padding: 0;
-  position: absolute;
-  top: 20px;
-  right: 15px;
-  background-image: url('../images/svg/popup_close.svg');
-  width: 40px;
-  height: 40px;
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  color: $blue;
-  cursor: pointer;
-}
+
+
+
 
 .popup__input {
   box-sizing: border-box;
@@ -171,10 +174,6 @@
   border-radius: 30px;
   outline: none;
   border: none;
-}
-
-.popup__enter {
-  width: 85px;
 }
 
 /*  */
@@ -211,6 +210,15 @@
       width: fit-content;
     }
 
+    &_type_confirmation {
+      height: 400px;
+    }
+
+  }
+
+  .popup__close {
+    top: 15px;
+    right: 10px;
   }
 
   .popup__img {
@@ -226,13 +234,14 @@
     width: 170px;
   }
 
+  .popup__confirm-button {
+    margin-right: 10px;
+  }
+
 }
 
 @include atMobileL {
-  .popup__close {
-    top: 15px;
-    right: 10px;
-  }
+
 
   .popup_type_video {
     display: none;
@@ -250,30 +259,9 @@
     margin-bottom: 30px;
   }
 
-  .popup__box-inputs {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .popup__sign-in {
-    padding-bottom: 20px;
-
-    &:nth-of-type(2) {
-      padding-bottom: 30px;
-    }
-  }
-
   .popup__input {
     width: 100%;
     height: 40px;
     margin-bottom: 10px;
-  }
-
-  .popup__enter {
-    width: 65px;
-  }
-
-  .popup__box-inputs {
-    justify-content: flex-start;
   }
 }

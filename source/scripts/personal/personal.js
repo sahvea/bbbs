@@ -1,5 +1,5 @@
 const buttonDelete = document.querySelector('.personal-area__button_action_delete-card');
-const popupDelete = document.querySelector('.personal');
+const popupDelete = document.querySelector('.popup_type_delete');
 
 const ratingButtonGood = document.querySelector('.rating__button_type_good');
 const ratingButtonNeutral = document.querySelector('.rating__button_type_neutral');

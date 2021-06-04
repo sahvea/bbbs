@@ -32,18 +32,6 @@
   font-family: $ptRootUI;
   box-sizing: border-box;
   overflow: hidden;
-
-  /* TODO */
-
-  &_type_lk {
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 30px;
-    width: 470px;
-    height: 238px;
-  }
-
-  /* TODO */
 }
 
 .popup__content {
@@ -155,7 +143,7 @@
   max-width: 570px;
 }
 
-.popup__confirmation-buttons {
+.popup__buttons {
   display: flex;
   justify-content: center;
   margin-top: 30px;
@@ -163,6 +151,15 @@
 
 .popup__confirm-button {
   margin-right: 15px;
+}
+
+.popup__delete-button {
+  margin-right: 30px;
+}
+
+.popup__delete-text {
+  max-width: 410px;
+  text-align: center;
 }
 
 .popup__done-content {
@@ -182,9 +179,6 @@
 .popup__return-button {
   margin-top: 30px;
 }
-
-
-/*  */
 
 @include atDesktop1024 {
   .popup__content {
@@ -216,7 +210,6 @@
     &_type_done {
       width: fit-content;
     }
-
   }
 
   .popup__close {
@@ -233,12 +226,12 @@
     margin: 20px 30px 80px;
   }
 
-  .popup__buttons {
-    width: 170px;
-  }
-
   .popup__confirm-button {
     margin-right: 10px;
+  }
+
+  .popup__delete-button {
+    margin-right: 15px;
   }
 
   .popup__done-content {
@@ -256,11 +249,10 @@
   .popup_type_video {
     display: none;
   }
+
   .popup__finish-text {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 30px;
   }
-
-
 }

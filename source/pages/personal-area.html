@@ -209,7 +209,7 @@
                 </label>
                 <img src="#" alt="История дружбы" class="story-form__img" />
               </div>
-              <div class="card personal-area__card personal-area__card_type_content">
+              <div class="card personal-area__card">
                 <div class="story-form__input-wrap">
                   <input
                     type="text"
@@ -258,23 +258,35 @@
           <div class="card card_content_media">
             <img src="../images/personal-area/lk.png" alt="Катя" class="personal-area__photo" />
           </div>
-          <div class="card personal-area__card personal-area__date-container">
-            <div class="personal-area__text-wrap">
+          <div class="card personal-area__card">
+            <div class="personal-area__date-container">
               <h2 class="section-title personal-area__card-title">Парк Горького</h2>
-              <p class="paragraph">
-                Описание в несколько срок. Подробное описание. Опишите вашу встречу, какие чувства
-                вы испытывали, что понравилось не понравилось. Описание в несколько срок. Подробное
-                описание. Подробное описание. Опишите вашу встречу, какие чувства вы испытывали, что
-                понравилось не понравилось. Описание в несколько срок. Подробное описание. Опишите
-                вашу встречу, какие чувства вы испытывали, что понравилось не понравилось. Описание
-                в несколько срок. Подробное описание. Подробное описание. Опишите вашу встречу,
-                какие чувства вы испытывали, что понравилось не понравилось. чувства вы испытывали,
-                что понравилось не понравилось.
-              </p>
-            </div>
-            <div class="personal-area__card-date">
-              <p class="personal-area__card-weekday">декабрь, 2020</p>
-              <p class="personal-area__card-day">05</p>
+              <div class="personal-area__card-date">
+                <p class="caption personal-area__card-weekday">декабрь, 2020</p>
+                <p class="personal-area__card-day">05</p>
+              </div>
+              <div class="card__content personal-area__text">
+                <p class="paragraph personal-area__card-paragraph">
+                  Описание в несколько срок. Подробное описание. Опишите вашу встречу, какие чувства
+                  вы испытывали, что понравилось не понравилось. Описание в несколько срок.
+                  Подробное описание. Подробное описание. Опишите вашу встречу, какие чувства вы
+                  испытывали, что понравилось не понравилось. Описание в несколько срок. Подробное
+                  описание. Опишите вашу встречу, какие чувства вы испытывали, что понравилось не
+                  понравилось. Описание в несколько срок. Подробное описание. Подробное описание.
+                  Опишите вашу встречу, какие чувства вы испытывали, что понравилось не понравилось.
+                  чувства вы испытывали, что понравилось не понравилось.
+                </p>
+                <p class="paragraph personal-area__card-paragraph">
+                  Описание в несколько срок. Подробное описание. Опишите вашу встречу, какие чувства
+                  вы испытывали, что понравилось не понравилось. Описание в несколько срок.
+                  Подробное описание. Подробное описание. Опишите вашу встречу, какие чувства вы
+                  испытывали, что понравилось не понравилось. Описание в несколько срок. Подробное
+                  описание. Опишите вашу встречу, какие чувства вы испытывали, что понравилось не
+                  понравилось. Описание в несколько срок. Подробное описание. Подробное описание.
+                  Опишите вашу встречу, какие чувства вы испытывали, что понравилось не понравилось.
+                  чувства вы испытывали, что понравилось не понравилось.
+                </p>
+              </div>
             </div>
             <div class="personal-area__actions">
               <div class="rating">
@@ -285,15 +297,19 @@
                 <p class="caption rating__label rating__label_type_good">Было классно</p>
               </div>
 
-              <div class="personal-area__action-elements">
-                <p class="caption personal-area__opened-info">Открыто Александре К.</p>
-                <button
-                  class="caption personal-area__button personal-area__button_action_edit-card"
-                >
+              <select name="curator" class="link personal-area__curator-select">
+                <option value="" disabled selected hidden>Поделиться с куратором</option>
+                <option value="Alexandra">Открыто Александре К.</option>
+                <option value="Olga">Открыто Ольге К.</option>
+                <option value="Ekaterina">Открыто Екатерине К.</option>
+              </select>
+
+              <div class="personal-area__buttons">
+                <button class="link personal-area__button personal-area__button_action_edit-card">
                   Редактировать
                 </button>
                 <button
-                  class="caption personal-area__button personal-area__button_action_delete-card"
+                  class="link personal-area__button personal-area__button_action_delete-card"
                   type="button"
                 >
                   Удалить

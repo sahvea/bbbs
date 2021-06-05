@@ -195,13 +195,11 @@
   color: $lightGray;
 }
 
-
 @include atDesktop1380 {
   .personal-area__story-form {
     margin-top: 30px;
   }
 }
-
 
 @include atDesktop1024 {
   .personal-area__user-info {

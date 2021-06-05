@@ -530,17 +530,12 @@
                   required
                   placeholder="Комментарий* Поделитесь впечатлениями о проведенном времени"
                 ></textarea>
-                <div class="recommendation__add-photo">
-                  <button class="recommendation__add-photo-button" type="button" disabled></button>
-                  <p
-                    class="
-                      caption
-                      recommendation__add-photo-caption recommendation__add-photo-caption_disabled
-                    "
-                  >
-                    Добавить фото
-                  </p>
-                </div>
+
+                <label class="caption recommendation__add-photo">
+                  <input type="file" name="photo" class="recommendation__file-input">
+                  <span class="recommendation__add-photo-button"></span>
+                  Загрузить фото
+                </label>
                 <button class="button button_theme_light recommendation__submit" type="submit">
                   Отправить
                 </button>

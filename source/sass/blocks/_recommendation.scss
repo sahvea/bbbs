@@ -66,19 +66,23 @@
   display: grid;
   grid-template-columns: min-content 1fr;
   gap: 20px;
+  cursor: pointer;
   align-items: center;
+  color: $lightGray;
+
+  &_required {
+    color: $error;
+  }
 }
 
 .recommendation__add-photo-button {
   position: relative;
-  padding: 0;
+  box-sizing: border-box;
   width: 48px;
   height: 48px;
-  border: 1px solid $blue;
+  border: 1px solid $lightGray;
   border-radius: 100%;
   background-color: transparent;
-  outline: none;
-  cursor: pointer;
 
   &::before {
     content: '';
@@ -87,7 +91,7 @@
     top: 16.5px;
     width: 1px;
     height: 12px;
-    background-color: $blue;
+    background-color: $lightGray;
     transform: translateX(-50%);
   }
   &::after {
@@ -97,22 +101,8 @@
     top: 50%;
     width: 12px;
     height: 1px;
-    background-color: $blue;
+    background-color: $lightGray;
     transform: translateY(-50%);
-  }
-
-  &:disabled {
-    border-color: $lightGray;
-    pointer-events: none;
-    user-select: none;
-
-    &::before {
-      background-color: $lightGray;
-    }
-
-    &::after {
-      background-color: $lightGray;
-    }
   }
 
   &_required {
@@ -128,17 +118,12 @@
   }
 }
 
-.recommendation__add-photo-caption {
-  color: $blue;
-  white-space: nowrap;
-
-  &_disabled {
-    color: $lightGray;
-  }
-
-  &_required {
-    color: $error;
-  }
+.recommendation__file-input {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 
 .recommendation__submit {

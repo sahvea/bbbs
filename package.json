@@ -40,6 +40,7 @@
     "build": "gulp build",
     "scripts": "gulp scripts",
     "start": "gulp start",
+    "prettier": "npx prettier --write .",
     "gh-pages": "gh-pages -d build"
   },
   "browserslist": [

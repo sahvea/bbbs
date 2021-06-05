@@ -1,7 +1,5 @@
-// открытие попапа с видео
-const pupupCity = document.querySelector('.pupup_type_cities');
+const pupupCity = document.querySelector('.popup_type_cities');
 const menuChangeCityLink = document.querySelector('.menu__user-link_type_city');
-
 
 function openCityPopup(popup) {
   popup.classList.add('popup_opened');
@@ -23,7 +21,7 @@ function closeCityPopupByEsc(evt) {
 }
 
 function closeCityPopupByOverlay(evt) {
-  if(evt.target.classList.contains('popup_opened')) {
+  if (evt.target.classList.contains('popup_opened')) {
     closeCityPopup(pupupCity);
   }
 }

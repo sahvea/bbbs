@@ -8,10 +8,9 @@ questions.forEach(function (question) {
 
   function handleAnswerShow() {
     questionShowButton.classList.toggle('question__show-button_active');
-    questionAnswer.classList.toggle('question__answer_visible')
+    questionAnswer.classList.toggle('question__answer_visible');
   }
 
   questionTitle.addEventListener('click', handleAnswerShow);
   questionShowButton.addEventListener('click', handleAnswerShow);
-
 });

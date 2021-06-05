@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Ответы на вопросы</title>
+  </head>
+  <body class="page">
+    <header class="header page__section">
+      <nav class="menu">
+        <a href="../index.html" target="_self" class="menu__logo">наставники.про</a>
+        <div class="menu__lists-wrap menu__lists-wrap_hidden">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a href="calendar.html" class="menu__link">Календарь</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="place.html" class="menu__link">Куда пойти</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="./questions.html" class="menu__link">Вопросы</a>
+            </li>
+            <li class="menu__list-item menu__dropdown-item">
+              <a href="read-watch-main.html" class="menu__link">Читать и смотреть</a>
+              <ul class="menu__dropdown-list">
+                <li class="menu__dropdown-list-item">
+                  <a href="catalog.html" class="link menu__dropdown-link">Справочник</a>
+                </li>
+                <li class="menu__dropdown-list-item">
+                  <a href="video.html" class="link menu__dropdown-link">Видео</a>
+                </li>
+                <li class="menu__dropdown-list-item">
+                  <a href="articles.html" class="link menu__dropdown-link">Статьи</a>
+                </li>
+                <li class="menu__dropdown-list-item">
+                  <a href="films.html" class="link menu__dropdown-link">Фильмы</a>
+                </li>
+                <li class="menu__dropdown-list-item">
+                  <a href="books.html" class="link menu__dropdown-link">Книги</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__list-item">
+              <a href="rights.html" class="menu__link">Права детей</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="stories.html" class="menu__link">Истории</a>
+            </li>
+          </ul>
+
+          <ul class="menu__list menu__list_type_social menu__list_hidden">
+            <li class="menu__list-item">
+              <a href="https://www.facebook.com/BigBrothers.BigSisters.Russia/" class="menu__link" target="_blank">facebook</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="https://vk.com/big.brothers.big.sisters" class="menu__link" target="_blank">vkontakte</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="https://www.instagram.com/nastavniki_org/" class="menu__link" target="_blank">instagram</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="https://www.youtube.com/user/Nastavniki/" class="menu__link" target="_blank">youtube</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="menu__burger" type="button">
+          <span class="menu__burger-line"></span>
+          <span class="menu__burger-line"></span>
+          <span class="menu__burger-line"></span>
+        </button>
+
+        <ul class="menu__button-list">
+          <li class="menu__button-item">
+            <form class="search" name="search-form">
+              <button class="menu__button menu__button_type_search search__button" type="submit" aria-label="Поиск" title="Поиск"></button>
+              <div class="search__options menu__search-options">
+                <input type="text" name="search" placeholder="Поиск" value="" class="search__input paragraph">
+                <ul class="search__option-list">
+                  <li class="search__option-item">
+                    <a href="article.html" class="search__title-link section-title section-title_clickable">Причины подростковой агрессии</a>
+                    <a href="article.html" class="link search__link">статьи</a>
+                  </li>
+                  <li class="search__option-item">
+                    <a href="video.html" class="search__title-link section-title section-title_clickable">Агрессивное поведение детей-сирот</a>
+                    <a href="video.html" class="link search__link">видео</a>
+                  </li>
+                  <li class="search__option-item">
+                    <a href="./questions.html" class="search__title-link section-title section-title_clickable">Что делать если ваш младший агрессивно себя ведет, решил закрыть пару?</a>
+                    <a href="./questions.html" class="link search__link">вопросы</a>
+                  </li>
+                  <li class="search__option-item">
+                    <a href="books.html" class="search__title-link section-title section-title_clickable">Как реагировать на агрессивное поведения ребенка</a>
+                    <a href="books.html" class="link search__link">книги</a>
+                  </li>
+                </ul>
+              </div>
+            </form>
+          </li>
+          <li class="menu__button-item">
+            <button class="menu__button menu__button_type_user" type="button" aria-label="Личный кабинет" title="Личный кабинет" onclick="document.location='./questions_active.html'"></button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="lead page__section">
+        <h1 class="main-title">Ответы на вопросы</h1>
+        <div class="tags tags_content_long-list">
+          <ul class="tags__list tags__list_type_long">
+            <li class="tags__list-item">
+              <button class="button tags__button tags__button_active" type="button">Все</button>
+            </li>
+            <li class="tags__list-item">
+              <button class="button tags__button" type="button">Первая встреча</button>
+            </li>
+            <li class="tags__list-item">
+              <button class="button tags__button" type="button">Вопросы детей</button>
+            </li>
+            <li class="tags__list-item">
+              <button class="button tags__button" type="button">Воспитатели / опекуны</button>
+            </li>
+            <li class="tags__list-item">
+              <button class="button tags__button" type="button">Сомнения</button>
+            </li>
+            <li class="tags__list-item">
+              <button class="button tags__button" type="button">Сложности</button>
+            </li>
+            <li class="tags__list-item">
+              <button class="button tags__button" type="button">Подарки</button>
+            </li>
+            <li class="tags__list-item">
+              <button class="button tags__button" type="button">Влияние на ребенка</button>
+            </li>
+            <li class="tags__list-item">
+              <button class="button tags__button" type="button">Времяпровождение</button>
+            </li>
+            <li class="tags__list-item">
+              <button class="button tags__button" type="button">Ответственность</button>
+            </li>
+            <li class="tags__list-item">
+              <button class="button tags__button" type="button">Завершение отношений</button>
+            </li>
+            <li class="tags__list-item">
+              <button class="button tags__button" type="button">Первая встреча</button>
+            </li>
+            <li class="tags__list-item">
+              <button class="button tags__button" type="button">Вопросы детей</button>
+            </li>
+            <li class="tags__list-item">
+              <button class="button tags__button" type="button">Первая встреча</button>
+            </li>
+            <li class="tags__list-item">
+              <button class="button tags__button" type="button">Вопросы детей</button>
+            </li>
+            <li class="tags__list-item">
+              <button class="button tags__button" type="button">Воспитатели / опекуны</button>
+            </li>
+            <li class="tags__list-item">
+              <button class="button tags__button" type="button">Сомнения</button>
+            </li>
+            <li class="tags__list-item">
+              <button class="button tags__button" type="button">Сложности</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="questions page__section">
+        <article class="question">
+          <h2 class="section-title question__title">
+            Я боюсь, что ребёнок ко мне слишком сильно привяжется. Что делать?
+          </h2>
+          <div class="question__wrap">
+            <p class="rubric question__rubric">рубрика</p>
+            <button class="question__show-button" type="button" aria-label="Показать ответ" title="Показать ответ"></button>
+          </div>
+          <div class="question__answer">
+            <p class="paragraph question__paragraph">
+              Настоящие дружеские отношения строятся на взаимном интересе, доверии и привязанности.
+              Когда наставник для ребенка становится именно другом, а не просто знакомым или
+              волонтером, то подопечный начинает быть искренне заинтересован в общении, начинает
+              ждать встреч, звонить по телефону. Но тут важно, чтобы наставник оставался именно в
+              роли друга, старшего брата или сестры, а не потенциального родителя. Перед включением
+              ребенка в программу кураторы обязательно объясняют ребенку, кто такой наставник и
+              какую роль он может сыграть в его жизни. Конечно, здесь многое зависит от умения
+              самого наставника выстраивать отношения и границы, но, если человек сомневается в
+              своих навыках, то в рамках нашей программы проводятся поддерживающие мероприятия,
+              которые развивают компетенции наставников и их коммуникативные способности, которые
+              помогают в общении с детьми, а также есть всегда возможность обратиться к куратору
+              программы.
+            </p>
+          </div>
+        </article>
+
+        <article class="question">
+          <h2 class="section-title question__title">
+            Возможно ли продлить срок участия в программе, если и я и мой «младший» хотим остаться в
+            программе?
+          </h2>
+          <div class="question__wrap">
+            <p class="rubric question__rubric">рубрика</p>
+            <button class="question__show-button" type="button" aria-label="Показать ответ" title="Показать ответ"></button>
+          </div>
+          <div class="question__answer">
+            <p class="paragraph question__paragraph">
+              Настоящие дружеские отношения строятся на взаимном интересе, доверии и привязанности.
+              Когда наставник для ребенка становится именно другом, а не просто знакомым или
+              волонтером, то подопечный начинает быть искренне заинтересован в общении, начинает
+              ждать встреч, звонить по телефону. Но тут важно, чтобы наставник оставался именно в
+              роли друга, старшего брата или сестры, а не потенциального родителя.
+            </p>
+            <p class="paragraph question__paragraph">
+              Перед включением ребенка в программу кураторы обязательно объясняют ребенку, кто такой
+              наставник и какую роль он может сыграть в его жизни. Конечно, здесь многое зависит от
+              умения самого наставника выстраивать отношения и границы, но, если человек сомневается
+              в своих навыках, то в рамках нашей программы проводятся поддерживающие мероприятия,
+              которые развивают компетенции наставников и их коммуникативные способности, которые
+              помогают в общении с детьми, а также есть всегда возможность обратиться к куратору
+              программы.
+            </p>
+          </div>
+        </article>
+
+        <article class="question">
+          <h2 class="section-title question__title">
+            Что делать если Ваш младший решил закрыть пару, т.к. слишком занят с учебой и друзьями?
+          </h2>
+          <div class="question__wrap">
+            <p class="rubric question__rubric">рубрика</p>
+            <button class="question__show-button" type="button" aria-label="Показать ответ" title="Показать ответ"></button>
+          </div>
+          <div class="question__answer">
+            <p class="paragraph question__paragraph">
+              Настоящие дружеские отношения строятся на взаимном интересе, доверии и привязанности.
+              Когда наставник для ребенка становится именно другом, а не просто знакомым или
+              волонтером, то подопечный начинает быть искренне заинтересован в общении, начинает
+              ждать встреч, звонить по телефону. Но тут важно, чтобы наставник оставался именно в
+              роли друга, старшего брата или сестры, а не потенциального родителя. Перед включением
+              ребенка в программу кураторы обязательно объясняют ребенку, кто такой наставник и
+              какую роль он может сыграть в его жизни. Конечно, здесь многое зависит от умения
+              самого наставника выстраивать отношения и границы, но, если человек сомневается в
+              своих навыках, то в рамках нашей программы проводятся поддерживающие мероприятия,
+              которые развивают компетенции наставников и их коммуникативные способности, которые
+              помогают в общении с детьми, а также есть всегда возможность обратиться к куратору
+              программы.
+            </p>
+          </div>
+        </article>
+
+        <article class="question">
+          <h2 class="section-title question__title">
+            Я боюсь, что ребёнок ко мне слишком сильно привяжется. Что делать?
+          </h2>
+          <div class="question__wrap">
+            <p class="rubric question__rubric">рубрика</p>
+            <button class="question__show-button" type="button" aria-label="Показать ответ" title="Показать ответ"></button>
+          </div>
+          <div class="question__answer">
+            <p class="paragraph question__paragraph">
+              Настоящие дружеские отношения строятся на взаимном интересе, доверии и привязанности.
+              Когда наставник для ребенка становится именно другом, а не просто знакомым или
+              волонтером, то подопечный начинает быть искренне заинтересован в общении, начинает
+              ждать встреч, звонить по телефону. Но тут важно, чтобы наставник оставался именно в
+              роли друга, старшего брата или сестры, а не потенциального родителя. Перед включением
+              ребенка в программу кураторы обязательно объясняют ребенку, кто такой наставник и
+              какую роль он может сыграть в его жизни. Конечно, здесь многое зависит от умения
+              самого наставника выстраивать отношения и границы, но, если человек сомневается в
+              своих навыках, то в рамках нашей программы проводятся поддерживающие мероприятия,
+              которые развивают компетенции наставников и их коммуникативные способности, которые
+              помогают в общении с детьми, а также есть всегда возможность обратиться к куратору
+              программы.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="../index.html" class="footer__logo" target="_self">
+        <img class="footer__logo-image" src="../images/svg/footer-logo.svg" alt="Логотип Старшие Братья Старшие Сестры России">
+      </a>
+      <button class="button footer__button" type="button">Помочь деньгами</button>
+      <div class="footer__column footer__column_content_concept">
+        <p class="footer__brand">&copy; Старшие Братья Старшие Сестры</p>
+        <div class="footer__copyright">
+          <p class="footer__authors">
+            Разработка – студенты
+            <a href="https://praktikum.yandex.ru/" class="footer__production" target="_blank">Яндекс.Практикум</a>
+          </p>
+          <p class="footer__design">
+            Концепция и дизайн –
+            <a href="https://krkr.design/" class="footer__production" target="_blank">krkr.design</a>
+          </p>
+        </div>
+      </div>
+      <nav class="footer__column footer__column_content_info">
+        <ul class="footer__column-list">
+          <li class="footer__column-links">
+            <a href="about.html" class="footer__column-link" target="_self">о проекте</a>
+          </li>
+          <li class="footer__column-links">
+            <a href="calendar.html" class="footer__column-link" target="_self">календарь</a>
+          </li>
+          <li class="footer__column-links">
+            <a href="place.html" class="footer__column-link" target="_self">куда пойти</a>
+          </li>
+          <li class="footer__column-links">
+            <a href="./questions.html" class="footer__column-link" target="_self">вопросы</a>
+          </li>
+          <li class="footer__column-links">
+            <a href="read-watch-main.html" class="footer__column-link" target="_self">читать и смотреть</a>
+          </li>
+          <li class="footer__column-links">
+            <a href="rights.html" class="footer__column-link" target="_self">права детей</a>
+          </li>
+          <li class="footer__column-links">
+            <a href="stories.html" class="footer__column-link" target="_self">истории</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="footer__column footer__column_content_social">
+        <ul class="footer__column-list">
+          <li class="footer__column-links">
+            <a href="https://www.facebook.com/BigBrothers.BigSisters.Russia/" class="footer__column-link" target="_blank">facebook</a>
+          </li>
+          <li class="footer__column-links">
+            <a href="https://vk.com/big.brothers.big.sisters" class="footer__column-link" target="_blank">vkontakte</a>
+          </li>
+          <li class="footer__column-links">
+            <a href="https://www.instagram.com/nastavniki_org/" class="footer__column-link" target="_blank">instagram</a>
+          </li>
+          <li class="footer__column-links">
+            <a href="https://www.youtube.com/user/Nastavniki/" class="footer__column-link" target="_blank">youtube</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+    <script src="../scripts/questions/questions.js"></script>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>

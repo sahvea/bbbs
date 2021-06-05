@@ -24,4 +24,3 @@ searchButton.addEventListener('click', (evt) => {
   evt.preventDefault();
   toggleSearchButton();
 });
-

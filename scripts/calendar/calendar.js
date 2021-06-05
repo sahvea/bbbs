@@ -1,11 +1,11 @@
-const popupCalendar = document.querySelector('.popup_type_description');
+const popupCalendar = document.querySelector('.popup_type_calendar');
 const popupConfirm = document.querySelector('.popup_type_confirmation');
 const popupDone = document.querySelector('.popup_type_done');
 const popups = document.querySelectorAll('.popup');
 const popupCalendarButtonClose = document.querySelector('.popup__close');
 const buttonDots = document.querySelectorAll('.calendar__button-dots');
 const buttonConfirm = document.querySelector('.button_action_confirm');
-const buttonDone = document.querySelector('.calendar__confirm');
+const buttonDone = document.querySelector('.popup__confirm-button');
 const buttonsCalendar = document.querySelectorAll('.calendar__button_action_sign-up');
 
 function openPopup(popup) {
@@ -31,18 +31,18 @@ function closePopup(popup) {
 (function closePopupByClick() {
   popups.forEach((popup) => {
     popup.addEventListener('click', (evt) => {
-      if(evt.target.classList.contains('popup_opened')) {
+      if (evt.target.classList.contains('popup_opened')) {
         closePopup(popup);
       }
-      if(evt.target.classList.contains('popup__cancel')) {
+      if (evt.target.classList.contains('popup__cancel')) {
         closePopup(popup);
       }
-    })
-  })
+    });
+  });
 })();
 
 function closePopupByEsc(evt) {
-  if(evt.key === 'Escape') {
+  if (evt.key === 'Escape') {
     const popup = document.querySelector('.popup_opened');
     closePopup(popup);
   }

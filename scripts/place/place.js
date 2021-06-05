@@ -1,10 +1,10 @@
 const modals = document.querySelectorAll('.popup');
 const spanRecommend = document.querySelector('.place-card__span-accent');
-const popupRecommend = document.querySelector('.recommendation');
-const formRecommend = document.querySelector('.popup__container_type_recommendation')
+const popupRecommend = document.querySelector('.popup_type_recommendation');
+const formRecommend = document.querySelector('.recommendation');
 const buttonFormSubmit = document.querySelector('.recommendation__submit');
-const popupRecommendFinish = document.querySelector('.recommendation_type_finish');
-const textArea = document.querySelector('.popup__textarea');
+const popupRecommendFinish = document.querySelector('.popup_type_recommendation-finish');
+// const textArea = document.querySelector('.popup__textarea');
 
 function openPopup(popup) {
   formRecommend.reset();
@@ -20,27 +20,27 @@ function closePopup(popup) {
 (function closePopupByClick() {
   modals.forEach((popup) => {
     popup.addEventListener('click', (evt) => {
-      if(evt.target.classList.contains('popup_opened')) {
+      if (evt.target.classList.contains('popup_opened')) {
         closePopup(popup);
       }
-      if(evt.target.classList.contains('popup__cancel')) {
+      if (evt.target.classList.contains('popup__cancel')) {
         closePopup(popup);
       }
-    })
-  })
+    });
+  });
 })();
 
 function closePopupByEsc(evt) {
-  if(evt.key === 'Escape') {
+  if (evt.key === 'Escape') {
     const popup = document.querySelector('.popup_opened');
     closePopup(popup);
   }
 }
 
-function autoGrow() {
+/* function autoGrow() {
   textArea.style.height = "5px";
   textArea.style.height = (textArea.scrollHeight) + "px";
-}
+} */
 
 function popupAddRecommend(evt) {
   evt.preventDefault();
@@ -48,6 +48,6 @@ function popupAddRecommend(evt) {
   openPopup(popupRecommendFinish);
 }
 
-textArea.addEventListener('input', autoGrow);
+// textArea.addEventListener('input', autoGrow);
 buttonFormSubmit.addEventListener('click', popupAddRecommend);
 spanRecommend.addEventListener('click', () => openPopup(popupRecommend));

@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/catalog-card.scss"],"names":[],"mappings":"AAAA,oB,CACE,mB,CAAA,gB,CACA,U,CACA,W,CAGF,oB,CACE,iB,CACA,e","file":"catalog-card.css","sourcesContent":[".catalog-card__image {\n  object-fit: cover;\n  width: 100%;\n  height: 100%;\n}\n\n.catalog-card__title {\n  text-align: center;\n  margin-top: 20px;\n}\n"]}

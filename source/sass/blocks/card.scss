@@ -96,8 +96,7 @@
   text-decoration: none;
 
   &_content_article-img {
-    margin-top: 70px;
-    margin-bottom: 15px;
+    margin-top: auto;
   }
 }
 
@@ -143,7 +142,7 @@
 }
 
 .card__link {
-  margin-top: auto;
+  margin-top: 15px;
 }
 
 .card__rubric {
@@ -181,6 +180,10 @@
   border-radius: 15px;
   object-fit: cover;
   object-position: center;
+
+  &_position_main-article {
+    margin-top: auto;
+  }
 }
 
 // фото на карточке c главной страницы

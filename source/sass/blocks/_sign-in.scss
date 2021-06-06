@@ -5,7 +5,7 @@
   max-width: 570px;
 }
 
-.sign-in__legend {
+.sign-in__text {
   text-align: center;
   margin-bottom: 50px;
 }
@@ -37,7 +37,7 @@
 }
 
 @include atDesktop1024 {
-  .sign-in__legend {
+  .sign-in__text {
     margin-bottom: 30px;
   }
 

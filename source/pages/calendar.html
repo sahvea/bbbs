@@ -203,7 +203,7 @@
         </div>
       </section>
       <section class="calendar-container page__section">
-        <article class="calendar calendar_selected">
+        <article class="calendar calendar_type_selected">
           <div class="calendar__caption">
             <div class="calendar__info">
               <p class="calendar__type">Волонтёры + дети</p>
@@ -232,15 +232,11 @@
             </ul>
             <div class="calendar__submit">
               <button
-                class="
-                  button button_theme_light
-                  calendar__button calendar__button_selected calendar__button_action_sign-up
-                "
+                class="button button_theme_light calendar__button calendar__button_type_selected"
                 type="button"
               >
                 Отменить запись
               </button>
-              <p class="calendar__place-left"></p>
               <button class="button calendar__button-dots button_theme_light" type="button">
                 &#8226;&#8226;&#8226;
               </button>
@@ -410,6 +406,15 @@
             </div>
           </div>
         </article>
+
+        <article class="calendar calendar_type_error">
+          <h2 class="section-title calendar__title calendar__title_type_error">
+            Что-то пошло не так, попробуйте записаться снова
+          </h2>
+          <button class="button calendar__button calendar__button_type_error" type="button">
+            Вернуться к мероприятию
+          </button>
+        </article>
       </section>
     </main>
 
@@ -510,7 +515,7 @@
           <button class="popup__close popup__cancel" type="button"></button>
           <form class="form sign-in" name="sign-in" novalidate>
             <fieldset class="sign-in__user-info">
-              <legend class="sign-in__legend">
+              <div class="sign-in__text">
                 <h2 class="section-title">Вход</h2>
                 <p class="paragraph sign-in__paragraph">
                   Вход в личный кабинет доступен наставникам программы
@@ -520,7 +525,7 @@
                   Пожалуйста, введите логин и пароль из письма. Если вам не приходило письмо,
                   свяжитесь с вашим куратором.
                 </p>
-              </legend>
+              </div>
               <input
                 type="text"
                 name="login"

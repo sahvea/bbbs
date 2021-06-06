@@ -11,17 +11,23 @@
   font-family: $ptRootUI;
   color: $black;
 
-  &_selected {
+  &_type_selected {
     background-color: $lightBlue;
+  }
+
+  &_type_error {
+    align-items: flex-start;
+    background-color: $lightPink;
   }
 }
 
 .calendar__title {
   max-width: 320px;
-}
 
-.calendar_selected {
-  background-color: $lightBlue;
+  &_type_error {
+    margin-top: 30px;
+    color: $error;
+  }
 }
 
 .calendar__weekday {
@@ -122,7 +128,7 @@
 }
 
 .calendar__button {
-  &_selected {
+  &_type_selected {
     background-color: $blue;
     color: $white;
 
@@ -178,6 +184,10 @@
 
   .calendar__title {
     max-width: 246px;
+
+    &_type_error {
+      margin-top: 20px;
+    }
   }
 
   .calendar__place-left {

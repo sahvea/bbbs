@@ -1,0 +1,42 @@
+@import '../base/variables.scss';
+@import '../base/mixins.scss';
+
+.cities {
+  text-align: center;
+}
+
+.cities__list {
+  margin: 15px 0 0;
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+
+  &_type_capitals {
+    margin-top: 30px;
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid $lightGray;
+  }
+}
+
+.cities__name {
+  margin-top: 10px;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.cities__link {
+  font-family: $protoGrotesk;
+  font-size: 15px;
+  line-height: 1.3;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+  color: $black;
+}
+
+@include atDesktop1024 {
+  .cities__link {
+    font-size: 12px;
+  }
+}

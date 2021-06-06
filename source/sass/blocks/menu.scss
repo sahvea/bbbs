@@ -1,0 +1,364 @@
+@import '../base/variables.scss';
+@import '../base/mixins.scss';
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.menu__logo {
+  font-family: $protoGrotesk;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 1.1;
+  color: $blue;
+  text-decoration: none;
+  transition: 0.2s linear;
+
+  &:hover {
+    color: $darkBlue;
+  }
+}
+
+.menu__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &_hidden {
+    display: none;
+  }
+}
+
+.menu__list-item {
+  margin-left: 30px;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+}
+
+.menu__link {
+  font-family: $protoGrotesk;
+  font-size: 14px;
+  line-height: 1.25;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $black;
+  transition: 0.2s linear;
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+.menu__dropdown-list {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 16px;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  background-color: $background;
+  border-radius: 0px 0px 30px 30px;
+  box-shadow: 0px 5px 5px rgba($black, 0.1);
+  list-style-type: none;
+  transition: 0.2s ease;
+  z-index: 1;
+}
+
+.menu__dropdown-list-item {
+  margin-top: 10px;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.menu__dropdown-link {
+  color: $black;
+  transition: 0.2s linear;
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+.menu__dropdown-item {
+  position: relative;
+
+  &:hover .menu__dropdown-list {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.menu__burger {
+  display: none;
+  border: none;
+  outline: 0;
+  padding: 0;
+  width: 30px;
+  height: 20px;
+  background-color: transparent;
+}
+
+.menu__button-list {
+  margin: 5px 0 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.menu__button-item {
+  transition: 0.15s ease-in;
+
+  &:first-of-type {
+    padding-right: 20px;
+  }
+
+  &:last-of-type {
+    height: 20px;
+    padding-left: 20px;
+    border-left: 0.7px solid $lightGray;
+  }
+}
+
+.menu__button {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  &_type_search {
+    background-image: url('../../images/svg/search.svg');
+  }
+
+  &_type_user {
+    background-image: url('../../images/svg/user.svg');
+  }
+
+  &_type_active-user {
+    background-image: url('../../images/svg/user-active.svg');
+  }
+}
+
+.menu__user-info {
+  display: none;
+}
+
+// меню для поиска
+.menu_state_search {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: 600px;
+  justify-items: start;
+  align-items: start;
+
+  & .menu__logo {
+    grid-column: 1;
+  }
+
+  & .menu__lists-wrap {
+    display: none;
+  }
+
+  & .menu__button-list {
+    grid-column: 2;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  & .menu__button-item {
+    &:first-of-type {
+      width: 100%;
+    }
+  }
+}
+
+@include atDesktop1380 {
+  .menu {
+    display: grid;
+    grid-template-columns: 60px 1fr 40px;
+    grid-template-rows: 30px 1fr;
+    justify-items: center;
+    align-items: start;
+  }
+
+  .menu__button-list {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+  }
+
+  .menu__button-item {
+    &:first-of-type {
+      padding-right: 0;
+    }
+
+    &:last-of-type {
+      visibility: hidden;
+      opacity: 0;
+      border: none;
+    }
+  }
+
+  .menu__logo {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 17.5px;
+    line-height: 1;
+  }
+
+  .menu__burger {
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .menu__burger-line {
+    margin-bottom: 5px;
+    width: 20px;
+    height: 1px;
+    background-color: $black;
+    transition: 0.4s linear;
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+
+  // аткивное состояние кнопки бургера
+  .menu__burger_active .menu__burger-line {
+    background-color: $blue;
+
+    &:first-of-type {
+      margin: 0;
+      top: 0;
+      transform: translateY(0.5px) rotate(45deg);
+    }
+    &:nth-child(2) {
+      display: none;
+    }
+    &:last-of-type {
+      bottom: 0;
+      transform: translateY(-0.5px) rotate(-45deg);
+    }
+  }
+
+  .menu__burger_active + .menu__button-list .menu__button-item {
+    &:last-of-type {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .menu__lists-wrap {
+    grid-column: 1 / 4;
+    grid-row: 2;
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    &_hidden {
+      display: none;
+    }
+  }
+
+  .menu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &_type_social {
+      padding-right: 17px;
+    }
+  }
+
+  .menu__list-item {
+    margin-left: 0;
+    margin-top: 15px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  .menu__dropdown-item {
+    &:hover .menu__dropdown-list {
+      display: none;
+    }
+  }
+
+  .menu__burger_active ~ .menu__user-info {
+    grid-column: 1 / 4;
+    grid-row: 3;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
+
+  .menu__user-link {
+    color: $lightGray;
+    text-decoration: none;
+    transition: 0.2s linear;
+
+    &:hover {
+      color: $darkGray;
+    }
+  }
+
+  // меню для поиска
+  .menu_state_search {
+    grid-template-columns: 60px 1fr 40px;
+    grid-template-rows: 30px 500px;
+    justify-items: center;
+    position: relative;
+
+    & .menu__button-list {
+      grid-column: 1;
+    }
+
+    & .menu__logo {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    & .menu__burger {
+      grid-column: 3;
+      grid-row: 1;
+    }
+
+    & .menu__search-options {
+      grid-column: 1 / 4;
+      grid-row: 2;
+      justify-self: start;
+    }
+  }
+}

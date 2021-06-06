@@ -1,0 +1,94 @@
+@import '../base/variables.scss';
+@import '../base/mixins.scss';
+
+.tags {
+  padding-top: 25px;
+  position: relative;
+}
+
+.tags__list {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+
+  &_type_long {
+    flex-wrap: wrap;
+  }
+}
+
+.tags__list-item {
+  margin-top: 15px;
+}
+
+.tags__button {
+  &_active {
+    background-color: $black;
+    color: $background;
+
+    &:hover {
+      background-color: $darkBlue;
+      color: $background;
+      border-color: $darkBlue;
+    }
+  }
+}
+
+@include atDesktop1024 {
+  .tags {
+    padding-top: 10px;
+
+    &_content_long-list {
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -1px;
+        width: 40px;
+        height: 100%;
+        background: linear-gradient(90deg, transparent 0%, $background 100%);
+      }
+    }
+  }
+
+  .tags__list {
+    &_type_long {
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
+  .tags__list-item {
+    margin-top: 10px;
+  }
+}
+
+@include atTablet {
+  .tags {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -1px;
+      width: 40px;
+      height: 100%;
+      background: linear-gradient(90deg, transparent 0%, $background 100%);
+    }
+  }
+  .tags__list {
+    justify-content: flex-start;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

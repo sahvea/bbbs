@@ -1,0 +1,100 @@
+@import '../base/variables.scss';
+@import '../base/mixins.scss';
+
+.rights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: 1fr [first-line] 1px 1fr [second-line] 1px 1fr [third-line] 1px 1fr;
+  gap: 80px 30px;
+}
+
+.rights__card {
+  flex-direction: row;
+  align-items: unset;
+  padding: 0;
+  overflow: hidden;
+}
+
+.rights__rubric {
+  margin-top: 17px;
+  align-self: center;
+}
+
+.rights__line {
+  grid-column: 1 / -1;
+  background: $black;
+
+  &:nth-of-type(1) {
+    grid-row-start: first-line;
+  }
+
+  &:nth-of-type(2) {
+    grid-row-start: second-line;
+  }
+
+  &:nth-of-type(3) {
+    grid-row-start: third-line;
+  }
+}
+
+.rights__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: auto;
+  text-align: center;
+  flex: 1;
+  text-decoration: none;
+}
+
+@include atDesktop1440 {
+  .rights {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
+}
+
+@include atDesktop1199 {
+  .rights {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr [third-line] 1px 1fr;
+  }
+
+  .rights__line {
+    &:nth-of-type(-n + 2) {
+      display: none;
+    }
+  }
+}
+
+@include atDesktop1024 {
+  .rights {
+    padding-top: 50px;
+    grid-template-rows: 1fr [third-line] 1px 1fr;
+    gap: 30px;
+  }
+
+  .rights__card {
+    margin: 0 auto;
+    max-width: 290px;
+  }
+}
+
+@include atTablet {
+  .rights {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr [first-line] 1px 1fr [second-line] 1px 1fr [third-line] 1px 1fr;
+    gap: 30px;
+  }
+
+  .rights__line {
+    &:nth-of-type(-n + 2) {
+      display: block;
+    }
+  }
+}
+
+@include atMobile {
+  .rights {
+    padding-top: 30px;
+  }
+}

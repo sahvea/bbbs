@@ -1,0 +1,68 @@
+@import '../base/mixins.scss';
+
+// удаление лишних карточек при переполнении
+// заданного кол-ва строк
+
+@include atDesktop1639 {
+  .card-pagination {
+    &_type_shapes {
+      &:nth-last-of-type(-n + 4) {
+        display: none;
+      }
+    }
+  }
+}
+
+@include atDesktop1440 {
+  .card-pagination {
+    &:nth-last-of-type(-n + 4) {
+      display: none;
+    }
+
+    &_page_main {
+      &:nth-last-of-type(-n + 1) {
+        display: none;
+      }
+    }
+  }
+}
+
+@include atDesktop1279 {
+  .card-pagination {
+    &_page_main {
+      &:nth-last-of-type(-n + 2) {
+        display: none;
+      }
+    }
+  }
+}
+
+@include atDesktop1199 {
+  .card-pagination {
+    &_type_shapes {
+      &:nth-last-of-type(-n + 12) {
+        display: none;
+      }
+    }
+  }
+}
+
+@include atDesktop1217 {
+  .card-pagination {
+    &_type_shapes {
+      &:nth-last-of-type(-n + 8) {
+        display: none;
+      }
+    }
+  }
+}
+
+@include atTabletL {
+  .card-pagination {
+    &_page_main {
+      &:nth-last-of-type(-n + 3) {
+        display: none;
+      }
+    }
+  }
+}

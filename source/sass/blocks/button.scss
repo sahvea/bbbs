@@ -1,0 +1,73 @@
+@import '../base/variables.scss';
+@import '../base/mixins.scss';
+
+.button {
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  border: 1px solid $black;
+  outline: none;
+  border-radius: 100px;
+  font-family: $protoGrotesk;
+  font-size: 15px;
+  line-height: 1.3;
+  letter-spacing: 0.2px;
+  color: $black;
+  white-space: nowrap;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.2s linear;
+
+  &:hover {
+    background-color: $lightGray;
+  }
+
+  &:active {
+    background-color: $black;
+    color: $background;
+  }
+
+  &:active:hover {
+    background-color: $darkBlue;
+    color: $background;
+    border-color: $darkBlue;
+  }
+
+  &:disabled {
+    color: $lightGray;
+    border-color: $lightGray;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  &_theme_light {
+    border-color: $blue;
+    color: $blue;
+
+    &:hover {
+      background-color: $lightBlue;
+    }
+
+    &:active {
+      background-color: $blue;
+    }
+
+    &:disabled {
+      color: $lightGray;
+      border-color: $lightGray;
+      pointer-events: none;
+      user-select: none;
+    }
+  }
+}
+
+@include atDesktop1024 {
+  .button {
+    height: 40px;
+    padding: 0 15px;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+}

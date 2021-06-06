@@ -1,0 +1,15 @@
+@import '../base/mixins.scss';
+
+.add-question {
+  max-width: 970px;
+}
+
+.add-question__title {
+  max-width: 650px;
+}
+
+@include atDesktop1024 {
+  .add-question {
+    padding-top: 50px;
+  }
+}

@@ -1,0 +1,133 @@
+@import '../base/variables.scss';
+@import '../base/mixins.scss';
+
+.article-lead {
+  background-color: $yellow;
+  border-top-right-radius: 400px;
+  border-bottom-right-radius: 400px;
+  padding: 230px 50px;
+  box-sizing: border-box;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 178px;
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: $yellow;
+    border-bottom-left-radius: 400px;
+    height: 250px;
+    width: 80%;
+    top: -250px;
+    right: 0;
+    z-index: -1;
+  }
+
+  &_form_oval {
+    border-radius: 400px;
+    &::before {
+      right: auto;
+      left: 0;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 400px;
+    }
+  }
+
+  &_form_trapezoid {
+    border-radius: 3px 3px 400px 400px;
+    &::before {
+      width: 100%;
+      border-radius: 3px 3px 400px 400px;
+    }
+  }
+}
+
+.article-lead__content {
+  margin: auto;
+  max-width: 868px;
+  text-align: center;
+}
+
+.article-lead__text {
+  margin-top: 30px;
+}
+
+@include atDesktop1440 {
+  .article-lead {
+    padding-top: 135px;
+    padding-bottom: 135px;
+    margin-top: 250px;
+    &::before {
+      height: 320px;
+      top: -320px;
+    }
+
+    &_form_oval {
+      margin-top: 150px;
+      padding-top: 185px;
+      padding-bottom: 185px;
+      &::before {
+        height: 220px;
+        top: -220px;
+      }
+    }
+
+    &_form_trapezoid {
+      margin-top: 150px;
+      padding-top: 185px;
+      padding-bottom: 185px;
+      &::before {
+        height: 220px;
+        top: -220px;
+      }
+    }
+  }
+}
+
+@include atDesktop1024 {
+  .article-lead {
+    margin-top: 187px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    &::before {
+      height: 270px;
+      top: -270px;
+    }
+
+    &_form_oval {
+      margin-top: 85px;
+      padding-top: 120px;
+      padding-bottom: 120px;
+      &::before {
+        height: 165px;
+        top: -165px;
+      }
+    }
+
+    &_form_trapezoid {
+      margin-top: 85px;
+      padding-top: 120px;
+      padding-bottom: 120px;
+      &::before {
+        height: 165px;
+        top: -165px;
+      }
+    }
+  }
+}
+
+@include atTablet {
+  .article-lead {
+    padding: 20px 15px 50px;
+    margin-top: 0;
+    border-radius: unset;
+    &::before {
+      height: 60px;
+      top: -60px;
+      width: 100%;
+      border-radius: unset;
+    }
+  }
+}

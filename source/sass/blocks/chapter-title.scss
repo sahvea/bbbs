@@ -1,0 +1,28 @@
+@import '../base/variables.scss';
+@import '../base/mixins.scss';
+
+.chapter-title {
+  margin: 0;
+  font-family: $protoGrotesk;
+  font-weight: 300;
+  font-size: 44px;
+  line-height: 1.1;
+  color: $black;
+
+  &_clickable {
+    color: $blue;
+    text-decoration: none;
+    transition: 0.2s linear;
+
+    &:hover {
+      color: $darkBlue;
+    }
+  }
+}
+
+@include atDesktop1024 {
+  .chapter-title {
+    font-size: 23px;
+    line-height: 1.3;
+  }
+}

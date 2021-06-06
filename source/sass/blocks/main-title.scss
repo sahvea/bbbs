@@ -1,0 +1,19 @@
+@import '../base/variables.scss';
+@import '../base/mixins.scss';
+
+.main-title {
+  margin: 0;
+  font-family: $protoGrotesk;
+  font-weight: 300;
+  font-size: 74px;
+  line-height: 108%;
+  color: $black;
+  text-align: center;
+}
+
+@include atDesktop1024 {
+  .main-title {
+    font-size: 37px;
+    line-height: 105%;
+  }
+}

@@ -1,0 +1,17 @@
+@import '../base/variables.scss';
+@import '../base/mixins.scss';
+
+.paragraph {
+  margin: 0;
+  font-family: $ptRootUI;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  color: $black;
+}
+
+@include atDesktop1024 {
+  .paragraph {
+    font-size: 15px;
+  }
+}

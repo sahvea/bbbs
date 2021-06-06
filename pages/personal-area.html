@@ -165,8 +165,8 @@
               <div class="card personal-area__card">
                 <div class="story-form__input-wrap">
                   <input type="text" name="place" placeholder="Место встречи" required="" class="form__input story-form__input">
-                  <input type="date" name="date" placeholder="Дата&emsp;" required="" onchange="this.className=(this.value!=''?'has-value personal-area__form-input':'')" class="form__input story-form__input">
-                  <textarea type="text" name="story" class="form__input story-form__input story-form__input_type_textarea" placeholder="Опишите вашу встречу, какие чувства вы испытывали, что понравилось / не понравилось" required=""></textarea>
+                  <input type="text" name="date" placeholder="Дата __.__.____" required="" onfocus="(this.type='date')" onblur="(this.type='text')" class="form__input story-form__input">
+                  <textarea name="story" class="form__input story-form__input story-form__input_type_textarea" placeholder="Опишите вашу встречу, какие чувства вы испытывали, что понравилось / не понравилось" required=""></textarea>
 
                   <div class="rating">
                     <button class="rating__button rating__button_type_good" type="button"></button>

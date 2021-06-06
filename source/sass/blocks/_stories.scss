@@ -47,10 +47,14 @@
 }
 
 .stories__arrow {
+  width: 30px;
   margin-left: 15px;
 }
 
 .stories__image {
+  width: 100%;
+  border-radius: 30px;
+  object-fit: cover;
   padding-bottom: 50px;
 }
 
@@ -207,6 +211,11 @@
     }
   }
 
+  .stories__arrow {
+    width: 20px;
+    padding-right: 25px;
+  }
+
   .stories__about-full {
     padding-bottom: 50px;
   }
@@ -237,5 +246,9 @@
 @include atMobileL {
   .stories__slide {
     max-width: 260px;
+  }
+
+  .stories__arrow {
+    padding-right: 5px;
   }
 }

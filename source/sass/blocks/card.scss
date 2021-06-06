@@ -93,10 +93,12 @@
 // обертки
 .card__link-wrap {
   width: 100%;
+  height: 100%;
   text-decoration: none;
 
   &_content_article-img {
     margin-top: auto;
+    height: fit-content;
   }
 }
 
@@ -142,7 +144,11 @@
 }
 
 .card__link {
-  margin-top: 15px;
+  margin-top: auto;
+
+  &_position_main-card {
+    margin-top: 15px;
+  }
 }
 
 .card__rubric {
@@ -180,10 +186,6 @@
   border-radius: 15px;
   object-fit: cover;
   object-position: center;
-
-  &_position_main-article {
-    margin-top: auto;
-  }
 }
 
 // фото на карточке c главной страницы
@@ -250,12 +252,6 @@
 }
 
 @include atDesktop1440 {
-  .card__img {
-    &_position_main-article {
-      margin-top: 10px;
-    }
-  }
-
   .card__video-iframe {
     max-width: 1100px;
     max-height: 625px;
@@ -314,10 +310,6 @@
 
   .card__img {
     height: 345px;
-
-    &_position_main-article {
-      margin-top: 40px;
-    }
   }
 
   .card__annotation-caption {
@@ -366,9 +358,5 @@
 
   .card__img {
     height: 142px;
-
-    &_position_main-article {
-      margin-top: 20px;
-    }
   }
 }

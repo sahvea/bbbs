@@ -107,7 +107,7 @@
   padding: 15px 30px;
   text-align: center;
   width: 100%;
-  height: 170px;
+  min-height: 170px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -297,7 +297,7 @@
 
   .card__video-info {
     padding: 15px;
-    height: 147px;
+    min-height: 147px;
   }
 
   .card__link-wrap {

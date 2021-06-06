@@ -11,12 +11,13 @@
   height: 30%;
   padding-top: 40px;
   padding-left: 30px;
+  box-sizing: border-box;
   border-bottom-right-radius: 200px;
   background-color: $pink;
 }
 
 .stub__logo {
-  width: 252px;
+  width: 250px;
 }
 
 .stub__content {
@@ -28,11 +29,15 @@
   background-color: $pink;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  overflow: hidden;
 }
 
 .stub__text {
+  margin: auto;
+  padding-right: 5px;
   max-width: 570px;
+  max-height: 90%;
   text-align: center;
 }
 
@@ -49,7 +54,7 @@
 
 @include atDesktop1024 {
   .stub__upper-element {
-    min-height: 90px;
+    height: 90px;
     padding-top: 27px;
     padding-left: 15px;
   }
@@ -59,7 +64,7 @@
   }
 
   .stub__content {
-    min-height: 292px;
+    height: 292px;
     padding: 35px 15px;
     border-radius: 70px 70px 0 0;
   }
@@ -67,6 +72,12 @@
 
 @include atMobile {
   .stub__upper-element {
+    width: 80%;
+    min-height: 78px;
     padding-top: 22px;
+  }
+
+  .stub__content {
+    height: 255px;
   }
 }

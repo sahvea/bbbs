@@ -44,29 +44,11 @@
   }
 }
 
-/* .preview__content-wrap {
-  position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -1px;
-    width: 40px;
-    height: 100%;
-    background: linear-gradient(90deg, transparent 0%, $background 100%);
-  }
-} */
-
 .preview__row {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, 420px);
-  grid-template-rows: 1fr 1px;
-  gap: 30px; */
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;

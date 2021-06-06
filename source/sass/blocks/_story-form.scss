@@ -56,11 +56,6 @@
     min-height: 286px;
     resize: none;
   }
-
-  &[type='date']:not(:focus):not(.has-value):before {
-    color: $lightGray;
-    content: attr(placeholder);
-  }
 }
 
 .story-form__buttons {
